@@ -19,6 +19,7 @@ $STD apt-get install -y sudo
 $STD apt-get install -y mc
 $STD apt-get install -y chromium
 $STD apt-get install -y xvfb
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 if [[ "$CTTYPE" == "0" ]]; then
