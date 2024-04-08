@@ -107,16 +107,6 @@ pve_check() {
   fi
 }
 
-# This function checks the system architecture and exits if it's not "amd64".
-arch_check() {
-  if [ "$(dpkg --print-architecture)" != "amd64" ]; then
-    echo -e "\n ${CROSS} This script will not work with PiMox! \n"
-    echo -e "Exiting..."
-    sleep 2
-    exit
-  fi
-}
-
 # This function checks if the script is running through SSH and prompts the user to confirm if they want to proceed or exit.
 ssh_check() {
   if command -v pveversion >/dev/null 2>&1 && [ -n "${SSH_CLIENT:+x}" ]; then
@@ -463,7 +453,6 @@ install_script() {
   pve_check
   shell_check
   root_check
-  arch_check
   ssh_check
 
   if systemctl is-active -q ping-instances.service; then
@@ -543,7 +532,6 @@ build_container() {
     -tags proxmox-helper-scripts
     $SD
     $NS
-    -net0 name=eth0,bridge=$BRG$MAC,ip=$NET$GATE$VLAN$MTU
     -onboot 1
     -cores $CORE_COUNT
     -memory $RAM_SIZE
@@ -551,7 +539,7 @@ build_container() {
     $PW
   "
   # This executes create_lxc.sh and creates the container and .conf file
-  bash -c "$(wget -qLO - https://raw.githubusercontent.com/tteck/Proxmox/main/ct/create_lxc.sh)" || exit
+  bash /root/create_lxc.sh || exit
 
   LXC_CONFIG=/etc/pve/lxc/${CTID}.conf
   if [ "$CT_TYPE" == "0" ]; then
@@ -595,7 +583,7 @@ http://dl-cdn.alpinelinux.org/alpine/latest-stable/community
 EOF'
     pct exec "$CTID" -- ash -c "apk add bash >/dev/null"
   fi
-  lxc-attach -n "$CTID" -- bash -c "$(wget -qLO - https://raw.githubusercontent.com/tteck/Proxmox/main/install/$var_install.sh)" || exit
+  lxc-attach -n "$CTID" -- bash "/root/$var_install.sh" || exit
 
 }
 
