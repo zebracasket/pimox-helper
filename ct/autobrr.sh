@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -61,7 +61,7 @@ msg_ok "Stopped ${APP} LXC"
 
 msg_info "Updating ${APP} LXC"
 rm -rf /usr/local/bin/*
-wget -q $(curl -s https://api.github.com/repos/autobrr/autobrr/releases/latest | grep download | grep linux_x86_64 | cut -d\" -f4)
+wget -q $(curl -s https://api.github.com/repos/autobrr/autobrr/releases/latest | grep download | grep linux_arm64 | cut -d\" -f4)
 tar -C /usr/local/bin -xzf autobrr*.tar.gz
 rm -rf autobrr*.tar.gz
 msg_ok "Updated ${APP} LXC"
