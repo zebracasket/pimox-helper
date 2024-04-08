@@ -30,6 +30,8 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>ActualBudget</li>
     <li>Adguard</li>
     <li>AgentDVR</li>
+    <li>Docker</li>
+    <li>Prowlarr
     <li>Radarr</li>
     <li>Sonarr</li>
 </details>
