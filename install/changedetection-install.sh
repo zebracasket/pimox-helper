@@ -44,7 +44,8 @@ $STD apt-get install -y \
   xdg-utils \
   xvfb \
   ca-certificates \
-  gnupg
+  gnupg \
+  wget
 msg_ok "Installed Dependencies"
 
 msg_info "Updating Python3"

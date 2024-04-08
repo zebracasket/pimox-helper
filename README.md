@@ -38,6 +38,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>Bazarr</li>
     <li>Blocky</li>
     <li>CasaOS</li>
+    <li>ChangeDetection</li>
     <li>Docker</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
