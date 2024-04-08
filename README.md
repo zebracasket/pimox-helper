@@ -44,6 +44,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>Commafeed</li>
     <li>Cronicle</li>
     <li>DaemonSync - needs testing?</li>
+    <li>Dashy</li>
     <li>Docker</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
