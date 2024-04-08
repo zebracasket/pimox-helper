@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -61,9 +61,9 @@ systemctl stop emby-server
 msg_ok "Stopped ${APP}"
 
 msg_info "Updating ${APP}"
-wget https://github.com/MediaBrowser/Emby.Releases/releases/download/${LATEST}/emby-server-deb_${LATEST}_amd64.deb &>/dev/null
-dpkg -i emby-server-deb_${LATEST}_amd64.deb &>/dev/null
-rm emby-server-deb_${LATEST}_amd64.deb
+wget https://github.com/MediaBrowser/Emby.Releases/releases/download/${LATEST}/emby-server-deb_${LATEST}_arm64.deb &>/dev/null
+dpkg -i emby-server-deb_${LATEST}_arm64.deb &>/dev/null
+rm emby-server-deb_${LATEST}_arm64.deb
 msg_ok "Updated ${APP}"
 
 msg_info "Starting ${APP}"
