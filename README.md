@@ -31,6 +31,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>Adguard</li>
     <li>AgentDVR</li>
     <li>Apache Cassandra</li>
+    <li>Apache CouchDB</li>
     <li>Docker</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
