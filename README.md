@@ -53,6 +53,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>EMQX</li>
     <li>ESPHome</li>
     <li>Fhem</li>
+    <li>FlowiseAI</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
     <li>Nginx Proxy Manager</li>
