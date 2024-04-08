@@ -39,6 +39,11 @@ Any applications not in ported or unsupported need to be tested for whether they
 </details>
 
 <details>
+  <summary>No changes required</summary>
+    <li>Tailscale</li>
+</details>
+
+<details>
   <summary>Unsupported applications</summary>
     <li>None yet</li>
 </details>
