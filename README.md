@@ -43,7 +43,6 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>Cloudflared</li>
     <li>Commafeed</li>
     <li>Cronicle</li>
-    <li>DaemonSync - needs testing?</li>
     <li>Dashy</li>
     <li>deConz</li>
     <li>Deluge</li>
@@ -73,6 +72,7 @@ Any applications not in ported or unsupported need to be tested for whether they
   <summary>Unsupported applications</summary>
     <li>Proxmox Backup Server - Needs custom image</li>
     <li>The Debian template - due to issues - see Current issues</li>
+    <li>DaemonSync - deb built for amd64 only</li>
 </details>
 
 <details>
