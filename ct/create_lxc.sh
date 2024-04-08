@@ -178,6 +178,6 @@ PCT_OPTIONS=(${PCT_OPTIONS[@]:-${DEFAULT_PCT_OPTIONS[@]}})
 
 # Create container
 msg_info "Creating LXC Container"
-pct create $CTID /var/lib/vz/template/cache/debian_12_arm64.tar.xz ${PCT_OPTIONS[@]} >/dev/null ||
+pct create $CTID local:vztmpl/debian-arm64-bullseye.tar.xz ${PCT_OPTIONS[@]} >/dev/null ||
   exit "A problem occured while trying to create container."
 msg_ok "LXC Container ${BL}$CTID${CL} ${GN}was successfully created."
