@@ -15,10 +15,28 @@
 
 ---
 
-These scripts empower users to create a Linux container or virtual machine interactively, providing choices for both simple and advanced configurations. The basic setup adheres to default settings, while the advanced setup gives users the ability to customize these defaults. 
+## README TO BE UPDATED
 
-Options are displayed to users in a dialog box format. Once the user makes their selections, the script collects and validates their input to generate the final configuration for the container or virtual machine.
-<p align="center">
-Be cautious and thoroughly evaluate scripts and automation tasks obtained from external sources. <a href="https://github.com/tteck/Proxmox/blob/main/CODE-AUDIT.md">Read more</a>
-</p>
-<sub><div align="center"> Proxmox® is a registered trademark of Proxmox Server Solutions GmbH. </div></sub>
+Ports of tteck's proxmox scripts to ARM64.
+
+Any issues with the scripts, please put an issue within this repository rather than upstream, as it is likely caused by my modifications.
+
+You can get a script from this by using the original website, and modifying the url in the bash statement to call from my user rather than tteck, until I can figure out how to get a website for these scripts up.
+
+Any applications not in ported or unsupported need to be tested for whether they could be ported or not.
+
+<details>
+  <summary>Currently ported applications</summary>
+    <li>Radarr</li>
+</details>
+
+<details>
+  <summary>Unsupported applications</summary>
+    <li>None yet</li>
+</details>
+
+<details>
+  <summary>Current issues</summary>
+    <li>Currently the image used is hardcoded to be an Ubuntu 22.04 image.</li>
+    <li>Available debian arm64 images aren't able to be used currently as they have moved from ifupdown networking to systemd-network, meaning that until I can figure out how to make a custom image using ifupdown Debian will not work, if you know how to do this please make an issue, as Im unsure of where to start with this</li>
+</details>
