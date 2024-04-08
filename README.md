@@ -27,9 +27,10 @@ Any applications not in ported or unsupported need to be tested for whether they
 
 <details>
   <summary>Currently ported applications</summary>
-    <li>ActualBudget - unable to test but does run</li>
-    <li>Adguard Home</li>
+    <li>ActualBudget</li>
+    <li>Adguard</li>
     <li>Radarr</li>
+    <li>Sonarr</li>
 </details>
 
 <details>
