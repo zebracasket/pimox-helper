@@ -51,6 +51,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>Dockage</li>
     <li>Emby</li>
     <li>EMQX</li>
+    <li>ESPHome</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
     <li>Nginx Proxy Manager</li>
