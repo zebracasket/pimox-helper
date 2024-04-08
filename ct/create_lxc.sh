@@ -156,21 +156,38 @@ pveam update >/dev/null
 msg_ok "Updated LXC Template List"
 
 # Get LXC template string
-TEMPLATE_SEARCH=${PCT_OSTYPE}-${PCT_OSVERSION:-}
-mapfile -t TEMPLATES < <(pveam available -section system | sed -n "s/.*\($TEMPLATE_SEARCH.*\)/\1/p" | sort -t - -k 2 -V)
-[ ${#TEMPLATES[@]} -gt 0 ] || exit "Unable to find a template when searching for '$TEMPLATE_SEARCH'."
-TEMPLATE="${TEMPLATES[-1]}"
+if [ $PCT_OSTYPE = debian ]; then
+    if [ $PCT_OSVERSION = 11 ]; then
+        # TEMPLATE_SEARCH=debian-bullseye
+        # Debian broken - using ubuntu 22.04
+        TEMPLATE_SEARCH=ubuntu-jammy
+    else
+        # TEMPLATE_SEARCH=debian-bookworm
+        # Debian broken - using ubuntu 22.04
+        TEMPLATE_SEARCH=ubuntu-jammy
+    fi
+elif [ $PCT_OSTYPE = alpine ]; then
+    TEMPLATE_SEARCH=alpine-3.18
+else
+    if [ $PCT_OSVERSION = 20.04 ]; then
+        TEMPLATE_SEARCH=ubuntu-focal
+    elif [ $PCT_OSVERSION = 23.10 ]; then
+        TEMPLATE_SEARCH=ubuntu-mantic
+    else
+        TEMPLATE_SEARCH=ubuntu-jammy
+    fi
+fi
+
+TEMPLATE="$(pveam available | grep -E "arm64.*$TEMPLATE_SEARCH" | sed 's/arm64[[:space:]]*//')"
 
 # Download LXC template if needed
-if ! pveam list $TEMPLATE_STORAGE | grep -q $TEMPLATE; then
+if ! pveam list $TEMPLATE_STORAGE | grep -F $TEMPLATE > /dev/null; then
   msg_info "Downloading LXC Template"
   pveam download $TEMPLATE_STORAGE $TEMPLATE >/dev/null ||
     exit "A problem occured while downloading the LXC template."
   msg_ok "Downloaded LXC Template"
 fi
 
-echo $TEMPLATE_SEARCH
-echo $TEMPLATE
 # Combine all options
 DEFAULT_PCT_OPTIONS=(
   -arch $(dpkg --print-architecture))
@@ -180,6 +197,6 @@ PCT_OPTIONS=(${PCT_OPTIONS[@]:-${DEFAULT_PCT_OPTIONS[@]}})
 
 # Create container
 msg_info "Creating LXC Container"
-pct create $CTID local:vztmpl/ubuntu-jammy-20231124_arm64.tar.xz ${PCT_OPTIONS[@]} >/dev/null ||
+pct create $CTID ${TEMPLATE_STORAGE}:vztmpl/${TEMPLATE} ${PCT_OPTIONS[@]} >/dev/null ||
   exit "A problem occured while trying to create container."
 msg_ok "LXC Container ${BL}$CTID${CL} ${GN}was successfully created."

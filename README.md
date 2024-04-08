@@ -72,12 +72,10 @@ Any applications not in ported or unsupported need to be tested for whether they
 <details>
   <summary>Unsupported applications</summary>
     <li>Proxmox Backup Server - Needs custom image</li>
-    <li>All alpine templates - hardcoded Ubuntu base image due to Debian issues</li>
-    <li>The Debian template - hardcoded Ubuntu base image due to Debian issues</li>
+    <li>The Debian template - due to issues - see Current issues</li>
 </details>
 
 <details>
   <summary>Current issues</summary>
-    <li>Currently the image used is hardcoded to be an Ubuntu 22.04 image.</li>
     <li>Available debian arm64 images aren't able to be used currently as they have moved from ifupdown networking to systemd-network, meaning that until I can figure out how to make a custom image using ifupdown Debian will not work, if you know how to do this please make an issue, as Im unsure of where to start with this</li>
 </details>
