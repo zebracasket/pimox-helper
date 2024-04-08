@@ -29,6 +29,7 @@ Any applications not in ported or unsupported need to be tested for whether they
   <summary>Currently ported applications</summary>
     <li>ActualBudget</li>
     <li>Adguard</li>
+    <li>AgentDVR</li>
     <li>Radarr</li>
     <li>Sonarr</li>
 </details>
