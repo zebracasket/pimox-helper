@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -23,8 +23,8 @@ APP="Nginx Proxy Manager"
 var_disk="4"
 var_cpu="1"
 var_ram="1024"
-var_os="debian"
-var_version="12"
+var_os="ubuntu"
+var_version="22.04"
 variables
 color
 catch_errors

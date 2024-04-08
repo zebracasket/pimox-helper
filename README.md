@@ -32,6 +32,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>AgentDVR</li>
     <li>Apache Cassandra</li>
     <li>Docker</li>
+    <li>Nginx Proxy Manager</li>
     <li>Prowlarr</li>
     <li>Radarr</li>
     <li>Sonarr</li>

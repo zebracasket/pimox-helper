@@ -27,7 +27,8 @@ $STD apt-get -y install \
   apache2-utils \
   logrotate \
   build-essential \
-  git
+  git \
+  wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Python Dependencies"
@@ -48,7 +49,7 @@ VERSION="$(awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release)"
 
 msg_info "Installing Openresty"
 wget -qO - https://openresty.org/package/pubkey.gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/openresty-archive-keyring.gpg
-echo -e "deb http://openresty.org/package/debian bullseye openresty" >/etc/apt/sources.list.d/openresty.list
+echo -e "deb http://openresty.org/package/ubuntu jammy openresty" >/etc/apt/sources.list.d/openresty.list
 $STD apt-get update
 $STD apt-get -y install openresty
 msg_ok "Installed Openresty"
