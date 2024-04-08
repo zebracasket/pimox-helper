@@ -54,6 +54,8 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>ESPHome</li>
     <li>Fhem</li>
     <li>FlowiseAI</li>
+    <li>Frigate</li>
+    <li>Go2RTC</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
     <li>Nginx Proxy Manager</li>

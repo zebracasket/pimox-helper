@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -60,8 +60,8 @@ msg_info "Updating $APP"
 systemctl stop go2rtc
 cd /opt/go2rtc
 rm go2rtc_linux_amd64
-wget -q https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_linux_amd64
-chmod +x go2rtc_linux_amd64
+wget -q https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_linux_arm64
+chmod +x go2rtc_linux_arm64
 systemctl start go2rtc
 msg_ok "Updated $APP"
 exit
