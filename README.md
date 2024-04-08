@@ -42,6 +42,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>Channels</li>
     <li>Cloudflared</li>
     <li>Commafeed</li>
+    <li>Cronicle</li>
     <li>Docker</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>

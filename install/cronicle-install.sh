@@ -21,6 +21,7 @@ $STD apt-get install -y git
 $STD apt-get install -y make
 $STD apt-get install -y g++
 $STD apt-get install -y gcc
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Node.js"
