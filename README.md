@@ -63,6 +63,7 @@ Any applications not in ported or unsupported need to be tested for whether they
   <summary>Unsupported applications</summary>
     <li>Proxmox Backup Server - Needs custom image</li>
     <li>All alpine templates - hardcoded Ubuntu base image due to Debian issues</li>
+    <li>The Debian template - hardcoded Ubuntu base image due to Debian issues</li>
 </details>
 
 <details>
