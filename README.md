@@ -35,6 +35,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>APT Cacher NG</li>
     <li>Audiobookshelf</li>
     <li>Autobrr</li>
+    <li>Bazarr</li>
     <li>Docker</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
