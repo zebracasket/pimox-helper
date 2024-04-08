@@ -43,6 +43,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>Cloudflared</li>
     <li>Commafeed</li>
     <li>Cronicle</li>
+    <li>DaemonSync - needs testing?</li>
     <li>Docker</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
