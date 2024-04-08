@@ -41,6 +41,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>ChangeDetection</li>
     <li>Channels</li>
     <li>Cloudflared</li>
+    <li>Commafeed</li>
     <li>Docker</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
