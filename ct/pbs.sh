@@ -6,7 +6,7 @@
 # License: MIT
 # https://github.com/tteck/Proxmox/raw/main/LICENSE
 
-echo Currently unsupported
+echo "Currently unsupported."
 # function header_info {
 # clear
 # cat <<"EOF"

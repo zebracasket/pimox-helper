@@ -33,6 +33,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>Apache Cassandra</li>
     <li>Apache CouchDB</li>
     <li>APT Cacher NG</li>
+    <li>Audiobookshelf</li>
     <li>Docker</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
