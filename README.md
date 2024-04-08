@@ -27,40 +27,50 @@ Any applications not in ported or unsupported need to be tested for whether they
 
 <details>
   <summary>Currently ported applications</summary>
-    <li>ActualBudget</li>
-    <li>Adguard</li>
-    <li>AgentDVR</li>
-    <li>Apache Cassandra</li>
-    <li>Apache CouchDB</li>
-    <li>APT Cacher NG</li>
-    <li>Audiobookshelf</li>
-    <li>Autobrr</li>
-    <li>Bazarr</li>
-    <li>Blocky</li>
-    <li>CasaOS</li>
-    <li>ChangeDetection</li>
-    <li>Channels</li>
-    <li>Cloudflared</li>
-    <li>Commafeed</li>
-    <li>Cronicle</li>
-    <li>Dashy</li>
-    <li>deConz</li>
-    <li>Deluge</li>
-    <li>Docker</li>
-    <li>Dockage</li>
-    <li>Emby</li>
-    <li>EMQX</li>
-    <li>ESPHome</li>
-    <li>Fhem</li>
-    <li>FlowiseAI</li>
-    <li>Frigate</li>
-    <li>Go2RTC</li>
-    <li>Jellyseerr</li>
-    <li>Mafl</li>
-    <li>Nginx Proxy Manager</li>
-    <li>Prowlarr</li>
-    <li>Radarr</li>
-    <li>Sonarr</li>
+  <b><big>Status Guide:</big></b><br>
+  <b>Tested using the application: </b>✅<br>
+  <b>Tested creating the container: </b>☑️<br>
+  <b>View notes: </b>🔘<br>
+  <b>Untested: </b> ⭕
+    <li>☑️ ActualBudget</li>
+    <li>☑️ Adguard</li>
+    <li>☑️ AgentDVR</li>
+    <li>☑️ Apache Cassandra</li>
+    <li>⭕ Apache CouchDB</li>
+    <li>⭕ APT Cacher NG</li>
+    <li>⭕ Audiobookshelf</li>
+    <li>⭕ Autobrr</li>
+    <li>⭕ Bazarr</li>
+    <li>⭕ Blocky</li>
+    <li>⭕ CasaOS</li>
+    <li>☑️🔘 ChangeDetection</li>
+    <li>⭕ Channels</li>
+    <li>⭕ Cloudflared</li>
+    <li>⭕ Commafeed</li>
+    <li>⭕ Cronicle</li>
+    <li>⭕ Dashy</li>
+    <li>⭕ deConz</li>
+    <li>⭕ Deluge</li>
+    <li>☑️ Docker</li>
+    <li>⭕ Dockage</li>
+    <li>⭕ Emby</li>
+    <li>⭕ EMQX</li>
+    <li>⭕ ESPHome</li>
+    <li>⭕ Fhem</li>
+    <li>⭕ FlowiseAI</li>
+    <li>⭕ Frigate</li>
+    <li>⭕ Go2RTC</li>
+    <li>⭕ Jellyseerr</li>
+    <li>⭕ Mafl</li>
+    <li>⭕ Nginx Proxy Manager</li>
+    <li>⭕ Prowlarr</li>
+    <li>✅ Radarr</li>
+    <li>✅ Sonarr</li>
+</details>
+
+<details>
+  <summary>App Notes</summary>
+    <li>ChangeDetection - in my testing I had a font package require manual input for the accepting of a EULA, make sure to enable verbose (changed to be enabled in the default config) to be able to accept it.</li>
 </details>
 
 <details>
