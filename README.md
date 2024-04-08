@@ -49,7 +49,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 
 <details>
   <summary>Unsupported applications</summary>
-    <li>None yet</li>
+    <li>Proxmox Backup Server - Needs custom image</li>
 </details>
 
 <details>
