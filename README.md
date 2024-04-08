@@ -36,6 +36,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>Audiobookshelf</li>
     <li>Autobrr</li>
     <li>Bazarr</li>
+    <li>Blocky</li>
     <li>Docker</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
@@ -53,6 +54,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 <details>
   <summary>Unsupported applications</summary>
     <li>Proxmox Backup Server - Needs custom image</li>
+    <li>All alpine templates - hardcoded Ubuntu base image due to Debian issues</li>
 </details>
 
 <details>
