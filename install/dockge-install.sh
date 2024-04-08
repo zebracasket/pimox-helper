@@ -17,6 +17,7 @@ msg_info "Installing Dependencies"
 $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 get_latest_release() {
@@ -36,7 +37,7 @@ msg_ok "Installed Docker $DOCKER_LATEST_VERSION"
 msg_info "Installing Docker Compose $DOCKER_COMPOSE_LATEST_VERSION"
 DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 mkdir -p $DOCKER_CONFIG/cli-plugins
-curl -sSL https://github.com/docker/compose/releases/download/$DOCKER_COMPOSE_LATEST_VERSION/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+curl -sSL https://github.com/docker/compose/releases/download/$DOCKER_COMPOSE_LATEST_VERSION/docker-compose-linux-aarch64 -o ~/.docker/cli-plugins/docker-compose
 chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
 msg_ok "Installed Docker Compose $DOCKER_COMPOSE_LATEST_VERSION"
 

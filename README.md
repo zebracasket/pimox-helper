@@ -48,6 +48,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>deConz</li>
     <li>Deluge</li>
     <li>Docker</li>
+    <li>Dockage</li>
     <li>Jellyseerr</li>
     <li>Mafl</li>
     <li>Nginx Proxy Manager</li>
