@@ -33,6 +33,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>Apache Cassandra</li>
     <li>Docker</li>
     <li>Jellyseerr</li>
+    <li>Mafl</li>
     <li>Nginx Proxy Manager</li>
     <li>Prowlarr</li>
     <li>Radarr</li>
