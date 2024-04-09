@@ -39,7 +39,8 @@ $STD apt-get install -y \
   libavutil-dev \
   libavfilter-dev \
   libmariadb-dev-compat \
-  libatlas-base-dev
+  libatlas-base-dev \
+  wget
 msg_ok "Installed Dependencies"
 
 #RELEASE=$(curl -s https://www.python.org/downloads/ | grep -oP 'Download Python \K\d+\.\d+\.\d+' | head -1)
