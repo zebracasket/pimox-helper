@@ -66,6 +66,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>⭕ FlowiseAI</li>
     <li>⭕ Frigate</li>
     <li>⭕ Go2RTC</li>
+    <li>⭕ Gokapi</li>
     <li>⭕ Jellyseerr</li>
     <li>⭕ Mafl</li>
     <li>⭕ Nginx Proxy Manager</li>

@@ -17,15 +17,16 @@ msg_info "Installing Dependencies"
 $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Gokapi"
 LATEST=$(curl -sL https://api.github.com/repos/Forceu/Gokapi/releases/latest | grep '"tag_name":' | cut -d'"' -f4)
 mkdir -p /opt/gokapi/{data,config}
-wget -q https://github.com/Forceu/Gokapi/releases/download/$LATEST/gokapi-linux_amd64.zip
-unzip -q gokapi-linux_amd64.zip -d /opt/gokapi
-rm gokapi-linux_amd64.zip
-chmod +x /opt/gokapi/gokapi-linux_amd64
+wget -q https://github.com/Forceu/Gokapi/releases/download/$LATEST/gokapi-linux_arm64.zip
+unzip -q gokapi-linux_arm64.zip -d /opt/gokapi
+rm gokapi-linux_arm64.zip
+chmod +x /opt/gokapi/gokapi-linux_arm64
 msg_ok "Installed Gokapi"
 
 msg_info "Creating Service" 
@@ -37,7 +38,7 @@ Description=gokapi
 Type=simple
 Environment=GOKAPI_DATA_DIR=/opt/gokapi/data
 Environment=GOKAPI_CONFIG_DIR=/opt/gokapi/config
-ExecStart=/opt/gokapi/gokapi-linux_amd64
+ExecStart=/opt/gokapi/gokapi-linux_arm64
 
 [Install]
 WantedBy=multi-user.target
