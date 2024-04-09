@@ -157,35 +157,44 @@ msg_ok "Updated LXC Template List"
 
 # Get LXC template string
 if [ $PCT_OSTYPE = debian ]; then
-    if [ $PCT_OSVERSION = 11 ]; then
-        # TEMPLATE_SEARCH=debian-bullseye
-        # Debian broken - using ubuntu 22.04
-        TEMPLATE_SEARCH=ubuntu-jammy
-    else
-        # TEMPLATE_SEARCH=debian-bookworm
-        # Debian broken - using ubuntu 22.04
-        TEMPLATE_SEARCH=ubuntu-jammy
-    fi
+  if [ $PCT_OSVERSION = 11 ]; then
+    # TEMPLATE_VARIENT=bullseye
+    # Debian broken - using ubuntu 22.04
+    TEMPLATE_VARIENT=jammy
+  else
+    # TEMPLATE_VARIENT=bookworm
+    # Debian broken - using ubuntu 22.04
+    TEMPLATE_VARIENT=jammy
+  fi
 elif [ $PCT_OSTYPE = alpine ]; then
-    TEMPLATE_SEARCH=alpine-3.18
+  TEMPLATE_VARIENT=3.18
 else
-    if [ $PCT_OSVERSION = 20.04 ]; then
-        TEMPLATE_SEARCH=ubuntu-focal
-    elif [ $PCT_OSVERSION = 23.10 ]; then
-        TEMPLATE_SEARCH=ubuntu-mantic
-    else
-        TEMPLATE_SEARCH=ubuntu-jammy
-    fi
+  if [ $PCT_OSVERSION = 20.04 ]; then
+    TEMPLATE_VARIENT=focal
+  elif [ $PCT_OSVERSION = 23.10 ]; then
+    TEMPLATE_VARIENT=mantic
+  else
+    TEMPLATE_VARIENT=jammy
+  fi
 fi
 
-TEMPLATE="$(pveam available | grep -E "arm64.*$TEMPLATE_SEARCH" | sed 's/arm64[[:space:]]*//')"
+if [ -d "/var/lib/vz/template/cache" ]; then 
+  TEMPLATE=$PCT_OSTYPE-$TEMPLATE_VARIENT-rootfs.tar.xz
+  # Download template if needed
+  if [ -f "/var/lib/vz/template/cache/$TEMPLATE"]; then
+    templateurl="https://jenkins.linuxcontainers.org/job/image-$PCT_OSTYPE/architecture=arm64,release=$TEMPLATE_VARIENT,variant=default/lastStableBuild/artifact/rootfs.tar.xz"
+    wget $templateurl -O $TEMPLATE -q
+  fi
+else
+  TEMPLATE="$(pveam available | grep -E "arm64.*$PCT_OSTYPE-$TEMPLATE_VARIENT" | sed 's/arm64[[:space:]]*//')"
 
-# Download LXC template if needed
-if ! pveam list $TEMPLATE_STORAGE | grep -F $TEMPLATE > /dev/null; then
-  msg_info "Downloading LXC Template"
-  pveam download $TEMPLATE_STORAGE $TEMPLATE >/dev/null ||
-    exit "A problem occured while downloading the LXC template."
-  msg_ok "Downloaded LXC Template"
+  # Download LXC template if needed
+  if ! pveam list $TEMPLATE_STORAGE | grep -F $TEMPLATE > /dev/null; then
+    msg_info "Downloading LXC Template"
+    pveam download $TEMPLATE_STORAGE $TEMPLATE >/dev/null ||
+      exit "A problem occured while downloading the LXC template."
+    msg_ok "Downloaded LXC Template"
+  fi
 fi
 
 # Combine all options
