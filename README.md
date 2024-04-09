@@ -36,6 +36,12 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>☑️ Adguard</li>
     <li>☑️ AgentDVR</li>
     <li>☑️ Apache Cassandra</li>
+    <li>☑️ Alpine Docker</li>
+    <li>⭕ Alpine Grafana</li>
+    <li>⭕ Alpine</li>
+    <li>⭕ Alpine Nextcloud</li>
+    <li>⭕ Alpine Vaultwarden</li>
+    <li>⭕ Alpine Zigbee2mqtt</li>
     <li>⭕ Apache CouchDB</li>
     <li>⭕ APT Cacher NG</li>
     <li>⭕ Audiobookshelf</li>
