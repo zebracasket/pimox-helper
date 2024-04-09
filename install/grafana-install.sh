@@ -20,6 +20,7 @@ $STD apt-get install -y mc
 $STD apt-get install -y gnupg
 $STD apt-get install -y apt-transport-https
 $STD apt-get install -y software-properties-common
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Setting up Grafana Repository"
