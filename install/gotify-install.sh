@@ -17,16 +17,17 @@ msg_info "Installing Dependencies"
 $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Gotify"
 RELEASE=$(curl -s https://api.github.com/repos/gotify/server/releases/latest | grep "tag_name" | awk '{print substr($2, 3, length($2)-4) }')
 mkdir -p /opt/gotify
 cd /opt/gotify
-wget -q https://github.com/gotify/server/releases/download/v${RELEASE}/gotify-linux-amd64.zip
-$STD unzip gotify-linux-amd64.zip
-rm -rf gotify-linux-amd64.zip
-chmod +x gotify-linux-amd64
+wget -q https://github.com/gotify/server/releases/download/v${RELEASE}/gotify-linux-arm64.zip
+$STD unzip gotify-linux-arm64.zip
+rm -rf gotify-linux-arm64.zip
+chmod +x gotify-linux-arm64
 
 cat <<EOF >/etc/systemd/system/gotify.service
 [Unit]
@@ -38,7 +39,7 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/opt/gotify
-ExecStart=/opt/gotify/./gotify-linux-amd64
+ExecStart=/opt/gotify/./gotify-linux-arm64
 Restart=always
 RestartSec=3
 
