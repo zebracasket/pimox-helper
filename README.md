@@ -85,6 +85,9 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>⭕ Jackett</li>
     <li>⭕ Jellyfin</li>
     <li>⭕ Jellyseerr</li>
+    <li>⭕ k0s</li>
+    <li>⭕ Kavita</li>
+    <li>⭕ Keycloak</li>
     <li>⭕ Mafl</li>
     <li>⭕ Nginx Proxy Manager</li>
     <li>⭕ Prowlarr</li>
