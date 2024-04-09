@@ -181,9 +181,11 @@ fi
 if [ -d "/var/lib/vz/template/cache" ]; then 
   TEMPLATE=$PCT_OSTYPE-$TEMPLATE_VARIENT-rootfs.tar.xz
   # Download template if needed
-  if [ -f "/var/lib/vz/template/cache/$TEMPLATE"]; then
+  if [ -f "/var/lib/vz/template/cache/$TEMPLATE" ]; then
     templateurl="https://jenkins.linuxcontainers.org/job/image-$PCT_OSTYPE/architecture=arm64,release=$TEMPLATE_VARIENT,variant=default/lastStableBuild/artifact/rootfs.tar.xz"
-    wget $templateurl -O $TEMPLATE -q
+    msg_info "Downloading LXC Template"
+    wget $templateurl -O $TEMPLATE -q || exit "A problem occured while downloading the LXC template."
+    msg_ok "Downloaded LXC Template"
   fi
 else
   TEMPLATE="$(pveam available | grep -E "arm64.*$PCT_OSTYPE-$TEMPLATE_VARIENT" | sed 's/arm64[[:space:]]*//')"
