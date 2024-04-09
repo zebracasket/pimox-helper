@@ -72,6 +72,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>⭕ Grocy</li>
     <li>⭕ Heimdall</li>
     <li>⭕ HiveMQ</li>
+    <li>⭕ Homarr</li>
     <li>⭕ Jellyseerr</li>
     <li>⭕ Mafl</li>
     <li>⭕ Nginx Proxy Manager</li>
