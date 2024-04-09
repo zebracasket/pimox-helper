@@ -20,12 +20,13 @@ $STD apt-get install -y mc
 $STD apt-get install -y sqlite3
 $STD apt-get install -y libchromaprint-tools
 $STD apt-get install -y mediainfo
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Lidarr"
 mkdir -p /var/lib/lidarr/
 chmod 775 /var/lib/lidarr/
-$STD wget --content-disposition 'https://lidarr.servarr.com/v1/update/master/updatefile?os=linux&runtime=netcore&arch=x64'
+$STD wget --content-disposition 'https://lidarr.servarr.com/v1/update/master/updatefile?os=linux&runtime=netcore&arch=arm64'
 $STD tar -xvzf Lidarr.master.*.tar.gz
 mv Lidarr /opt
 chmod 775 /opt/Lidarr
