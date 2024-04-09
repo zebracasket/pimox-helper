@@ -19,6 +19,7 @@ $STD apt-get install -y sudo
 $STD apt-get install -y mc
 $STD apt-get install -y apt-transport-https
 $STD apt-get install -y composer
+$STD apt-get install -y wget
 $STD apt-get install -y php8.2-{bz2,curl,sqlite3,zip,xml}
 msg_ok "Installed Dependencies"
 
