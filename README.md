@@ -82,6 +82,8 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>⭕ Hyperion</li>
     <li>⭕ InfluxDB</li>
     <li>⭕ ioBroker</li>
+    <li>⭕ Jackett</li>
+    <li>⭕ Jellyfin</li>
     <li>⭕ Jellyseerr</li>
     <li>⭕ Mafl</li>
     <li>⭕ Nginx Proxy Manager</li>

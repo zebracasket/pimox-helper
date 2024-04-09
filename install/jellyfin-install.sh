@@ -18,6 +18,7 @@ $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y gnupg
 $STD apt-get install -y mc
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 if [[ "$CTTYPE" == "0" ]]; then
@@ -45,7 +46,7 @@ Types: deb
 URIs: https://repo.jellyfin.org/${PCT_OSTYPE}
 Suites: ${VERSION}
 Components: main
-Architectures: amd64
+Architectures: arm64
 Signed-By: /etc/apt/keyrings/jellyfin.gpg
 EOF
 # Install Jellyfin using the metapackage (which will fetch jellyfin-server, jellyfin-web, and jellyfin-ffmpeg5)
