@@ -45,7 +45,7 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>⭕ Apache CouchDB</li>
     <li>⭕ APT Cacher NG</li>
     <li>⭕ Audiobookshelf</li>
-    <li>⭕ Autobrr</li>
+    <li>☑️ Autobrr</li>
     <li>⭕ Bazarr</li>
     <li>⭕ Blocky</li>
     <li>⭕ CasaOS</li>
@@ -73,8 +73,8 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>⭕ Heimdall</li>
     <li>⭕ HiveMQ</li>
     <li>⭕ Homarr</li>
-    <li>⭕ Homeassistant Core</li>
-    <li>⭕ Homeassistant</li>
+    <li>⭕ HomeAssistant Core</li>
+    <li>⭕ HomeAssistant</li>
     <li>⭕ Homebridge</li>
     <li>⭕ Homepage</li>
     <li>⭕ Homer</li>
@@ -92,6 +92,14 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>⭕ Lidarr</li>
     <li>⭕ Linkwarden</li>
     <li>⭕ Mafl</li>
+    <li>⭕ MagicMirror</li>
+    <li>⭕ MariaDB</li>
+    <li>⭕ MediaMTX</li>
+    <li>⭕ Medusa</li>
+    <li>⭕ MeshCentral</li>
+    <li>⭕ MagicMirror</li>
+    <li>⭕ Motioneye</li>
+    <li>⭕ MQTT</li>
     <li>⭕ Nginx Proxy Manager</li>
     <li>⭕ Prowlarr</li>
     <li>✅ Radarr</li>
