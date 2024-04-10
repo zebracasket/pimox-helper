@@ -177,10 +177,7 @@ fi
 if [ -d "/var/lib/vz/template/cache" ]; then 
   TEMPLATE=$PCT_OSTYPE-$TEMPLATE_VARIENT-rootfs.tar.xz
   # Download template if needed
-  
-    wget -q $(curl -s https://api.github.com/repos/autobrr/autobrr/releases/latest | grep download | grep debian-bookworm-arm64-rootfs.tar.xz | cut -d\" -f4)
-
-  elif [ ! -f "/var/lib/vz/template/cache/$TEMPLATE" ]; then
+  if [ ! -f "/var/lib/vz/template/cache/$TEMPLATE" ]; then
     if [ $PCT_OSTYPE = debian ]; then
       msg_info "Downloading LXC Template"
       wget -q $(curl -s https://api.github.com/repos/asylumexp/debian-ifupdown2-lxc/releases/latest | grep download | grep debian-$TEMPLATE_VARIENT-arm64-rootfs.tar.xz | cut -d\" -f4) -O /var/lib/vz/template/cache/$TEMPLATE -q || exit "A problem occured while downloading the LXC template."
