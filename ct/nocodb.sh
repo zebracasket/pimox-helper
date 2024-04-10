@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -59,7 +59,7 @@ msg_info "Updating ${APP}"
 systemctl stop nocodb.service
 cd /opt/nocodb
 rm -rf nocodb
-curl -s http://get.nocodb.com/linux-x64 -o nocodb -L
+curl -s http://get.nocodb.com/linux-arm64 -o nocodb -L
 chmod +x nocodb
 systemctl start nocodb.service
 msg_ok "Updated Successfully"

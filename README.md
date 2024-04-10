@@ -97,10 +97,15 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>⭕ MediaMTX</li>
     <li>⭕ Medusa</li>
     <li>⭕ MeshCentral</li>
-    <li>⭕ MagicMirror</li>
     <li>⭕ Motioneye</li>
     <li>⭕ MQTT</li>
+    <li>⭕ n8n</li>
+    <li>⭕ Navidrome</li>
+    <li>⭕ NextCloudPi</li>
     <li>⭕ Nginx Proxy Manager</li>
+    <li>⭕ NocoDB</li>
+    <li>⭕ Node-Red</li>
+    <li>⭕ ntfy</li>
     <li>⭕ Prowlarr</li>
     <li>✅ Radarr</li>
     <li>✅ Sonarr</li>
