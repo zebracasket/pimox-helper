@@ -150,11 +150,6 @@ msg_ok "Using ${BL}$TEMPLATE_STORAGE${CL} ${GN}for Template Storage."
 CONTAINER_STORAGE=$(select_storage container) || exit
 msg_ok "Using ${BL}$CONTAINER_STORAGE${CL} ${GN}for Container Storage."
 
-# Update LXC template list
-msg_info "Updating LXC Template List"
-pveam update >/dev/null
-msg_ok "Updated LXC Template List"
-
 # Get LXC template string
 if [ $PCT_OSTYPE = debian ]; then
   if [ $PCT_OSVERSION = 11 ]; then
@@ -190,10 +185,14 @@ if [ -d "/var/lib/vz/template/cache" ]; then
     fi
   fi
 else
+  # Update LXC template list
+  msg_info "Updating LXC Template List"
+  pveam update >/dev/null
+  msg_ok "Updated LXC Template List"
   if [ $PCT_OSTYPE = debian ]; then
     PCT_OSTYPE=ubuntu
     TEMPLATE_VARIENT=jammy
-    msg_info "Debian unsupported with this download method. Using Ubuntu 22.04."
+    msg_error "Debian unsupported with this download method. Using Ubuntu 22.04."
   fi
   TEMPLATE="$(pveam available | grep -E "arm64.*$PCT_OSTYPE-$TEMPLATE_VARIENT" | sed 's/arm64[[:space:]]*//')"
 
