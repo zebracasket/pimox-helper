@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -63,7 +63,7 @@ if [ -z "${latest_version}" ]; then
 fi
 echo -e "Updating Omada Controller"
 wget -qL ${latest_url}
-dpkg -i ${latest_version}
+dpkg -i --ignore-depends=jsvc,mongodb-server ${latest_version}
 rm -rf ${latest_version}
 echo -e "Updated Omada Controller"
 exit

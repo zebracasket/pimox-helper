@@ -17,15 +17,16 @@ msg_info "Installing Dependencies"
 $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Ombi"
 RELEASE=$(curl -sL https://api.github.com/repos/Ombi-app/Ombi/releases/latest | grep '"tag_name":' | cut -d'"' -f4)
-wget -q https://github.com/Ombi-app/Ombi/releases/download/${RELEASE}/linux-x64.tar.gz
+wget -q https://github.com/Ombi-app/Ombi/releases/download/${RELEASE}/linux-arm64.tar.gz
 echo "${RELEASE}" >/opt/${APPLICATION}_version.txt
 mkdir -p /opt/ombi
-tar -xzf linux-x64.tar.gz -C /opt/ombi
-rm -rf linux-x64.tar.gz
+tar -xzf linux-arm64.tar.gz -C /opt/ombi
+rm -rf linux-arm64.tar.gz
 msg_ok "Installed Ombi"
 
 msg_info "Creating Service"

@@ -20,6 +20,7 @@ $STD apt-get install -y mc
 $STD apt-get install -y git
 $STD apt-get install -y libyaml-dev
 $STD apt-get install -y build-essential
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Updating Python3"

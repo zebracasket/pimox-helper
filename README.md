@@ -106,6 +106,14 @@ Any applications not in ported or unsupported need to be tested for whether they
     <li>⭕ NocoDB</li>
     <li>⭕ Node-Red</li>
     <li>⭕ ntfy</li>
+    <li>⭕ OctoPrint</li>
+    <li>⭕ Omada</li>
+    <li>⭕ Ombi</li>
+    <li>⭕ OMV</li>
+    <li>⭕ openHAB</li>
+    <li>⭕ OpenObserve</li>
+    <li>⭕ Overseerr</li>
+    <li>⭕ Owncast</li>
     <li>⭕ Prowlarr</li>
     <li>✅ Radarr</li>
     <li>✅ Sonarr</li>

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -62,9 +62,9 @@ if [[ "${RELEASE}" != "$(cat /opt/${APP}_version.txt)" ]] || [[ ! -f /opt/${APP}
   msg_ok "Stopped ${APP}"
 
   msg_info "Updating ${APP} to ${RELEASE}"
-  wget -q https://github.com/Ombi-app/Ombi/releases/download/${RELEASE}/linux-x64.tar.gz
-  tar -xzf linux-x64.tar.gz -C /opt/ombi
-  rm -rf linux-x64.tar.gz
+  wget -q https://github.com/Ombi-app/Ombi/releases/download/${RELEASE}/linux-arm64.tar.gz
+  tar -xzf linux-arm64.tar.gz -C /opt/ombi
+  rm -rf linux-arm64.tar.gz
   echo "${RELEASE}" >/opt/${APP}_version.txt
   msg_ok "Updated ${APP} to ${RELEASE}"
 
