@@ -158,13 +158,9 @@ msg_ok "Updated LXC Template List"
 # Get LXC template string
 if [ $PCT_OSTYPE = debian ]; then
   if [ $PCT_OSVERSION = 11 ]; then
-    # TEMPLATE_VARIENT=bullseye
-    # Debian broken - using ubuntu 22.04
-    TEMPLATE_VARIENT=jammy
+    TEMPLATE_VARIENT=bullseye
   else
-    # TEMPLATE_VARIENT=bookworm
-    # Debian broken - using ubuntu 22.04
-    TEMPLATE_VARIENT=jammy
+    TEMPLATE_VARIENT=bookworm
   fi
 elif [ $PCT_OSTYPE = alpine ]; then
   TEMPLATE_VARIENT=3.18
@@ -181,13 +177,27 @@ fi
 if [ -d "/var/lib/vz/template/cache" ]; then 
   TEMPLATE=$PCT_OSTYPE-$TEMPLATE_VARIENT-rootfs.tar.xz
   # Download template if needed
-  if [ -f "/var/lib/vz/template/cache/$TEMPLATE" ]; then
-    templateurl="https://jenkins.linuxcontainers.org/job/image-$PCT_OSTYPE/architecture=arm64,release=$TEMPLATE_VARIENT,variant=default/lastStableBuild/artifact/rootfs.tar.xz"
-    msg_info "Downloading LXC Template"
-    wget $templateurl -O $TEMPLATE -q || exit "A problem occured while downloading the LXC template."
-    msg_ok "Downloaded LXC Template"
+  
+    wget -q $(curl -s https://api.github.com/repos/autobrr/autobrr/releases/latest | grep download | grep debian-bookworm-arm64-rootfs.tar.xz | cut -d\" -f4)
+
+  elif [ ! -f "/var/lib/vz/template/cache/$TEMPLATE" ]; then
+    if [ $PCT_OSTYPE = debian ]; then
+      msg_info "Downloading LXC Template"
+      wget -q $(curl -s https://api.github.com/repos/asylumexp/debian-ifupdown2-lxc/releases/latest | grep download | grep debian-$TEMPLATE_VARIENT-arm64-rootfs.tar.xz | cut -d\" -f4) -O /var/lib/vz/template/cache/$TEMPLATE -q || exit "A problem occured while downloading the LXC template."
+      msg_ok "Downloaded LXC Template"
+    else
+      templateurl="https://jenkins.linuxcontainers.org/job/image-$PCT_OSTYPE/architecture=arm64,release=$TEMPLATE_VARIENT,variant=default/lastStableBuild/artifact/rootfs.tar.xz"
+      msg_info "Downloading LXC Template"
+      wget $templateurl -O /var/lib/vz/template/cache/$TEMPLATE -q || exit "A problem occured while downloading the LXC template."
+      msg_ok "Downloaded LXC Template"
+    fi
   fi
 else
+  if [ $PCT_OSTYPE = debian ]; then
+    PCT_OSTYPE=ubuntu
+    TEMPLATE_VARIENT=jammy
+    msg_info "Debian unsupported with this download method. Using Ubuntu 22.04."
+  fi
   TEMPLATE="$(pveam available | grep -E "arm64.*$PCT_OSTYPE-$TEMPLATE_VARIENT" | sed 's/arm64[[:space:]]*//')"
 
   # Download LXC template if needed
