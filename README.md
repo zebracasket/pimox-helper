@@ -25,112 +25,107 @@ You can get a script from this by using the original website, and modifying the 
 
 Any applications not in ported or unsupported need to be tested for whether they could be ported or not.
 
-<details>
-  <summary>Currently ported applications</summary>
-  <b><big>Status Guide:</big></b><br>
-  <b>Tested using the application: </b>✅<br>
-  <b>Tested creating the container: </b>☑️<br>
-  <b>View notes: </b>🔘<br>
-  <b>Untested: </b> ⭕
-    <li>☑️ ActualBudget</li>
-    <li>☑️ Adguard</li>
-    <li>☑️ AgentDVR</li>
-    <li>☑️ Apache Cassandra</li>
-    <li>☑️ Alpine Docker</li>
-    <li>⭕ Alpine Grafana</li>
-    <li>⭕ Alpine</li>
-    <li>⭕ Alpine Nextcloud</li>
-    <li>⭕ Alpine Vaultwarden</li>
-    <li>⭕ Alpine Zigbee2mqtt</li>
-    <li>⭕ Apache CouchDB</li>
-    <li>⭕ APT Cacher NG</li>
-    <li>⭕ Audiobookshelf</li>
-    <li>☑️ Autobrr</li>
-    <li>⭕ Bazarr</li>
-    <li>⭕ Blocky</li>
-    <li>⭕ CasaOS</li>
-    <li>☑️🔘 ChangeDetection</li>
-    <li>⭕ Channels</li>
-    <li>⭕ Cloudflared</li>
-    <li>⭕ Commafeed</li>
-    <li>⭕ Cronicle</li>
-    <li>⭕ Dashy</li>
-    <li>⭕ deConz</li>
-    <li>⭕ Deluge</li>
-    <li>☑️ Docker</li>
-    <li>⭕ Dockage</li>
-    <li>⭕ Emby</li>
-    <li>⭕ EMQX</li>
-    <li>⭕ ESPHome</li>
-    <li>⭕ Fhem</li>
-    <li>⭕ FlowiseAI</li>
-    <li>⭕ Frigate</li>
-    <li>⭕ Go2RTC</li>
-    <li>⭕ Gokapi</li>
-    <li>⭕ Gotify</li>
-    <li>⭕ Grafana</li>
-    <li>⭕ Grocy</li>
-    <li>⭕ Heimdall</li>
-    <li>⭕ HiveMQ</li>
-    <li>⭕ Homarr</li>
-    <li>⭕ HomeAssistant Core</li>
-    <li>⭕ HomeAssistant</li>
-    <li>⭕ Homebridge</li>
-    <li>⭕ Homepage</li>
-    <li>⭕ Homer</li>
-    <li>⭕ Hyperhdr</li>
-    <li>⭕ Hyperion</li>
-    <li>⭕ InfluxDB</li>
-    <li>⭕ ioBroker</li>
-    <li>⭕ Jackett</li>
-    <li>⭕ Jellyfin</li>
-    <li>⭕ Jellyseerr</li>
-    <li>⭕ k0s</li>
-    <li>⭕ Kavita</li>
-    <li>⭕ Keycloak</li>
-    <li>⭕ LazyLibrarian</li>
-    <li>⭕ Lidarr</li>
-    <li>⭕ Linkwarden</li>
-    <li>⭕ Mafl</li>
-    <li>⭕ MagicMirror</li>
-    <li>⭕ MariaDB</li>
-    <li>⭕ MediaMTX</li>
-    <li>⭕ Medusa</li>
-    <li>⭕ MeshCentral</li>
-    <li>⭕ Motioneye</li>
-    <li>⭕ MQTT</li>
-    <li>⭕ n8n</li>
-    <li>⭕ Navidrome</li>
-    <li>⭕ NextCloudPi</li>
-    <li>⭕ Nginx Proxy Manager</li>
-    <li>⭕ NocoDB</li>
-    <li>⭕ Node-Red</li>
-    <li>⭕ ntfy</li>
-    <li>⭕ OctoPrint</li>
-    <li>⭕ Omada</li>
-    <li>⭕ Ombi</li>
-    <li>⭕ OMV</li>
-    <li>⭕ openHAB</li>
-    <li>⭕ OpenObserve</li>
-    <li>⭕ Overseerr</li>
-    <li>⭕ Owncast</li>
-    <li>⭕ Prowlarr</li>
-    <li>✅ Radarr</li>
-    <li>✅ Sonarr</li>
-</details>
+## Compatibility Guide
+| Icon | Description |
+|---|---|
+| ✅ | The install script has been tested with creating a container and using the application. |
+| ☑️ | The install script has been tested to the extent of creating a container. |
+| ⭕ | Install script is ported, but has not been tested. |
+| ❌ | Unsupported. View *Unsupported Applications* at the bottom |
+| 🔘 | Install script not ported to ARM64. |
 
-<details>
-  <summary>App Notes</summary>
-    <li>ChangeDetection - in my testing I had a font package require manual input for the accepting of a EULA, make sure to enable verbose (changed to be enabled in the default config) to be able to accept it.</li>
-</details>
-
-<details>
-  <summary>No changes required</summary>
-    <li>Tailscale</li>
-</details>
+| App | Status | Notes |
+|---|---|---|
+| ActualBudget | ☑️ | - |
+| Adguard | ☑️ | - |
+| AgentDVR | ☑️ | - |
+| Apache Cassandra | ☑️ | - |
+| Alpine Docker | ☑️ | - |
+| Alpine Grafana | ⭕ | - |
+| Alpine | ⭕ | - |
+| Alpine Nextcloud | ⭕ | - |
+| Alpine Vaultwarden | ⭕ | - |
+| Alpine Zigbee2mqtt | ⭕ | - |
+| Apache CouchDB | ⭕ | - |
+| APT Cacher NG | ⭕ | - |
+| Audiobookshelf | ⭕ | - |
+| Autobrr | ☑️ | - |
+| Bazarr | ⭕ | - |
+| Blocky | ⭕ | - |
+| CasaOS | ⭕ | - |
+| ChangeDetection | ☑️ | In my testing I had a font package require manual input for the accepting of a EULA, make sure to enable verbose (changed to be enabled in the default config) to be able to accept it. |
+| Channels | ⭕ | - |
+| Cloudflared | ⭕ | - |
+| Commafeed | ⭕ | - |
+| Cronicle | ⭕ | - |
+| Dashy | ⭕ | - |
+| deConz | ⭕ | - |
+| DaemonSync | ❌ | - |
+| Deluge | ⭕ | - |
+| Docker | ☑️ | - |
+| Dockage | ⭕ | - |
+| Emby | ⭕ | - |
+| EMQX | ⭕ | - |
+| ESPHome | ⭕ | - |
+| Fhem | ⭕ | - |
+| FlowiseAI | ⭕ | - |
+| Frigate | ⭕ | - |
+| Go2RTC | ⭕ | - |
+| Gokapi | ⭕ | - |
+| Gotify | ⭕ | - |
+| Grafana | ⭕ | - |
+| Grocy | ⭕ | - |
+| Heimdall | ⭕ | - |
+| HiveMQ | ⭕ | - |
+| Homarr | ⭕ | - |
+| HomeAssistant Core | ⭕ | - |
+| HomeAssistant | ⭕ | - |
+| Homebridge | ⭕ | - |
+| Homepage | ⭕ | - |
+| Homer | ⭕ | - |
+| Hyperhdr | ⭕ | - |
+| Hyperion | ⭕ | - |
+| InfluxDB | ⭕ | - |
+| ioBroker | ⭕ | - |
+| Jackett | ⭕ | - |
+| Jellyfin | ⭕ | - |
+| Jellyseerr | ⭕ | - |
+| k0s | ⭕ | - |
+| Kavita | ⭕ | - |
+| Keycloak | ⭕ | - |
+| LazyLibrarian | ⭕ | - |
+| Lidarr | ⭕ | - |
+| Linkwarden | ⭕ | - |
+| Mafl | ⭕ | - |
+| MagicMirror | ⭕ | - |
+| MariaDB | ⭕ | - |
+| MediaMTX | ⭕ | - |
+| Medusa | ⭕ | - |
+| MeshCentral | ⭕ | - |
+| Motioneye | ⭕ | - |
+| MQTT | ⭕ | - |
+| n8n | ⭕ | - |
+| Navidrome | ⭕ | - |
+| NextCloudPi | ⭕ | - |
+| Nginx Proxy Manager | ⭕ | - |
+| NocoDB | ⭕ | - |
+| Node-Red | ⭕ | - |
+| ntfy | ⭕ | - |
+| OctoPrint | ⭕ | - |
+| Omada | ⭕ | - |
+| Ombi | ⭕ | - |
+| OMV | ⭕ | - |
+| openHAB | ⭕ | - |
+| OpenObserve | ⭕ | - |
+| Overseerr | ⭕ | - |
+| Owncast | ⭕ | - |
+| PBS | ☑️ | Proxmox Backup Server |
+| Prowlarr | ⭕ | - |
+| Radarr | ✅ | - |
+| Sonarr | ✅ | - |
+| Tailscale | ✅ | No changes required |
 
 <details>
   <summary>Unsupported applications</summary>
-    <li>Proxmox Backup Server - Needs custom image</li>
     <li>DaemonSync - built for amd64 only</li>
 </details>
