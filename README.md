@@ -60,7 +60,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 | Cronicle | ⭕ | - |
 | Dashy | ⭕ | - |
 | deConz | ⭕ | - |
-| DaemonSync | ❌ | - |
+| DaemonSync | ❌ | Built for amd64 only. |
 | Deluge | ⭕ | - |
 | Docker | ☑️ | - |
 | Dockage | ⭕ | - |
@@ -89,7 +89,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 | ioBroker | ⭕ | - |
 | Jackett | ⭕ | - |
 | Jellyfin | ⭕ | - |
-| Jellyseerr | ⭕ | - |
+| Jellyseerr | ✅ | - |
 | k0s | ⭕ | - |
 | Kavita | ⭕ | - |
 | Keycloak | ⭕ | - |
@@ -119,9 +119,10 @@ Any applications not in ported or unsupported need to be tested for whether they
 | OpenObserve | ⭕ | - |
 | Overseerr | ⭕ | - |
 | Owncast | ⭕ | - |
-| PBS | ☑️ | Proxmox Backup Server |
-| Prowlarr | ⭕ | - |
+| PBS | ✅ | Proxmox Backup Server |
+| Prowlarr | ✅ | - |
 | Radarr | ✅ | - |
+| RDTClient | ✅ | Real-Debrid Torrent Client | 
 | Sonarr | ✅ | - |
 | Tailscale | ✅ | No changes required |
 
