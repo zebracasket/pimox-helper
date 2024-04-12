@@ -132,7 +132,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 | PostgreSQL | ⭕ ||
 | Prometheus | ⭕ ||
 | Prowlarr | ✅ ||
-| qBittorrent | 🔘 ||
+| qBittorrent | ⭕ ||
 | Radarr | ✅ ||
 | RDTClient | ✅ | Real-Debrid Torrent Client | 
 | Readarr | 🔘 ||
