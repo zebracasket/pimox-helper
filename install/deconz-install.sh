@@ -27,9 +27,8 @@ echo "deb [arch=arm64] http://phoscon.de/apt/deconz $VERSION main" >/etc/apt/sou
 msg_ok "Setup Phoscon Repository"
 
 msg_info "Installing deConz"
-libssl=$(curl -fsSL "http://security.ubuntu.com/ubuntu/pool/main/o/openssl/" | grep -o 'libssl1\.1_1\.1\.1f-1ubuntu2\.2[^"]*all\.deb' | head -n1)
-wget -qL http://security.ubuntu.com/ubuntu/pool/main/o/openssl/$libssl
-$STD dpkg -i $libssl
+wget -qL http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_arm64.deb
+$STD dpkg -i libssl1.1_1.1.1f-1ubuntu2.22_arm64.deb
 $STD apt-get update
 $STD apt-get install -y deconz
 msg_ok "Installed deConz"
@@ -58,7 +57,7 @@ motd_ssh
 customize
 
 msg_info "Cleaning up"
-rm -rf $libssl
+rm -rf libssl1.1_1.1.1f-1ubuntu2.22_arm64.deb
 $STD apt-get autoremove
 $STD apt-get autoclean
 msg_ok "Cleaned"
