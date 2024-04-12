@@ -58,7 +58,7 @@ rm -rf frigate.tar.gz
 cd /opt/frigate
 $STD pip3 wheel --wheel-dir=/wheels -r /opt/frigate/docker/main/requirements-wheels.txt
 cp -a /opt/frigate/docker/main/rootfs/. /
-export TARGETARCH="amd64"
+export TARGETARCH="arm64"
 echo 'libc6 libraries/restart-without-asking boolean true' | debconf-set-selections
 $STD /opt/frigate/docker/main/install_deps.sh
 $STD ln -svf /usr/lib/btbn-ffmpeg/bin/ffmpeg /usr/local/bin/ffmpeg
