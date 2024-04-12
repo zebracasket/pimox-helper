@@ -41,7 +41,7 @@ mkdir -p /opt/homarr
 cd /opt
 git clone https://github.com/ajnart/homarr.git
 cd /opt/homarr
-wget -q -O /opt/homarr/.env https://raw.githubusercontent.com/ajnart/homarr/dev/.env.example
+wget -q -O /opt/homarr/.env https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/homarr.env
 sed -i 's|NEXTAUTH_SECRET="[^"]*"|NEXTAUTH_SECRET="'"$(openssl rand -base64 32)"'"|' /opt/homarr/.env
 sed 's/ $//' /opt/homarr/.env # Get rid of space at the end of last config file line
 $STD yarn install
