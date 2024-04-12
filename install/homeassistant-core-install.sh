@@ -68,6 +68,7 @@ $STD update-alternatives --install /usr/bin/python3 python3 /usr/local/bin/pytho
 cd ~
 rm -rf Python-3.12.2
 msg_ok "Installed Python 3.12"
+rm -rf /usr/local/bin/python3.*/EXTERNALLY-MANAGED
 
 msg_info "Installing Home Assistant-Core"
 mkdir /srv/homeassistant
