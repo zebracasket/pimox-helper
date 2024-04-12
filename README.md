@@ -40,7 +40,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 | Adguard | ☑️ | - |
 | AgentDVR | ☑️ | - |
 | Apache Cassandra | ☑️ | - |
-| Alpine Docker | ☑️ | - |
+| Alpine Docker | ✅ | - |
 | Alpine Grafana | ⭕ | - |
 | Alpine | ⭕ | - |
 | Alpine Nextcloud | ⭕ | - |
@@ -119,14 +119,55 @@ Any applications not in ported or unsupported need to be tested for whether they
 | OpenObserve | ⭕ | - |
 | Overseerr | ⭕ | - |
 | Owncast | ⭕ | - |
+| PairDrop | 🔘 | - |
+| Paperless-ngx | 🔘 | - |
 | PBS | ✅ | Proxmox Backup Server |
+| PhotoPrism | 🔘 | - |
+| PiAlert | 🔘 | - |
+| Pihole | 🔘 | - |
+| Pingvin | 🔘 | - |
+| Plex | 🔘 | - |
+| Podman-Home Assistant | 🔘 | - |
+| Podman | 🔘 | - |
+| PostgreSQL | 🔘 | - |
+| Prometheus | 🔘 | - |
 | Prowlarr | ✅ | - |
+| qBittorrent | 🔘 | - |
 | Radarr | ✅ | - |
 | RDTClient | ✅ | Real-Debrid Torrent Client | 
+| Readarr | 🔘 | - |
+| Readeck | 🔘 | - |
+| Redis | 🔘 | - |
+| RTSPtoWeb | 🔘 | - |
+| Runtipi | 🔘 | - |
+| SABnzbd | 🔘 | - |
+| Scrypted | 🔘 | - |
+| SFTPGo | 🔘 | - |
+| Shinobi | 🔘 | - |
+| SmokePing | 🔘 | - |
 | Sonarr | ✅ | - |
-| Tailscale | ✅ | No changes required |
-
-<details>
-  <summary>Unsupported applications</summary>
-    <li>DaemonSync - built for amd64 only</li>
-</details>
+| Stirling-PDF | 🔘 | - |
+| Syncthing | 🔘 | - |
+| Tandoor | 🔘 | - |
+| TasmoAdmin | 🔘 | - |
+| Tautulli | 🔘 | - |
+| Tdarr | 🔘 | - |
+| Technitium DNS | 🔘 | - |
+| Transmission | 🔘 | - |
+| Trilium | 🔘 | - |
+| Ubuntu | 🔘 | - |
+| Umbrel | 🔘 | - |
+| Unifi | 🔘 | - |
+| Unmanic | 🔘 | - |
+| Uptime Kuma | 🔘 | - |
+| Vaultwarden | 🔘 | - |
+| Wastebin | 🔘 | - |
+| WatchYourLAN | 🔘 | - |
+| Whisparr | 🔘 | - |
+| Whoogle | 🔘 | - |
+| Wikijs | 🔘 | - |
+| Wireguard | 🔘 | - |
+| YunoHost | 🔘 | - |
+| Zigbee2MQTT | 🔘 | - |
+| Zoraxy | 🔘 | - |
+| Zwave-JS-UI | 🔘 | - |
