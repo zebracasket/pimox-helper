@@ -38,14 +38,14 @@ msg_ok "Installed Node.js/Yarn"
 
 msg_info "Installing Homarr (Patience)"
 mkdir -p /opt/homarr
-RELEASE=$(curl -s https://api.github.com/repos/ajnart/homarr/releases/latest | grep "tag_name" | awk '{print substr($2, 3, length($2)-4) }')
-wget -q -O- https://github.com/ajnart/homarr/archive/refs/tags/v${RELEASE}.tar.gz | $STD tar -xz -C /opt && mv /opt/homarr-${RELEASE}/* /opt/homarr
-rm -rf /opt/homarr-${RELEASE}
+cd /opt
+git clone https://github.com/ajnart/homarr.git
 cd /opt/homarr
 wget -q -O /opt/homarr/.env https://raw.githubusercontent.com/ajnart/homarr/dev/.env.example
 sed -i 's|NEXTAUTH_SECRET="[^"]*"|NEXTAUTH_SECRET="'"$(openssl rand -base64 32)"'"|' /opt/homarr/.env
-$STD yarn install --omit=optional
-$STD yarn build --omit=optional
+sed 's/ $//' /opt/homarr/.env # Get rid of space at the end of last config file line
+$STD yarn install
+$STD yarn build
 $STD yarn db:migrate
 msg_ok "Installed Homarr"
 
