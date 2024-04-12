@@ -28,10 +28,10 @@ Any applications not in ported or unsupported need to be tested for whether they
 ## Compatibility Guide
 | Icon | Description |
 |---|---|
-| ✅ | The install script has been tested with creating a container and using the application. |
-| ☑️ | The install script has been tested to the extent of creating a container. |
+| ✅ | The install script has been tested by creating a container and using the application. |
+| ☑️ | The install script has been tested by creating a container. |
 | ⭕ | Install script is ported, but has not been tested. |
-| ❌ | Unsupported. View *Unsupported Applications* at the bottom |
+| ❌ | Unsupported. View notes for reason. |
 | 🔘 | Install script not ported to ARM64. |
 
 | App | Status | Notes |
@@ -41,29 +41,29 @@ Any applications not in ported or unsupported need to be tested for whether they
 | AgentDVR | ☑️ ||
 | Apache Cassandra | ☑️ ||
 | Alpine Docker | ✅ ||
-| Alpine Grafana | ⭕ ||
-| Alpine | ⭕ ||
-| Alpine Nextcloud | ⭕ ||
-| Alpine Vaultwarden | ⭕ ||
-| Alpine Zigbee2mqtt | ⭕ ||
-| Apache CouchDB | ⭕ ||
-| APT Cacher NG | ⭕ ||
-| Audiobookshelf | ⭕ ||
+| Alpine Grafana | ☑️ ||
+| Alpine | ☑️ ||
+| Alpine Nextcloud | ☑️ ||
+| Alpine Vaultwarden | ☑️ ||
+| Alpine Zigbee2mqtt | ☑️ ||
+| Apache CouchDB | ☑️ ||
+| APT Cacher NG | ☑️ ||
+| Audiobookshelf | ❌ | Broken right now, working on fixing. |
 | Autobrr | ☑️ ||
-| Bazarr | ⭕ ||
-| Blocky | ⭕ ||
-| CasaOS | ⭕ ||
-| ChangeDetection | ☑️ | In my testing I had a font package require manual input for the accepting of a EULA, make sure to enable verbose (changed to be enabled in the default config) to be able to accept it. |
-| Channels | ⭕ ||
-| Cloudflared | ⭕ ||
-| Commafeed | ⭕ ||
-| Cronicle | ⭕ ||
-| Dashy | ⭕ ||
-| deConz | ⭕ ||
-| DaemonSync | ❌ | Built for amd64 only. |
-| Deluge | ⭕ ||
+| Bazarr | ❌ | Broken right now, working on fixing. |
+| Blocky | ☑️ ||
+| CasaOS | ☑️ ||
+| ChangeDetection | ❌ | Broken right now, working on fixing. |
+| Channels | ☑️ ||
+| Cloudflared | ☑️ ||
+| Commafeed | ☑️ ||
+| Cronicle | ☑️ ||
+| Dashy | ☑️ ||
+| deConz | ☑️ ||
+| DaemonSync | ❌ | Built for x64 only. |
+| Deluge | ❌ | Broken right now, working on fixing. |
 | Docker | ☑️ ||
-| Dockage | ⭕ ||
+| Dockge | ☑️ ||
 | Emby | ⭕ ||
 | EMQX | ⭕ ||
 | ESPHome | ⭕ ||
