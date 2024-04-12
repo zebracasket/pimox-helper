@@ -48,7 +48,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 | Alpine Zigbee2mqtt | ☑️ ||
 | Apache CouchDB | ☑️ ||
 | APT Cacher NG | ☑️ ||
-| Audiobookshelf | ❌ | Broken right now, working on fixing. |
+| Audiobookshelf | ❌ | Built for x64 only. |
 | Autobrr | ☑️ ||
 | Bazarr | ☑️ ||
 | Blocky | ☑️ ||
