@@ -46,7 +46,8 @@ $STD apt-get install -y --no-install-recommends \
   libpng-dev \
   libleptonica-dev \
   sudo \
-  mc
+  mc \
+  wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing OCR Dependencies (Patience)"

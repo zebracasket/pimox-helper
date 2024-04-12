@@ -17,13 +17,14 @@ msg_info "Installing Dependencies"
 $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Prometheus"
 RELEASE=$(curl -s https://api.github.com/repos/prometheus/prometheus/releases/latest | grep "tag_name" | awk '{print substr($2, 3, length($2)-4) }')
 mkdir -p /etc/prometheus
 mkdir -p /var/lib/prometheus
-$STD wget https://github.com/prometheus/prometheus/releases/download/v${RELEASE}/prometheus-${RELEASE}.linux-amd64.tar.gz
+$STD wget https://github.com/prometheus/prometheus/releases/download/v${RELEASE}/prometheus-${RELEASE}.linux-arm64.tar.gz
 $STD tar -xvf prometheus-${RELEASE}.linux-amd64.tar.gz
 cd prometheus-${RELEASE}.linux-amd64
 mv prometheus promtool /usr/local/bin/

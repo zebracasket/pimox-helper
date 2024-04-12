@@ -26,6 +26,7 @@ $STD apt-get install -y libtiff-dev
 $STD apt-get install -y imagemagick
 $STD apt-get install -y darktable
 $STD apt-get install -y rawtherapee
+$STD apt-get install -y wget
 
 echo 'export PATH=/usr/local:$PATH' >>~/.bashrc
 export PATH=/usr/local:$PATH
@@ -33,11 +34,11 @@ msg_ok "Installed Dependencies"
 
 msg_info "Installing PhotoPrism (Patience)"
 mkdir -p /opt/photoprism/{cache,config,photos/originals,photos/import,storage,temp}
-wget -q -cO - https://dl.photoprism.app/pkg/linux/amd64.tar.gz | tar -xz -C /opt/photoprism --strip-components=1
+wget -q -cO - https://dl.photoprism.app/pkg/linux/arm.tar.gz | tar -xz -C /opt/photoprism --strip-components=1
 if [[ ${PCT_OSTYPE} == "ubuntu" ]]; then 
-  wget -q -cO - https://dl.photoprism.app/dist/libheif/libheif-jammy-amd64-v1.17.1.tar.gz | tar -xzf - -C /usr/local --strip-components=1
+  wget -q -cO - https://dl.photoprism.app/dist/libheif/libheif-jammy-arm64-v1.17.1.tar.gz | tar -xzf - -C /usr/local --strip-components=1
 else
-  wget -q -cO - https://dl.photoprism.app/dist/libheif/libheif-bookworm-amd64-v1.17.1.tar.gz | tar -xzf - -C /usr/local --strip-components=1
+  wget -q -cO - https://dl.photoprism.app/dist/libheif/libheif-bookworm-arm64-v1.17.1.tar.gz | tar -xzf - -C /usr/local --strip-components=1
 fi
 ldconfig
 cat <<EOF >/opt/photoprism/config/.env

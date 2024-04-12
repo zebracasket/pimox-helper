@@ -36,138 +36,138 @@ Any applications not in ported or unsupported need to be tested for whether they
 
 | App | Status | Notes |
 |---|---|---|
-| ActualBudget | ☑️ | - |
-| Adguard | ☑️ | - |
-| AgentDVR | ☑️ | - |
-| Apache Cassandra | ☑️ | - |
-| Alpine Docker | ✅ | - |
-| Alpine Grafana | ⭕ | - |
-| Alpine | ⭕ | - |
-| Alpine Nextcloud | ⭕ | - |
-| Alpine Vaultwarden | ⭕ | - |
-| Alpine Zigbee2mqtt | ⭕ | - |
-| Apache CouchDB | ⭕ | - |
-| APT Cacher NG | ⭕ | - |
-| Audiobookshelf | ⭕ | - |
-| Autobrr | ☑️ | - |
-| Bazarr | ⭕ | - |
-| Blocky | ⭕ | - |
-| CasaOS | ⭕ | - |
+| ActualBudget | ☑️ ||
+| Adguard | ☑️ ||
+| AgentDVR | ☑️ ||
+| Apache Cassandra | ☑️ ||
+| Alpine Docker | ✅ ||
+| Alpine Grafana | ⭕ ||
+| Alpine | ⭕ ||
+| Alpine Nextcloud | ⭕ ||
+| Alpine Vaultwarden | ⭕ ||
+| Alpine Zigbee2mqtt | ⭕ ||
+| Apache CouchDB | ⭕ ||
+| APT Cacher NG | ⭕ ||
+| Audiobookshelf | ⭕ ||
+| Autobrr | ☑️ ||
+| Bazarr | ⭕ ||
+| Blocky | ⭕ ||
+| CasaOS | ⭕ ||
 | ChangeDetection | ☑️ | In my testing I had a font package require manual input for the accepting of a EULA, make sure to enable verbose (changed to be enabled in the default config) to be able to accept it. |
-| Channels | ⭕ | - |
-| Cloudflared | ⭕ | - |
-| Commafeed | ⭕ | - |
-| Cronicle | ⭕ | - |
-| Dashy | ⭕ | - |
-| deConz | ⭕ | - |
+| Channels | ⭕ ||
+| Cloudflared | ⭕ ||
+| Commafeed | ⭕ ||
+| Cronicle | ⭕ ||
+| Dashy | ⭕ ||
+| deConz | ⭕ ||
 | DaemonSync | ❌ | Built for amd64 only. |
-| Deluge | ⭕ | - |
-| Docker | ☑️ | - |
-| Dockage | ⭕ | - |
-| Emby | ⭕ | - |
-| EMQX | ⭕ | - |
-| ESPHome | ⭕ | - |
-| Fhem | ⭕ | - |
-| FlowiseAI | ⭕ | - |
-| Frigate | ⭕ | - |
-| Go2RTC | ⭕ | - |
-| Gokapi | ⭕ | - |
-| Gotify | ⭕ | - |
-| Grafana | ⭕ | - |
-| Grocy | ⭕ | - |
-| Heimdall | ⭕ | - |
-| HiveMQ | ⭕ | - |
-| Homarr | ⭕ | - |
-| HomeAssistant Core | ⭕ | - |
-| HomeAssistant | ⭕ | - |
-| Homebridge | ⭕ | - |
-| Homepage | ⭕ | - |
-| Homer | ⭕ | - |
-| Hyperhdr | ⭕ | - |
-| Hyperion | ⭕ | - |
-| InfluxDB | ⭕ | - |
-| ioBroker | ⭕ | - |
-| Jackett | ⭕ | - |
-| Jellyfin | ⭕ | - |
-| Jellyseerr | ✅ | - |
-| k0s | ⭕ | - |
-| Kavita | ⭕ | - |
-| Keycloak | ⭕ | - |
-| LazyLibrarian | ⭕ | - |
-| Lidarr | ⭕ | - |
-| Linkwarden | ⭕ | - |
-| Mafl | ⭕ | - |
-| MagicMirror | ⭕ | - |
-| MariaDB | ⭕ | - |
-| MediaMTX | ⭕ | - |
-| Medusa | ⭕ | - |
-| MeshCentral | ⭕ | - |
-| Motioneye | ⭕ | - |
-| MQTT | ⭕ | - |
-| n8n | ⭕ | - |
-| Navidrome | ⭕ | - |
-| NextCloudPi | ⭕ | - |
-| Nginx Proxy Manager | ⭕ | - |
-| NocoDB | ⭕ | - |
-| Node-Red | ⭕ | - |
-| ntfy | ⭕ | - |
-| OctoPrint | ⭕ | - |
-| Omada | ⭕ | - |
-| Ombi | ⭕ | - |
-| OMV | ⭕ | - |
-| openHAB | ⭕ | - |
-| OpenObserve | ⭕ | - |
-| Overseerr | ⭕ | - |
-| Owncast | ⭕ | - |
-| PairDrop | 🔘 | - |
-| Paperless-ngx | 🔘 | - |
+| Deluge | ⭕ ||
+| Docker | ☑️ ||
+| Dockage | ⭕ ||
+| Emby | ⭕ ||
+| EMQX | ⭕ ||
+| ESPHome | ⭕ ||
+| Fhem | ⭕ ||
+| FlowiseAI | ⭕ ||
+| Frigate | ⭕ ||
+| Go2RTC | ⭕ ||
+| Gokapi | ⭕ ||
+| Gotify | ⭕ ||
+| Grafana | ⭕ ||
+| Grocy | ⭕ ||
+| Heimdall | ⭕ ||
+| HiveMQ | ⭕ ||
+| Homarr | ⭕ ||
+| HomeAssistant Core | ⭕ ||
+| HomeAssistant | ⭕ ||
+| Homebridge | ⭕ ||
+| Homepage | ⭕ ||
+| Homer | ⭕ ||
+| Hyperhdr | ⭕ ||
+| Hyperion | ⭕ ||
+| InfluxDB | ⭕ ||
+| ioBroker | ⭕ ||
+| Jackett | ⭕ ||
+| Jellyfin | ⭕ ||
+| Jellyseerr | ✅ ||
+| k0s | ⭕ ||
+| Kavita | ⭕ ||
+| Keycloak | ⭕ ||
+| LazyLibrarian | ⭕ ||
+| Lidarr | ⭕ ||
+| Linkwarden | ⭕ ||
+| Mafl | ⭕ ||
+| MagicMirror | ⭕ ||
+| MariaDB | ⭕ ||
+| MediaMTX | ⭕ ||
+| Medusa | ⭕ ||
+| MeshCentral | ⭕ ||
+| Motioneye | ⭕ ||
+| MQTT | ⭕ ||
+| n8n | ⭕ ||
+| Navidrome | ⭕ ||
+| NextCloudPi | ⭕ ||
+| Nginx Proxy Manager | ⭕ ||
+| NocoDB | ⭕ ||
+| Node-Red | ⭕ ||
+| ntfy | ⭕ ||
+| OctoPrint | ⭕ ||
+| Omada | ⭕ ||
+| Ombi | ⭕ ||
+| OMV | ⭕ ||
+| openHAB | ⭕ ||
+| OpenObserve | ⭕ ||
+| Overseerr | ⭕ ||
+| Owncast | ⭕ ||
+| PairDrop | ⭕ ||
+| Paperless-ngx | ⭕ ||
 | PBS | ✅ | Proxmox Backup Server |
-| PhotoPrism | 🔘 | - |
-| PiAlert | 🔘 | - |
-| Pihole | 🔘 | - |
-| Pingvin | 🔘 | - |
-| Plex | 🔘 | - |
-| Podman-Home Assistant | 🔘 | - |
-| Podman | 🔘 | - |
-| PostgreSQL | 🔘 | - |
-| Prometheus | 🔘 | - |
-| Prowlarr | ✅ | - |
-| qBittorrent | 🔘 | - |
-| Radarr | ✅ | - |
+| PhotoPrism | ⭕ ||
+| PiAlert | ⭕ ||
+| Pihole | ⭕ ||
+| Pingvin | ⭕ ||
+| Plex | ⭕ ||
+| Podman-Home Assistant | ⭕ ||
+| Podman | ⭕ ||
+| PostgreSQL | ⭕ ||
+| Prometheus | ⭕ ||
+| Prowlarr | ✅ ||
+| qBittorrent | 🔘 ||
+| Radarr | ✅ ||
 | RDTClient | ✅ | Real-Debrid Torrent Client | 
-| Readarr | 🔘 | - |
-| Readeck | 🔘 | - |
-| Redis | 🔘 | - |
-| RTSPtoWeb | 🔘 | - |
-| Runtipi | 🔘 | - |
-| SABnzbd | 🔘 | - |
-| Scrypted | 🔘 | - |
-| SFTPGo | 🔘 | - |
-| Shinobi | 🔘 | - |
-| SmokePing | 🔘 | - |
-| Sonarr | ✅ | - |
-| Stirling-PDF | 🔘 | - |
-| Syncthing | 🔘 | - |
-| Tandoor | 🔘 | - |
-| TasmoAdmin | 🔘 | - |
-| Tautulli | 🔘 | - |
-| Tdarr | 🔘 | - |
-| Technitium DNS | 🔘 | - |
-| Transmission | 🔘 | - |
-| Trilium | 🔘 | - |
-| Ubuntu | 🔘 | - |
-| Umbrel | 🔘 | - |
-| Unifi | 🔘 | - |
-| Unmanic | 🔘 | - |
-| Uptime Kuma | 🔘 | - |
-| Vaultwarden | 🔘 | - |
-| Wastebin | 🔘 | - |
-| WatchYourLAN | 🔘 | - |
-| Whisparr | 🔘 | - |
-| Whoogle | 🔘 | - |
-| Wikijs | 🔘 | - |
-| Wireguard | 🔘 | - |
-| YunoHost | 🔘 | - |
-| Zigbee2MQTT | 🔘 | - |
-| Zoraxy | 🔘 | - |
-| Zwave-JS-UI | 🔘 | - |
+| Readarr | 🔘 ||
+| Readeck | 🔘 ||
+| Redis | 🔘 ||
+| RTSPtoWeb | 🔘 ||
+| Runtipi | 🔘 ||
+| SABnzbd | 🔘 ||
+| Scrypted | 🔘 ||
+| SFTPGo | 🔘 ||
+| Shinobi | 🔘 ||
+| SmokePing | 🔘 ||
+| Sonarr | ✅ ||
+| Stirling-PDF | 🔘 ||
+| Syncthing | 🔘 ||
+| Tandoor | 🔘 ||
+| TasmoAdmin | 🔘 ||
+| Tautulli | 🔘 ||
+| Tdarr | 🔘 ||
+| Technitium DNS | 🔘 ||
+| Transmission | 🔘 ||
+| Trilium | 🔘 ||
+| Ubuntu | 🔘 ||
+| Umbrel | 🔘 ||
+| Unifi | 🔘 ||
+| Unmanic | 🔘 ||
+| Uptime Kuma | 🔘 ||
+| Vaultwarden | 🔘 ||
+| Wastebin | 🔘 ||
+| WatchYourLAN | 🔘 ||
+| Whisparr | 🔘 ||
+| Whoogle | 🔘 ||
+| Wikijs | 🔘 ||
+| Wireguard | 🔘 ||
+| YunoHost | 🔘 ||
+| Zigbee2MQTT | 🔘 ||
+| Zoraxy | 🔘 ||
+| Zwave-JS-UI | 🔘 ||
