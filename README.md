@@ -50,10 +50,10 @@ Any applications not in ported or unsupported need to be tested for whether they
 | APT Cacher NG | ☑️ ||
 | Audiobookshelf | ❌ | Broken right now, working on fixing. |
 | Autobrr | ☑️ ||
-| Bazarr | ❌ | Broken right now, working on fixing. |
+| Bazarr | ☑️ ||
 | Blocky | ☑️ ||
 | CasaOS | ☑️ ||
-| ChangeDetection | ❌ | Broken right now, working on fixing. |
+| ChangeDetection | ☑️ ||
 | Channels | ☑️ ||
 | Cloudflared | ☑️ ||
 | Commafeed | ☑️ ||
@@ -61,7 +61,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 | Dashy | ☑️ ||
 | deConz | ☑️ ||
 | DaemonSync | ❌ | Built for x64 only. |
-| Deluge | ❌ | Broken right now, working on fixing. |
+| Deluge | ☑️ ||
 | Docker | ☑️ ||
 | Dockge | ☑️ ||
 | Emby | ⭕ ||
