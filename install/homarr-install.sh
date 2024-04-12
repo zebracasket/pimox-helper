@@ -44,8 +44,8 @@ rm -rf /opt/homarr-${RELEASE}
 cd /opt/homarr
 wget -q -O /opt/homarr/.env https://raw.githubusercontent.com/ajnart/homarr/dev/.env.example
 sed -i 's|NEXTAUTH_SECRET="[^"]*"|NEXTAUTH_SECRET="'"$(openssl rand -base64 32)"'"|' /opt/homarr/.env
-$STD yarn install
-$STD yarn build
+$STD yarn install --omit=optional
+$STD yarn build --omit=optional
 $STD yarn db:migrate
 msg_ok "Installed Homarr"
 
