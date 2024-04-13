@@ -55,11 +55,13 @@ $STD apt-get update
 $STD apt-get -y install openresty
 msg_ok "Installed Openresty"
 
+msg_info "Setting up Node.js Repository"
+curl -sL https://deb.nodesource.com/setup_16.x | $STD bash -
+msg_ok "Set up Node.js Repository"
+
 msg_info "Installing Node.js"
-$STD bash <(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh)
-source ~/.bashrc
-$STD nvm install 16.20.2
-ln -sf /root/.nvm/versions/node/v16.20.2/bin/node /usr/bin/node
+$STD apt-get update
+$STD apt-get install -y nodejs
 msg_ok "Installed Node.js"
 
 msg_info "Installing pnpm"
