@@ -82,6 +82,7 @@ $STD tar -xf paperless-ngx-$Paperlessngx.tar.xz -C /opt/
 mv paperless-ngx paperless
 rm paperless-ngx-$Paperlessngx.tar.xz
 cd /opt/paperless
+rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
 $STD pip install --upgrade pip
 $STD pip install -r requirements.txt
 curl -s -o /opt/paperless/paperless.conf https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/main/paperless.conf.example
