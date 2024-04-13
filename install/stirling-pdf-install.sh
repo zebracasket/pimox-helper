@@ -28,7 +28,8 @@ $STD apt-get install -y \
   make \
   g++ \
   unpaper \
-  ocrmypdf
+  ocrmypdf \
+  wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing LibreOffice Components"
@@ -42,6 +43,7 @@ msg_info "Installing Python Dependencies"
 $STD apt-get install -y \
   python3 \
   python3-pip
+rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
 $STD pip3 install \
   uno \
   opencv-python-headless \

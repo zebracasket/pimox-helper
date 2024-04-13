@@ -19,11 +19,12 @@ $STD apt-get install -y sudo
 $STD apt-get install -y mc
 $STD apt-get install -y apt-transport-https
 $STD apt-get install -y gnupg
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Eclipse Temurin JRE"
 wget -qO- https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor >/etc/apt/trusted.gpg.d/adoptium.gpg
-echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/adoptium.gpg] https://packages.adoptium.net/artifactory/deb bookworm main" >/etc/apt/sources.list.d/adoptium.list
+echo "deb [arch=arm64 signed-by=/etc/apt/trusted.gpg.d/adoptium.gpg] https://packages.adoptium.net/artifactory/deb bookworm main" >/etc/apt/sources.list.d/adoptium.list
 $STD apt-get update
 $STD apt-get install -y temurin-17-jre
 msg_ok "Installed Eclipse Temurin JRE"
@@ -37,7 +38,7 @@ msg_ok "Installed MongoDB"
 
 msg_info "Installing UniFi Network Server"
 wget -qO /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg
-echo "deb [ arch=amd64 signed-by=/etc/apt/trusted.gpg.d/unifi-repo.gpg] https://www.ui.com/downloads/unifi/debian stable ubiquiti" >/etc/apt/sources.list.d/100-ubnt-unifi.list
+echo "deb [ arch=arm64 signed-by=/etc/apt/trusted.gpg.d/unifi-repo.gpg] https://www.ui.com/downloads/unifi/debian stable ubiquiti" >/etc/apt/sources.list.d/100-ubnt-unifi.list
 $STD apt-get update
 $STD apt-get install -y unifi
 msg_ok "Installed UniFi Network Server"

@@ -35,15 +35,15 @@ $STD apt-get -y install \
     sudo \
     mc \
     ca-certificates \
-    gnupg
+    gnupg \
+    wget
 msg_ok "Installed Dependencies"
 
 if [[ "$CTTYPE" == "0" ]]; then
   msg_info "Setting Up Hardware Acceleration"
   $STD apt-get -y install \
     va-driver-all \
-    ocl-icd-libopencl1 \
-    intel-opencl-icd
+    ocl-icd-libopencl1 
   chgrp video /dev/dri
   chmod 755 /dev/dri
   chmod 660 /dev/dri/*
@@ -81,6 +81,7 @@ $STD apt-get install -y \
   python3 \
   python3-dev \
   python3-pip
+rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
 msg_ok "Updated Python3"
 
 msg_info "Installing Python3 Dependencies"

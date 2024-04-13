@@ -23,8 +23,8 @@ msg_info "Installing Z-Wave JS UI"
 mkdir /opt/zwave-js-ui
 cd /opt/zwave-js-ui
 RELEASE=$(curl -s https://api.github.com/repos/zwave-js/zwave-js-ui/releases/latest | grep "tag_name" | awk '{print substr($2, 2, length($2)-3) }')
-$STD wget https://github.com/zwave-js/zwave-js-ui/releases/download/${RELEASE}/zwave-js-ui-${RELEASE}-linux.zip
-$STD unzip zwave-js-ui-${RELEASE}-linux.zip
+$STD wget https://github.com/zwave-js/zwave-js-ui/releases/download/${RELEASE}/zwave-js-ui-${RELEASE}-linux-arm64.zip
+$STD unzip zwave-js-ui-${RELEASE}-linux-arm64.zip
 msg_ok "Installed Z-Wave JS UI"
 
 msg_info "Creating Service"
@@ -43,11 +43,11 @@ systemctl start zwave-js-ui
 $STD systemctl enable zwave-js-ui
 msg_ok "Created Service"
 
-motd_ssh
+motd_sash
 customize
 
 msg_info "Cleaning up"
-rm zwave-js-ui-${RELEASE}-linux.zip
+rm zwave-js-ui-${RELEASE}-linux-arm64.zip
 $STD apt-get autoremove
 $STD apt-get autoclean
 msg_ok "Cleaned"

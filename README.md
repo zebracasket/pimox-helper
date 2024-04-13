@@ -115,7 +115,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 | OctoPrint             | ⭕     |                                                                                                         |
 | Omada                 | ⭕     |                                                                                                         |
 | Ombi                  | ⭕     |                                                                                                         |
-| OMV                   | ⭕     | Has been removed from upstream website.                                                                |
+| OMV                   | ⭕     | Has been removed from upstream website.                                                                 |
 | openHAB               | ⭕     |                                                                                                         |
 | OpenObserve           | ⭕     |                                                                                                         |
 | Overseerr             | ⭕     |                                                                                                         |
@@ -136,39 +136,39 @@ Any applications not in ported or unsupported need to be tested for whether they
 | qBittorrent           | ⭕     |                                                                                                         |
 | Radarr                | ✅     |                                                                                                         |
 | RDTClient             | ✅     | Real-Debrid Torrent Client                                                                              |
-| Readarr               | 🔘     |                                                                                                         |
-| Readeck               | 🔘     |                                                                                                         |
-| Redis                 | 🔘     |                                                                                                         |
-| RTSPtoWeb             | 🔘     |                                                                                                         |
-| Runtipi               | 🔘     |                                                                                                         |
-| SABnzbd               | 🔘     |                                                                                                         |
-| Scrypted              | 🔘     |                                                                                                         |
-| SFTPGo                | 🔘     |                                                                                                         |
-| Shinobi               | 🔘     |                                                                                                         |
-| SmokePing             | 🔘     |                                                                                                         |
+| Readarr               | ⭕     |                                                                                                         |
+| Readeck               | ⭕     |                                                                                                         |
+| Redis                 | ⭕     |                                                                                                         |
+| RTSPtoWeb             | ⭕     |                                                                                                         |
+| Runtipi               | ⭕     |                                                                                                         |
+| SABnzbd               | ⭕     |                                                                                                         |
+| Scrypted              | ⭕     |                                                                                                         |
+| SFTPGo                | ⭕     |                                                                                                         |
+| Shinobi               | ⭕     |                                                                                                         |
+| SmokePing             | ⭕     |                                                                                                         |
 | Sonarr                | ✅     |                                                                                                         |
-| Stirling-PDF          | 🔘     |                                                                                                         |
-| Syncthing             | 🔘     |                                                                                                         |
-| Tandoor               | 🔘     |                                                                                                         |
-| TasmoAdmin            | 🔘     |                                                                                                         |
-| Tautulli              | 🔘     |                                                                                                         |
-| Tdarr                 | 🔘     |                                                                                                         |
-| Technitium DNS        | 🔘     |                                                                                                         |
-| Transmission          | 🔘     |                                                                                                         |
-| Trilium               | 🔘     |                                                                                                         |
-| Ubuntu                | 🔘     |                                                                                                         |
-| Umbrel                | 🔘     |                                                                                                         |
-| Unifi                 | 🔘     |                                                                                                         |
-| Unmanic               | 🔘     |                                                                                                         |
-| Uptime Kuma           | 🔘     |                                                                                                         |
-| Vaultwarden           | 🔘     |                                                                                                         |
-| Wastebin              | 🔘     |                                                                                                         |
-| WatchYourLAN          | 🔘     |                                                                                                         |
-| Whisparr              | 🔘     |                                                                                                         |
-| Whoogle               | 🔘     |                                                                                                         |
-| Wikijs                | 🔘     |                                                                                                         |
-| Wireguard             | 🔘     |                                                                                                         |
-| YunoHost              | 🔘     |                                                                                                         |
-| Zigbee2MQTT           | 🔘     |                                                                                                         |
-| Zoraxy                | 🔘     |                                                                                                         |
-| Zwave-JS-UI           | 🔘     |                                                                                                         |
+| Stirling-PDF          | ⭕     |                                                                                                         |
+| Syncthing             | ⭕     |                                                                                                         |
+| Tandoor               | ⭕     |                                                                                                         |
+| TasmoAdmin            | ⭕     |                                                                                                         |
+| Tautulli              | ⭕     |                                                                                                         |
+| Tdarr                 | ⭕     |                                                                                                         |
+| Technitium DNS        | ⭕     |                                                                                                         |
+| Transmission          | ⭕     |                                                                                                         |
+| Trilium               | ❌     | Built for x64 only.                                                                                     |
+| Ubuntu                | ⭕     |                                                                                                         |
+| Umbrel                | ⭕     |                                                                                                         |
+| Unifi                 | ⭕     |                                                                                                         |
+| Unmanic               | ⭕     |                                                                                                         |
+| Uptime Kuma           | ⭕     |                                                                                                         |
+| Vaultwarden           | ⭕     |                                                                                                         |
+| Wastebin              | ⭕     |                                                                                                         |
+| WatchYourLAN          | ⭕     |                                                                                                         |
+| Whisparr              | ⭕     |                                                                                                         |
+| Whoogle               | ⭕     |                                                                                                         |
+| Wikijs                | ⭕     |                                                                                                         |
+| Wireguard             | ⭕     |                                                                                                         |
+| YunoHost              | ⭕     |                                                                                                         |
+| Zigbee2MQTT           | ⭕     |                                                                                                         |
+| Zoraxy                | ⭕     |                                                                                                         |
+| Zwave-JS-UI           | ⭕     |                                                                                                         |

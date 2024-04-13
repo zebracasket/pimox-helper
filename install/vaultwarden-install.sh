@@ -25,7 +25,8 @@ $STD apt-get -qqy install \
   curl \
   sudo \
   argon2 \
-  mc
+  mc \
+  wget
 msg_ok "Installed Dependencies"
 
 WEBVAULT=$(curl -s https://api.github.com/repos/dani-garcia/bw_web_builds/releases/latest |

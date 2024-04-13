@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -60,7 +60,7 @@ LATEST=$(curl -s https://codeberg.org/readeck/readeck/releases/ | grep -oP '(?<=
 systemctl stop readeck.service
 rm -rf /opt/readeck/readeck
 cd /opt/readeck
-wget -q -O readeck https://codeberg.org/readeck/readeck/releases/download/${LATEST}/readeck-${LATEST}-linux-amd64
+wget -q -O readeck https://codeberg.org/readeck/readeck/releases/download/${LATEST}/readeck-${LATEST}-linux-arm64
 chmod a+x readeck
 systemctl start readeck.service
 msg_ok "Updated ${APP}"

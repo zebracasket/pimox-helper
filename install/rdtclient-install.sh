@@ -33,9 +33,8 @@ $STD apt-get install -y zlib1g
 
 curl -SL -o dotnet.tar.gz https://download.visualstudio.microsoft.com/download/pr/1e449990-2934-47ee-97fb-b78f0e587c98/1c92c33593932f7a86efa5aff18960ed/dotnet-sdk-8.0.204-linux-arm64.tar.gz
 mkdir -p /usr/share/dotnet
-tar -zxf dotnet.tar.gz -C /usr/share/dotnet
-ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
-
+$STD tar -zxf dotnet.tar.gz -C /usr/share/dotnet
+$STD ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
 msg_ok "Installed ASP.NET Core Runtime"
 
 msg_info "Installing rdtclient"

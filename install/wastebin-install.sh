@@ -23,7 +23,8 @@ $STD apt-get install -y --no-install-recommends \
   sudo \
   git \
   make \
-  mc
+  mc \
+  wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Rust (Patience)" 

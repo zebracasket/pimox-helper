@@ -19,6 +19,7 @@ $STD apt-get install -y sudo
 $STD apt-get install -y mc
 $STD apt-get install -y par2
 $STD apt-get install -y p7zip-full
+$STD apt-get install -y wget
 cat <<EOF >/etc/apt/sources.list.d/non-free.list
 deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
 EOF
@@ -33,6 +34,7 @@ $STD apt-get install -y \
   python3-dev \
   python3-pip
 $STD apt-get install -y python3-setuptools
+rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
 msg_ok "Updated Python3"
 
 msg_info "Installing SABnzbd"

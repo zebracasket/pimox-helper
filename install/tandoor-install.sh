@@ -29,7 +29,8 @@ $STD apt-get install -y --no-install-recommends \
   sudo \
   git \
   make \
-  mc
+  mc \
+  wget
 msg_ok "Installed Dependencies"
 
 msg_info "Updating Python3"
@@ -38,6 +39,7 @@ $STD apt-get install -y \
   python3-dev \
   python3-setuptools \
   python3-pip
+rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
 msg_ok "Updated Python3"
 
 msg_info "Setting up Node.js Repository"

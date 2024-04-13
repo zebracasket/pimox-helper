@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -59,11 +59,11 @@ msg_info "Updating $APP"
 systemctl stop watchyourlan.service
 cp -R /data/config.yaml config.yaml
 RELEASE=$(curl -s https://api.github.com/repos/aceberg/WatchYourLAN/releases/latest | grep -o '"tag_name": *"[^"]*"' | cut -d '"' -f 4)
-wget -q https://github.com/aceberg/WatchYourLAN/releases/download/$RELEASE/watchyourlan_${RELEASE}_linux_amd64.deb
-dpkg -i watchyourlan_${RELEASE}_linux_amd64.deb
+wget -q https://github.com/aceberg/WatchYourLAN/releases/download/$RELEASE/watchyourlan_${RELEASE}_linux_arm64.deb
+dpkg -i watchyourlan_${RELEASE}_linux_arm64.deb
 cp -R config.yaml /data/config.yaml
 sed -i 's|/etc/watchyourlan/config.yaml|/data/config.yaml|' /lib/systemd/system/watchyourlan.service
-rm watchyourlan_${RELEASE}_linux_amd64.deb config.yaml
+rm watchyourlan_${RELEASE}_linux_arm64.deb config.yaml
 systemctl enable -q --now watchyourlan.service
 msg_ok "Updated $APP"
 exit

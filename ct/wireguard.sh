@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -74,6 +74,7 @@ if [ "$UPD" == "2" ]; then
 IP=$(hostname -I | awk '{print $1}')
 msg_info "Installing Python3-pip"
 apt-get install -y python3-pip &>/dev/null
+rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
 pip install flask &>/dev/null
 pip install ifcfg &>/dev/null
 pip install flask_qrcode &>/dev/null

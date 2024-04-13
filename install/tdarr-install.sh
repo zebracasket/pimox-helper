@@ -18,14 +18,14 @@ $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
 $STD apt-get install -y handbrake-cli
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 if [[ "$CTTYPE" == "0" ]]; then
   msg_info "Setting Up Hardware Acceleration"
   $STD apt-get -y install \
     va-driver-all \
-    ocl-icd-libopencl1 \
-    intel-opencl-icd
+    ocl-icd-libopencl1 
   chgrp video /dev/dri
   chmod 755 /dev/dri
   chmod 660 /dev/dri/*
@@ -37,7 +37,7 @@ fi
 msg_info "Installing Tdarr"
 mkdir -p /opt/tdarr
 cd /opt/tdarr
-RELEASE=$(curl -s https://f000.backblazeb2.com/file/tdarrs/versions.json | grep -oP '(?<="Tdarr_Updater": ")[^"]+' | grep linux_x64 | head -n 1)
+RELEASE=$(curl -s https://f000.backblazeb2.com/file/tdarrs/versions.json | grep -oP '(?<="Tdarr_Updater": ")[^"]+' | grep linux_arm64 | head -n 1)
 wget -q $RELEASE
 $STD unzip Tdarr_Updater.zip
 rm -rf Tdarr_Updater.zip

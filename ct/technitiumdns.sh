@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -56,14 +56,6 @@ function update_script() {
 header_info
 if [[ ! -d /etc/dns ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
 msg_info "Updating ${APP}"
-
-if ! dpkg -s aspnetcore-runtime-8.0 > /dev/null 2>&1; then
-    wget -q https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb
-    dpkg -i packages-microsoft-prod.deb &>/dev/null
-    apt-get update &>/dev/null
-    apt-get install -y aspnetcore-runtime-8.0 &>/dev/null
-    rm packages-microsoft-prod.deb
-fi
 bash <(curl -fsSL https://download.technitium.com/dns/install.sh) &>/dev/null
 msg_ok "Updated Successfully"
 exit
@@ -73,6 +65,6 @@ start
 build_container
 description
 
-msg_ok "Completed Successfully!\n"
+msg_ok "Completed Successfully!\n"a
 echo -e "${APP} should be reachable by going to the following URL.
          ${BL}http://${IP}:5380${CL} \n"
