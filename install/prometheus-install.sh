@@ -25,8 +25,8 @@ RELEASE=$(curl -s https://api.github.com/repos/prometheus/prometheus/releases/la
 mkdir -p /etc/prometheus
 mkdir -p /var/lib/prometheus
 $STD wget https://github.com/prometheus/prometheus/releases/download/v${RELEASE}/prometheus-${RELEASE}.linux-arm64.tar.gz
-$STD tar -xvf prometheus-${RELEASE}.linux-amd64.tar.gz
-cd prometheus-${RELEASE}.linux-amd64
+$STD tar -xvf prometheus-${RELEASE}.linux-arm64.tar.gz
+cd prometheus-${RELEASE}.linux-arm64
 mv prometheus promtool /usr/local/bin/
 mv consoles/ console_libraries/ /etc/prometheus/
 mv prometheus.yml /etc/prometheus/prometheus.yml
@@ -61,5 +61,5 @@ customize
 msg_info "Cleaning up"
 $STD apt-get autoremove
 $STD apt-get autoclean
-rm -rf ../prometheus-${RELEASE}.linux-amd64 ../prometheus-${RELEASE}.linux-amd64.tar.gz
+rm -rf ../prometheus-${RELEASE}.linux-arm64 ../prometheus-${RELEASE}.linux-arm64.tar.gz
 msg_ok "Cleaned"
