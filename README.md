@@ -115,7 +115,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 | OctoPrint             | ⭕     |                                                                                                         |
 | Omada                 | ⭕     |                                                                                                         |
 | Ombi                  | ⭕     |                                                                                                         |
-| OMV                   | ⭕     |                                                                                                         |
+| OMV                   | ⭕     | Has been removed from upstream website.                                                                |
 | openHAB               | ⭕     |                                                                                                         |
 | OpenObserve           | ⭕     |                                                                                                         |
 | Overseerr             | ⭕     |                                                                                                         |
