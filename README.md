@@ -78,7 +78,7 @@ Any applications not in ported or unsupported need to be tested for whether they
 | Grocy                 | ☑️     |                                                                                                         |
 | Heimdall              | ☑️     |                                                                                                         |
 | HiveMQ                | ☑️     |                                                                                                         |
-| Homarr                | ☑️     | Not on the templates webpage?                                                                           |
+| Homarr                | ☑️     | Has been removed from upstream website. Installer still works though.                                   |
 | HomeAssistant Core    | ☑️     | Got stuck at the Cleaning Up stage for me, but the webui still loaded.                                  |
 | HomeAssistant         | ☑️     |                                                                                                         |
 | Homebridge            | ☑️     |                                                                                                         |
@@ -99,53 +99,53 @@ Any applications not in ported or unsupported need to be tested for whether they
 | Linkwarden            | ☑️     |                                                                                                         |
 | Mafl                  | ☑️     |                                                                                                         |
 | MagicMirror           | ☑️     |                                                                                                         |
-| MariaDB               | ⭕     |                                                                                                         |
-| MediaMTX              | ⭕     |                                                                                                         |
-| Medusa                | ⭕     |                                                                                                         |
-| MeshCentral           | ⭕     |                                                                                                         |
-| Motioneye             | ⭕     |                                                                                                         |
-| MQTT                  | ⭕     |                                                                                                         |
-| n8n                   | ⭕     |                                                                                                         |
-| Navidrome             | ⭕     |                                                                                                         |
-| NextCloudPi           | ⭕     |                                                                                                         |
-| Nginx Proxy Manager   | ⭕     |                                                                                                         |
-| NocoDB                | ⭕     |                                                                                                         |
-| Node-Red              | ⭕     |                                                                                                         |
-| ntfy                  | ⭕     |                                                                                                         |
-| OctoPrint             | ⭕     |                                                                                                         |
-| Omada                 | ⭕     |                                                                                                         |
-| Ombi                  | ⭕     |                                                                                                         |
-| OMV                   | ⭕     | Has been removed from upstream website.                                                                 |
-| openHAB               | ⭕     |                                                                                                         |
-| OpenObserve           | ⭕     |                                                                                                         |
-| Overseerr             | ⭕     |                                                                                                         |
-| Owncast               | ⭕     |                                                                                                         |
-| PairDrop              | ⭕     |                                                                                                         |
-| Paperless-ngx         | ⭕     |                                                                                                         |
+| MariaDB               | ☑️     |                                                                                                         |
+| MediaMTX              | ☑️     |                                                                                                         |
+| Medusa                | ☑️     |                                                                                                         |
+| MeshCentral           | ☑️     |                                                                                                         |
+| Motioneye             | ☑️     |                                                                                                         |
+| MQTT                  | ☑️     |                                                                                                         |
+| n8n                   | ☑️     |                                                                                                         |
+| Navidrome             | ☑️     |                                                                                                         |
+| NextCloudPi           | ☑️     | Took two attempts to work.                                                                              |
+| Nginx Proxy Manager   | ☑️     |                                                                                                         |
+| NocoDB                | ☑️     |                                                                                                         |
+| Node-Red              | ☑️     |                                                                                                         |
+| ntfy                  | ☑️     |                                                                                                         |
+| OctoPrint             | ☑️     |                                                                                                         |
+| Omada                 | ☑️     |                                                                                                         |
+| Ombi                  | ☑️     |                                                                                                         |
+| OMV                   | ❌     | Timeout during APT. Has been removed from upstream website.                                             |
+| openHAB               | ☑️     |                                                                                                         |
+| OpenObserve           | ☑️     |                                                                                                         |
+| Overseerr             | ☑️     |                                                                                                         |
+| Owncast               | ☑️     |                                                                                                         |
+| PairDrop              | ☑️     |                                                                                                         |
+| Paperless-ngx         | ☑️     |                                                                                                         |
 | PBS                   | ✅     | Proxmox Backup Server                                                                                   |
-| PhotoPrism            | ⭕     |                                                                                                         |
-| PiAlert               | ⭕     |                                                                                                         |
-| Pihole                | ⭕     |                                                                                                         |
-| Pingvin               | ⭕     |                                                                                                         |
-| Plex                  | ⭕     |                                                                                                         |
-| Podman-Home Assistant | ⭕     |                                                                                                         |
-| Podman                | ⭕     |                                                                                                         |
-| PostgreSQL            | ⭕     |                                                                                                         |
-| Prometheus            | ⭕     |                                                                                                         |
+| PhotoPrism            | ☑️     |                                                                                                         |
+| PiAlert               | ☑️     |                                                                                                         |
+| Pihole                | ☑️     |                                                                                                         |
+| Pingvin               | ☑️     |                                                                                                         |
+| Plex                  | ☑️     |                                                                                                         |
+| Podman-Home Assistant | ☑️     |                                                                                                         |
+| Podman                | ☑️     |                                                                                                         |
+| PostgreSQL            | ☑️     |                                                                                                         |
+| Prometheus            | ☑️     |                                                                                                         |
 | Prowlarr              | ✅     |                                                                                                         |
-| qBittorrent           | ⭕     |                                                                                                         |
+| qBittorrent           | ☑️     |                                                                                                         |
 | Radarr                | ✅     |                                                                                                         |
 | RDTClient             | ✅     | Real-Debrid Torrent Client                                                                              |
-| Readarr               | ⭕     |                                                                                                         |
-| Readeck               | ⭕     |                                                                                                         |
-| Redis                 | ⭕     |                                                                                                         |
-| RTSPtoWeb             | ⭕     |                                                                                                         |
-| Runtipi               | ⭕     |                                                                                                         |
-| SABnzbd               | ⭕     |                                                                                                         |
+| Readarr               | ☑️     |                                                                                                         |
+| Readeck               | ☑️     |                                                                                                         |
+| Redis                 | ☑️     |                                                                                                         |
+| RTSPtoWeb             | ☑️     |                                                                                                         |
+| Runtipi               | ☑️     |                                                                                                         |
+| SABnzbd               | ☑️     |                                                                                                         |
 | Scrypted              | ⭕     |                                                                                                         |
 | SFTPGo                | ⭕     |                                                                                                         |
-| Shinobi               | ⭕     |                                                                                                         |
-| SmokePing             | ⭕     |                                                                                                         |
+| Shinobi               | ☑️     |                                                                                                         |
+| SmokePing             | ☑️     |                                                                                                         |
 | Sonarr                | ✅     |                                                                                                         |
 | Stirling-PDF          | ⭕     |                                                                                                         |
 | Syncthing             | ⭕     |                                                                                                         |
