@@ -32,7 +32,7 @@ msg_ok "Installed Azul Zulu"
 
 msg_info "Installing MongoDB"
 wget -qL http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_arm64.deb
-$STD dpkg -i $libssl
+$STD dpkg -i libssl1.1_1.1.1f-1ubuntu2_arm64.deb
 wget -qL https://repo.mongodb.org/apt/ubuntu/dists/focal/mongodb-org/4.4/multiverse/binary-arm64/mongodb-org-server_4.4.29_arm64.deb
 $STD dpkg -i mongodb-org-server_4.4.29_arm64.deb
 msg_ok "Installed MongoDB"
