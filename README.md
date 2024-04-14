@@ -6,22 +6,22 @@
 <h1 align="center">Proxmox VE Helper-Scripts</h1>
 
 <p align="center">
-  <a href="https://asylumexp.github.io/Proxmox-ARM64">Website</a> | 
-  <a href="https://github.com/asylumexp/Proxmox-ARM64/blob/main/.github/CONTRIBUTING.md">Contribute</a> |
-  <a href="https://github.com/asylumexp/Proxmox-ARM64/blob/main/USER_SUBMITTED_GUIDES.md">Guides</a> |
-  <a href="https://github.com/asylumexp/Proxmox-ARM64/blob/main/CHANGELOG.md">Changelog</a> |
+  <a href="https://asylumexp.github.io/Proxmox">Website</a> | 
+  <a href="https://github.com/asylumexp/Proxmox/blob/main/.github/CONTRIBUTING.md">Contribute</a> |
+  <a href="https://github.com/asylumexp/Proxmox/blob/main/USER_SUBMITTED_GUIDES.md">Guides</a> |
+  <a href="https://github.com/asylumexp/Proxmox/blob/main/CHANGELOG.md">Changelog</a> |
   <a href="https://ko-fi.com/D1D7EP4GF">Support</a>
 </p>
 
 ---
 
-## Proxmox-ARM64
+## Proxmox Helper Script for ARM64
 
 Ports of tteck's proxmox scripts to ARM64.
 
 Any issues with the scripts, please put an issue within this repository rather than upstream, as it is likely caused by my modifications.
 
-You can get a script from the [website](https://asylumexp.github.io/Proxmox-ARM64).
+You can get a script from the [website](https://asylumexp.github.io/Proxmox).
 
 ### VMs
 
