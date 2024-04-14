@@ -44,7 +44,7 @@ systemctl start zwave-js-ui
 $STD systemctl enable zwave-js-ui
 msg_ok "Created Service"
 
-motd_sash
+motd_ssh
 customize
 
 msg_info "Cleaning up"
