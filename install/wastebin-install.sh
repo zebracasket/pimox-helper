@@ -24,7 +24,8 @@ $STD apt-get install -y --no-install-recommends \
   git \
   make \
   mc \
-  wget
+  wget \
+  ca-certificates
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Rust"
