@@ -23,9 +23,8 @@ msg_ok "Installed Dependencies"
 
 msg_info "Installing Golang"
 set +o pipefail
-RELEASE=$(curl -s https://go.dev/dl/ | grep -o "go.*\linux-arm64.tar.gz" | head -n 1)
-wget -q https://golang.org/dl/$RELEASE
-$STD tar -xzf $RELEASE -C /usr/local
+wget -q https://golang.org/dl/go1.22.2.linux-arm64.tar.gz
+tar -xzf go1.22.2.linux-arm64.tar.gz -C /usr/local
 $STD ln -s /usr/local/go/bin/go /usr/local/bin/go
 set -o pipefail
 msg_ok "Installed Golang"
@@ -58,7 +57,7 @@ motd_ssh
 customize
 
 msg_info "Cleaning up"
-rm -rf $RELEASE
+rm -rf go1.22.2.linux-arm64.tar.gz
 $STD apt-get autoremove
 $STD apt-get autoclean
 msg_ok "Cleaned"
