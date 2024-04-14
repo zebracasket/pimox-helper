@@ -6,26 +6,40 @@
 <h1 align="center">Proxmox VE Helper-Scripts</h1>
 
 <p align="center">
-  <a href="https://helper-scripts.com/">Website</a> | 
-  <a href="https://github.com/tteck/Proxmox/blob/main/.github/CONTRIBUTING.md">Contribute</a> |
-  <a href="https://github.com/tteck/Proxmox/blob/main/USER_SUBMITTED_GUIDES.md">Guides</a> |
-  <a href="https://github.com/tteck/Proxmox/blob/main/CHANGELOG.md">Changelog</a> |
+  <a href="https://asylumexp.github.io/Proxmox-ARM64">Website</a> | 
+  <a href="https://github.com/asylumexp/Proxmox-ARM64/blob/main/.github/CONTRIBUTING.md">Contribute</a> |
+  <a href="https://github.com/asylumexp/Proxmox-ARM64/blob/main/USER_SUBMITTED_GUIDES.md">Guides</a> |
+  <a href="https://github.com/asylumexp/Proxmox-ARM64/blob/main/CHANGELOG.md">Changelog</a> |
   <a href="https://ko-fi.com/D1D7EP4GF">Support</a>
 </p>
 
 ---
 
-## README TO BE UPDATED
+## Proxmox-ARM64
 
 Ports of tteck's proxmox scripts to ARM64.
 
 Any issues with the scripts, please put an issue within this repository rather than upstream, as it is likely caused by my modifications.
 
-You can get a script from this by using the original website, and modifying the url in the bash statement to call from my user rather than tteck, until I can figure out how to get a website for these scripts up.
+You can get a script from the [website](https://asylumexp.github.io/Proxmox-ARM64).
 
-Any applications not in ported or unsupported need to be tested for whether they could be ported or not.
+### VMs
 
-## Compatibility Guide
+Since I'm using a vm on an M1 Mac I cannot use VMs according to the proxmox-port README. When I have some more time I'll get my RPI4 running with it and try port couple of VM scripts that there are.
+
+### Unsupported Scripts
+
+As of writing this there are currently 7 scripts that are marked as unsupported. I'll try to fix the ones with compile/npm errors once I have some more time.
+
+## Status Updates
+
+If you are using an app and it has no issues whatsoever, or it has certain features that are blocked due to it being ARM64, please make an issue so that I can update the status for that app to tested with using the application.
+
+## Issues with Scripts
+
+If you have any issues with the scripts feel free to leave an issue and I will try to help fix it.
+
+## Container Compatibility Guide
 
 | Icon | Description                                                                           |
 | ---- | ------------------------------------------------------------------------------------- |
