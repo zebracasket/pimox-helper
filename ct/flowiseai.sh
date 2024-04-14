@@ -1,4 +1,4 @@
-echo "Unsupported, view notes on GitHub"
+echo "Unsupported. View notes on GitHub."
 # #!/usr/bin/env bash
 # source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # # Copyright (c) 2021-2024 tteck

@@ -5,7 +5,7 @@
 # # License: MIT
 # # https://github.com/tteck/Proxmox/raw/main/LICENSE
 
-echo "Not supported"
+echo "Unsupported. View notes on GitHub."
 
 # function header_info {
 # clear
