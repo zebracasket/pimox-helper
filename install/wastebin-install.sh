@@ -28,12 +28,10 @@ $STD apt-get install -y --no-install-recommends \
   ca-certificates
 msg_ok "Installed Dependencies"
 
-msg_info "Installing Rust"
+msg_info "Installing Rust (Patience)" 
 $STD bash <(curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs) -y
-echo 'export PATH=~/.cargo/bin:$PATH' >>~/.bashrc
-export PATH=~/.cargo/bin:$PATH
-rm index.html
-msg_ok "Installed Rust"
+source ~/.cargo/env
+msg_ok "Installed Rust" 
 
 msg_info "Installing Wastebin (Patience)"
 RELEASE=$(curl -s https://api.github.com/repos/matze/wastebin/releases/latest | grep "tag_name" | awk '{print substr($2, 2, length($2)-3) }')
