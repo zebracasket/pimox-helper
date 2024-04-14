@@ -147,18 +147,18 @@ Any applications not in ported or unsupported need to be tested for whether they
 | Shinobi               | ☑️     |                                                                                                         |
 | SmokePing             | ☑️     |                                                                                                         |
 | Sonarr                | ✅     |                                                                                                         |
-| Stirling-PDF          | ⭕     |                                                                                                         |
-| Syncthing             | ⭕     |                                                                                                         |
-| Tandoor               | ⭕     |                                                                                                         |
-| TasmoAdmin            | ⭕     |                                                                                                         |
-| Tautulli              | ⭕     |                                                                                                         |
-| Tdarr                 | ⭕     |                                                                                                         |
-| Technitium DNS        | ⭕     |                                                                                                         |
-| Transmission          | ⭕     |                                                                                                         |
+| Stirling-PDF          | ☑️     |                                                                                                         |
+| Syncthing             | ☑️     |                                                                                                         |
+| Tandoor               | ☑️     |                                                                                                         |
+| TasmoAdmin            | ☑️     |                                                                                                         |
+| Tautulli              | ☑️     |                                                                                                         |
+| Tdarr                 | ☑️     |                                                                                                         |
+| Technitium DNS        | ☑️     |                                                                                                         |
+| Transmission          | ☑️     |                                                                                                         |
 | Trilium               | ❌     | Built for x64 only.                                                                                     |
-| Ubuntu                | ⭕     |                                                                                                         |
-| Umbrel                | ⭕     |                                                                                                         |
-| Unifi                 | ⭕     |                                                                                                         |
+| Ubuntu                | ☑️     |                                                                                                         |
+| Umbrel                | ☑️     | Removed from templates website                                                                          |
+| Unifi                 | ❌     | Working on fixing.                                                                                      |
 | Unmanic               | ⭕     |                                                                                                         |
 | Uptime Kuma           | ⭕     |                                                                                                         |
 | Vaultwarden           | ⭕     |                                                                                                         |
