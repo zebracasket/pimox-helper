@@ -35,140 +35,140 @@ Any applications not in ported or unsupported need to be tested for whether they
 | ❌   | Unsupported. View notes for reason.                                                   |
 | 🔘   | Install script not ported to ARM64.                                                   |
 
-| App                   | Status | Notes                                                                                                   |
-| --------------------- | ------ | ------------------------------------------------------------------------------------------------------- |
-| ActualBudget          | ☑️     |                                                                                                         |
-| Adguard               | ☑️     |                                                                                                         |
-| AgentDVR              | ☑️     |                                                                                                         |
-| Apache Cassandra      | ☑️     |                                                                                                         |
-| Alpine Docker         | ✅     |                                                                                                         |
-| Alpine Grafana        | ☑️     |                                                                                                         |
-| Alpine                | ☑️     |                                                                                                         |
-| Alpine Nextcloud      | ☑️     |                                                                                                         |
-| Alpine Vaultwarden    | ☑️     |                                                                                                         |
-| Alpine Zigbee2mqtt    | ☑️     |                                                                                                         |
-| Apache CouchDB        | ☑️     |                                                                                                         |
-| APT Cacher NG         | ☑️     |                                                                                                         |
-| Audiobookshelf        | ❌     | Built for x64 only. Use ARM64 Docker Image                                                              |
-| Autobrr               | ☑️     |                                                                                                         |
-| Bazarr                | ☑️     |                                                                                                         |
-| Blocky                | ☑️     |                                                                                                         |
-| CasaOS                | ☑️     |                                                                                                         |
-| ChangeDetection       | ☑️     |                                                                                                         |
-| Channels              | ☑️     |                                                                                                         |
-| Cloudflared           | ☑️     |                                                                                                         |
-| Commafeed             | ☑️     |                                                                                                         |
-| Cronicle              | ☑️     |                                                                                                         |
-| Dashy                 | ☑️     |                                                                                                         |
-| deConz                | ☑️     |                                                                                                         |
-| DaemonSync            | ❌     | Built for x64 only.                                                                                     |
-| Deluge                | ☑️     |                                                                                                         |
-| Docker                | ☑️     |                                                                                                         |
-| Dockge                | ☑️     |                                                                                                         |
-| Emby                  | ☑️     |                                                                                                         |
-| EMQX                  | ☑️     |                                                                                                         |
-| ESPHome               | ☑️     |                                                                                                         |
-| Fhem                  | ☑️     |                                                                                                         |
-| FlowiseAI             | ❌     | Error with npm on install. The script hasn't been disabled if you want to try it. Otherwise use Docker. |
-| Frigate               | ❌     | Think a dependency is only built for x64. Use Docker image.                                             |
-| Go2RTC                | ☑️     |                                                                                                         |
-| Gokapi                | ☑️     |                                                                                                         |
-| Gotify                | ☑️     |                                                                                                         |
-| Grafana               | ☑️     |                                                                                                         |
-| Grocy                 | ☑️     |                                                                                                         |
-| Heimdall              | ☑️     |                                                                                                         |
-| HiveMQ                | ☑️     |                                                                                                         |
-| Homarr                | ☑️     | Has been removed from upstream website. Installer still works though.                                   |
-| HomeAssistant Core    | ☑️     | Got stuck at the Cleaning Up stage for me, but the webui still loaded.                                  |
-| HomeAssistant         | ☑️     |                                                                                                         |
-| Homebridge            | ☑️     |                                                                                                         |
-| Homepage              | ☑️     |                                                                                                         |
-| Homer                 | ☑️     |                                                                                                         |
-| Hyperhdr              | ☑️     |                                                                                                         |
-| Hyperion              | ☑️     |                                                                                                         |
-| InfluxDB              | ☑️     |                                                                                                         |
-| ioBroker              | ☑️     |                                                                                                         |
-| Jackett               | ☑️     |                                                                                                         |
-| Jellyfin              | ☑️     |                                                                                                         |
-| Jellyseerr            | ✅     |                                                                                                         |
-| k0s                   | ☑️     |                                                                                                         |
-| Kavita                | ☑️     |                                                                                                         |
-| Keycloak              | ☑️     |                                                                                                         |
-| LazyLibrarian         | ☑️     |                                                                                                         |
-| Lidarr                | ☑️     |                                                                                                         |
-| Linkwarden            | ☑️     |                                                                                                         |
-| Mafl                  | ☑️     |                                                                                                         |
-| MagicMirror           | ☑️     |                                                                                                         |
-| MariaDB               | ☑️     |                                                                                                         |
-| MediaMTX              | ☑️     |                                                                                                         |
-| Medusa                | ☑️     |                                                                                                         |
-| MeshCentral           | ☑️     |                                                                                                         |
-| Motioneye             | ☑️     |                                                                                                         |
-| MQTT                  | ☑️     |                                                                                                         |
-| n8n                   | ☑️     |                                                                                                         |
-| Navidrome             | ☑️     |                                                                                                         |
-| NextCloudPi           | ☑️     | Took two attempts to work.                                                                              |
-| Nginx Proxy Manager   | ☑️     |                                                                                                         |
-| NocoDB                | ☑️     |                                                                                                         |
-| Node-Red              | ☑️     |                                                                                                         |
-| ntfy                  | ☑️     |                                                                                                         |
-| OctoPrint             | ☑️     |                                                                                                         |
-| Omada                 | ☑️     |                                                                                                         |
-| Ombi                  | ☑️     |                                                                                                         |
-| OMV                   | ❌     | Timeout during APT. Has been removed from upstream website.                                             |
-| openHAB               | ☑️     |                                                                                                         |
-| OpenObserve           | ☑️     |                                                                                                         |
-| Overseerr             | ☑️     |                                                                                                         |
-| Owncast               | ☑️     |                                                                                                         |
-| PairDrop              | ☑️     |                                                                                                         |
-| Paperless-ngx         | ☑️     |                                                                                                         |
-| PBS                   | ✅     | Proxmox Backup Server                                                                                   |
-| PhotoPrism            | ☑️     |                                                                                                         |
-| PiAlert               | ☑️     |                                                                                                         |
-| Pihole                | ☑️     |                                                                                                         |
-| Pingvin               | ☑️     |                                                                                                         |
-| Plex                  | ☑️     |                                                                                                         |
-| Podman-Home Assistant | ☑️     |                                                                                                         |
-| Podman                | ☑️     |                                                                                                         |
-| PostgreSQL            | ☑️     |                                                                                                         |
-| Prometheus            | ☑️     |                                                                                                         |
-| Prowlarr              | ✅     |                                                                                                         |
-| qBittorrent           | ☑️     |                                                                                                         |
-| Radarr                | ✅     |                                                                                                         |
-| RDTClient             | ✅     | Real-Debrid Torrent Client                                                                              |
-| Readarr               | ☑️     |                                                                                                         |
-| Readeck               | ☑️     |                                                                                                         |
-| Redis                 | ☑️     |                                                                                                         |
-| RTSPtoWeb             | ☑️     |                                                                                                         |
-| Runtipi               | ☑️     |                                                                                                         |
-| SABnzbd               | ☑️     |                                                                                                         |
-| Scrypted              | ⭕     |                                                                                                         |
-| SFTPGo                | ⭕     |                                                                                                         |
-| Shinobi               | ☑️     |                                                                                                         |
-| SmokePing             | ☑️     |                                                                                                         |
-| Sonarr                | ✅     |                                                                                                         |
-| Stirling-PDF          | ☑️     |                                                                                                         |
-| Syncthing             | ☑️     |                                                                                                         |
-| Tandoor               | ☑️     |                                                                                                         |
-| TasmoAdmin            | ☑️     |                                                                                                         |
-| Tautulli              | ☑️     |                                                                                                         |
-| Tdarr                 | ☑️     |                                                                                                         |
-| Technitium DNS        | ☑️     |                                                                                                         |
-| Transmission          | ☑️     |                                                                                                         |
-| Trilium               | ❌     | Built for x64 only.                                                                                     |
-| Ubuntu                | ☑️     |                                                                                                         |
-| Umbrel                | ☑️     | Removed from templates website                                                                          |
-| Unifi                 | ❌     | Working on fixing.                                                                                      |
-| Unmanic               | ⭕     |                                                                                                         |
-| Uptime Kuma           | ⭕     |                                                                                                         |
-| Vaultwarden           | ⭕     |                                                                                                         |
-| Wastebin              | ⭕     |                                                                                                         |
-| WatchYourLAN          | ⭕     |                                                                                                         |
-| Whisparr              | ⭕     |                                                                                                         |
-| Whoogle               | ⭕     |                                                                                                         |
-| Wikijs                | ⭕     |                                                                                                         |
-| Wireguard             | ⭕     |                                                                                                         |
-| YunoHost              | ⭕     |                                                                                                         |
-| Zigbee2MQTT           | ⭕     |                                                                                                         |
-| Zoraxy                | ⭕     |                                                                                                         |
-| Zwave-JS-UI           | ⭕     |                                                                                                         |
+| App                   | Status | Notes                                                                                                            |
+| --------------------- | ------ | ---------------------------------------------------------------------------------------------------------------- |
+| ActualBudget          | ☑️     |                                                                                                                  |
+| Adguard               | ☑️     |                                                                                                                  |
+| AgentDVR              | ☑️     |                                                                                                                  |
+| Apache Cassandra      | ☑️     |                                                                                                                  |
+| Alpine Docker         | ✅     |                                                                                                                  |
+| Alpine Grafana        | ☑️     |                                                                                                                  |
+| Alpine                | ☑️     |                                                                                                                  |
+| Alpine Nextcloud      | ☑️     |                                                                                                                  |
+| Alpine Vaultwarden    | ☑️     |                                                                                                                  |
+| Alpine Zigbee2mqtt    | ☑️     |                                                                                                                  |
+| Apache CouchDB        | ☑️     |                                                                                                                  |
+| APT Cacher NG         | ☑️     |                                                                                                                  |
+| Audiobookshelf        | ❌     | [ARM64 available as Docker Image only](https://github.com/advplyr/audiobookshelf/pkgs/container/audiobookshelf). |
+| Autobrr               | ☑️     |                                                                                                                  |
+| Bazarr                | ☑️     |                                                                                                                  |
+| Blocky                | ☑️     |                                                                                                                  |
+| CasaOS                | ☑️     |                                                                                                                  |
+| ChangeDetection       | ☑️     |                                                                                                                  |
+| Channels              | ☑️     |                                                                                                                  |
+| Cloudflared           | ☑️     |                                                                                                                  |
+| Commafeed             | ☑️     |                                                                                                                  |
+| Cronicle              | ☑️     |                                                                                                                  |
+| Dashy                 | ☑️     |                                                                                                                  |
+| deConz                | ☑️     |                                                                                                                  |
+| DaemonSync            | ❌     | Built for x64 only.                                                                                              |
+| Deluge                | ☑️     |                                                                                                                  |
+| Docker                | ☑️     |                                                                                                                  |
+| Dockge                | ☑️     |                                                                                                                  |
+| Emby                  | ☑️     |                                                                                                                  |
+| EMQX                  | ☑️     |                                                                                                                  |
+| ESPHome               | ☑️     |                                                                                                                  |
+| Fhem                  | ☑️     |                                                                                                                  |
+| FlowiseAI             | ❌     | NPM Error. [Use Docker image](https://docs.frigate.video/frigate/installation/).                                 |
+| Frigate               | ❌     | Compile Error. [Use Docker image](https://docs.frigate.video/frigate/installation/).                             |
+| Go2RTC                | ☑️     |                                                                                                                  |
+| Gokapi                | ☑️     |                                                                                                                  |
+| Gotify                | ☑️     |                                                                                                                  |
+| Grafana               | ☑️     |                                                                                                                  |
+| Grocy                 | ☑️     |                                                                                                                  |
+| Heimdall              | ☑️     |                                                                                                                  |
+| HiveMQ                | ☑️     |                                                                                                                  |
+| Homarr                | ☑️     | Has been removed from upstream templates website.                                                                |
+| HomeAssistant Core    | ☑️     | Got stuck at the Cleaning Up stage for me, but the webui still loaded.                                           |
+| HomeAssistant         | ☑️     |                                                                                                                  |
+| Homebridge            | ☑️     |                                                                                                                  |
+| Homepage              | ☑️     |                                                                                                                  |
+| Homer                 | ☑️     |                                                                                                                  |
+| Hyperhdr              | ☑️     |                                                                                                                  |
+| Hyperion              | ☑️     |                                                                                                                  |
+| InfluxDB              | ☑️     |                                                                                                                  |
+| ioBroker              | ☑️     |                                                                                                                  |
+| Jackett               | ☑️     |                                                                                                                  |
+| Jellyfin              | ☑️     |                                                                                                                  |
+| Jellyseerr            | ✅     |                                                                                                                  |
+| k0s                   | ☑️     |                                                                                                                  |
+| Kavita                | ☑️     |                                                                                                                  |
+| Keycloak              | ☑️     |                                                                                                                  |
+| LazyLibrarian         | ☑️     |                                                                                                                  |
+| Lidarr                | ☑️     |                                                                                                                  |
+| Linkwarden            | ☑️     |                                                                                                                  |
+| Mafl                  | ☑️     |                                                                                                                  |
+| MagicMirror           | ☑️     |                                                                                                                  |
+| MariaDB               | ☑️     |                                                                                                                  |
+| MediaMTX              | ☑️     |                                                                                                                  |
+| Medusa                | ☑️     |                                                                                                                  |
+| MeshCentral           | ☑️     |                                                                                                                  |
+| Motioneye             | ☑️     |                                                                                                                  |
+| MQTT                  | ☑️     |                                                                                                                  |
+| n8n                   | ☑️     |                                                                                                                  |
+| Navidrome             | ☑️     |                                                                                                                  |
+| NextCloudPi           | ☑️     | Took two attempts to work.                                                                                       |
+| Nginx Proxy Manager   | ☑️     |                                                                                                                  |
+| NocoDB                | ☑️     |                                                                                                                  |
+| Node-Red              | ☑️     |                                                                                                                  |
+| ntfy                  | ☑️     |                                                                                                                  |
+| OctoPrint             | ☑️     |                                                                                                                  |
+| Omada                 | ☑️     |                                                                                                                  |
+| Ombi                  | ☑️     |                                                                                                                  |
+| OMV                   | ❌     | Timeout during APT. Has been removed from upstream website.                                                      |
+| openHAB               | ☑️     |                                                                                                                  |
+| OpenObserve           | ☑️     |                                                                                                                  |
+| Overseerr             | ☑️     |                                                                                                                  |
+| Owncast               | ☑️     |                                                                                                                  |
+| PairDrop              | ☑️     |                                                                                                                  |
+| Paperless-ngx         | ☑️     |                                                                                                                  |
+| PBS                   | ✅     | Proxmox Backup Server                                                                                            |
+| PhotoPrism            | ☑️     |                                                                                                                  |
+| PiAlert               | ☑️     |                                                                                                                  |
+| Pihole                | ☑️     |                                                                                                                  |
+| Pingvin               | ☑️     |                                                                                                                  |
+| Plex                  | ☑️     |                                                                                                                  |
+| Podman-Home Assistant | ☑️     |                                                                                                                  |
+| Podman                | ☑️     |                                                                                                                  |
+| PostgreSQL            | ☑️     |                                                                                                                  |
+| Prometheus            | ☑️     |                                                                                                                  |
+| Prowlarr              | ✅     |                                                                                                                  |
+| qBittorrent           | ☑️     |                                                                                                                  |
+| Radarr                | ✅     |                                                                                                                  |
+| RDTClient             | ✅     | Real-Debrid Torrent Client                                                                                       |
+| Readarr               | ☑️     |                                                                                                                  |
+| Readeck               | ☑️     |                                                                                                                  |
+| Redis                 | ☑️     |                                                                                                                  |
+| RTSPtoWeb             | ☑️     |                                                                                                                  |
+| Runtipi               | ☑️     |                                                                                                                  |
+| SABnzbd               | ☑️     |                                                                                                                  |
+| Scrypted              | ☑️     |                                                                                                                  |
+| SFTPGo                | ☑️     |                                                                                                                  |
+| Shinobi               | ☑️     |                                                                                                                  |
+| SmokePing             | ☑️     |                                                                                                                  |
+| Sonarr                | ✅     |                                                                                                                  |
+| Stirling-PDF          | ☑️     |                                                                                                                  |
+| Syncthing             | ☑️     |                                                                                                                  |
+| Tandoor               | ☑️     |                                                                                                                  |
+| TasmoAdmin            | ☑️     |                                                                                                                  |
+| Tautulli              | ☑️     |                                                                                                                  |
+| Tdarr                 | ☑️     |                                                                                                                  |
+| Technitium DNS        | ☑️     |                                                                                                                  |
+| Transmission          | ☑️     |                                                                                                                  |
+| Trilium               | ❌     | Built for x64 only.                                                                                              |
+| Ubuntu                | ☑️     |                                                                                                                  |
+| Umbrel                | ☑️     | Has been removed from upstream templates website.                                                                |
+| Unifi                 | ☑️     |                                                                                                                  |
+| Unmanic               | ☑️     |                                                                                                                  |
+| Uptime Kuma           | ☑️     |                                                                                                                  |
+| Vaultwarden           | ❌     | Compile error. [Use docker image](https://github.com/dani-garcia/vaultwarden).                                   |
+| Wastebin              | ☑️     |                                                                                                                  |
+| WatchYourLAN          | ☑️     |                                                                                                                  |
+| Whisparr              | ☑️     |                                                                                                                  |
+| Whoogle               | ☑️     |                                                                                                                  |
+| Wikijs                | ☑️     |                                                                                                                  |
+| Wireguard             | ☑️     |                                                                                                                  |
+| YunoHost              | ☑️     |                                                                                                                  |
+| Zigbee2MQTT           | ☑️     |                                                                                                                  |
+| Zoraxy                | ☑️     |                                                                                                                  |
+| Zwave-JS-UI           | ☑️     |                                                                                                                  |
