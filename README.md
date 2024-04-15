@@ -96,7 +96,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Grocy                 | ☑️     |                                                                                                                  |
 | Heimdall              | ☑️     |                                                                                                                  |
 | HiveMQ                | ☑️     |                                                                                                                  |
-| Homarr                | ☑️     | Has been removed from upstream templates website.                                                                |
+| Homarr                | ☑️     |                                                                                                                  |
 | HomeAssistant Core    | ☑️     | Got stuck at the Cleaning Up stage for me, but the webui still loaded.                                           |
 | HomeAssistant         | ☑️     |                                                                                                                  |
 | Homebridge            | ☑️     |                                                                                                                  |
@@ -133,7 +133,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | OctoPrint             | ☑️     |                                                                                                                  |
 | Omada                 | ☑️     |                                                                                                                  |
 | Ombi                  | ☑️     |                                                                                                                  |
-| OMV                   | ❌     | Timeout during APT. Has been removed from upstream website.                                                      |
+| OMV                   | ❌     | Timeout during APT.                                                                                              |
 | openHAB               | ☑️     |                                                                                                                  |
 | OpenObserve           | ☑️     |                                                                                                                  |
 | Overseerr             | ☑️     |                                                                                                                  |
@@ -175,7 +175,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Transmission          | ☑️     |                                                                                                                  |
 | Trilium               | ❌     | Built for x64 only.                                                                                              |
 | Ubuntu                | ☑️     |                                                                                                                  |
-| Umbrel                | ☑️     | Has been removed from upstream templates website.                                                                |
+| Umbrel                | ☑️     |                                                                                                                  |
 | Unifi                 | ☑️     |                                                                                                                  |
 | Unmanic               | ☑️     |                                                                                                                  |
 | Uptime Kuma           | ☑️     |                                                                                                                  |
