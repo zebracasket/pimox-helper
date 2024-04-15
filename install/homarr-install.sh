@@ -37,13 +37,15 @@ $STD npm install -g yarn
 msg_ok "Installed Node.js/Yarn"
 
 msg_info "Installing Homarr (Patience)"
-mkdir -p /opt/homarr
-cd /opt
-git clone https://github.com/ajnart/homarr.git
+$STD git clone -b dev https://github.com/ajnart/homarr.git /opt/homarr
+cat <<EOF >/opt/homarr/.env
+DATABASE_URL="file:./database/db.sqlite"
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="$(openssl rand -base64 32)"
+NEXT_PUBLIC_DISABLE_ANALYTICS="true"
+DEFAULT_COLOR_SCHEME="dark"
+EOF
 cd /opt/homarr
-wget -q -O /opt/homarr/.env https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/homarr.env
-sed -i 's|NEXTAUTH_SECRET="[^"]*"|NEXTAUTH_SECRET="'"$(openssl rand -base64 32)"'"|' /opt/homarr/.env
-sed 's/ $//' /opt/homarr/.env # Get rid of space at the end of last config file line
 $STD yarn install
 $STD yarn build
 $STD yarn db:migrate
