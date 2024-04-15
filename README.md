@@ -190,3 +190,10 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Zigbee2MQTT           | ☑️     |                                                                                                                  |
 | Zoraxy                | ☑️     |                                                                                                                  |
 | Zwave-JS-UI           | ☑️     |                                                                                                                  |
+
+## Miscellaneous Compatibility Guide
+
+| Script    | Status | Notes                |
+| --------- | ------ | -------------------- |
+| Olivetin  | ☑️     |                      |
+| Tailscale | ✅     | No changes required. |
