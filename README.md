@@ -67,6 +67,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Alpine Zigbee2mqtt    | ☑️     |                                                                                                                  |
 | Apache CouchDB        | ☑️     |                                                                                                                  |
 | APT Cacher NG         | ☑️     |                                                                                                                  |
+| Aria2                 | ⭕     | Not present upstream.                                                                                            |
 | Audiobookshelf        | ❌     | [ARM64 available as Docker Image only](https://github.com/advplyr/audiobookshelf/pkgs/container/audiobookshelf). |
 | Autobrr               | ☑️     |                                                                                                                  |
 | Bazarr                | ☑️     |                                                                                                                  |
