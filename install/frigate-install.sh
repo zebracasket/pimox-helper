@@ -98,7 +98,7 @@ echo "tmpfs   /tmp/cache      tmpfs   defaults        0       0" >> /etc/fstab
 msg_ok "Installed Frigate $RELEASE"
 
 if grep -q -o -m1 'avx[^ ]*' /proc/cpuinfo; then
-  echo -e "AVX support detected"
+  msg_ok "AVX Support Detected"
   msg_info "Installing Openvino Object Detection Model (Resilience)"
   $STD pip install -r /opt/frigate/docker/main/requirements-ov.txt
   cd /opt/frigate/models
@@ -123,7 +123,7 @@ model:
   input_pixel_format: bgr
   labelmap_path: /openvino-model/coco_91cl_bkgr.txt
 EOF
-  msg_ok "Installed Openvino Object Detection Model (Resilience)"
+  msg_ok "Installed Openvino Object Detection Model"
 else
   cat <<EOF >>/config/config.yml
 model:
@@ -131,7 +131,7 @@ model:
 EOF
 fi
 
-msg_info "Installing Coral Object Detection Model (Resilience)"
+msg_info "Installing Coral Object Detection Model (Patience)"
 cd /opt/frigate
 export CCACHE_DIR=/root/.ccache
 export CCACHE_MAXSIZE=2G
@@ -191,6 +191,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
+ExecStartPre=+rm /dev/shm/logs/go2rtc/current
 ExecStart=bash /opt/frigate/docker/main/rootfs/etc/s6-overlay/s6-rc.d/go2rtc/run
 StandardOutput=file:/dev/shm/logs/go2rtc/current
 StandardError=file:/dev/shm/logs/go2rtc/current
@@ -212,6 +213,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
+ExecStartPre=+rm /dev/shm/logs/frigate/current
 ExecStart=bash /opt/frigate/docker/main/rootfs/etc/s6-overlay/s6-rc.d/frigate/run
 StandardOutput=file:/dev/shm/logs/frigate/current
 StandardError=file:/dev/shm/logs/frigate/current
@@ -233,6 +235,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
+ExecStartPre=+rm /dev/shm/logs/nginx/current
 ExecStart=bash /opt/frigate/docker/main/rootfs/etc/s6-overlay/s6-rc.d/nginx/run
 StandardOutput=file:/dev/shm/logs/nginx/current
 StandardError=file:/dev/shm/logs/nginx/current
