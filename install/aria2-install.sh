@@ -18,22 +18,22 @@ $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
 $STD apt-get install -y wget
-$STD apt-get install -y unzip
-$STD apt-get install -y nginx
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Aria2"
-DEBIAN_FRONTEND=noninteractive $STD apt-get -o Dpkg::Options::="--force-confold" install -y aria2
+$STD apt-get install -y aria2
 msg_ok "Installed Aria2"
 
 read -r -p "Would you like to add AriaNG? <y/N> " prompt
 if [[ ${prompt,,} =~ ^(y|yes)$ ]]; then
   msg_info "Installing AriaNG"
-  cd /root
-  mkdir -p /var/www
-  wget -q "$(curl -s https://api.github.com/repos/mayswind/ariang/releases/latest | grep download | grep AllInOne.zip | cut -d\" -f4)" -O /root/ariang.zip
-  $STD unzip "$(ls -l /root | grep zip$ | awk '{print $9}')" -d /var/www
-cat <<EOF >/etc/nginx/conf.d/ariang.conf
+  $STD apt-get install -y nginx 
+  $STD apt-get install -y unzip 
+  systemctl disable -q --now nginx
+  wget -q "$(curl -s https://api.github.com/repos/mayswind/ariang/releases/latest | grep download | grep AllInOne.zip | cut -d\" -f4)"
+  $STD unzip AriaNg-*-AllInOne.zip -d /var/www
+  rm /etc/nginx/sites-enabled/*
+  cat <<EOF >/etc/nginx/conf.d/ariang.conf
 server {
     listen 6880 default_server;
     listen [::]:6880 default_server;
@@ -48,18 +48,15 @@ server {
     }
 }
 EOF
-  rm /etc/nginx/sites-enabled/*
-  $STD systemctl disable --now nginx
-  $STD cp /lib/systemd/system/nginx.service /lib/systemd/system/ariang.service
-  $STD systemctl enable --now ariang
+  cp /lib/systemd/system/nginx.service /lib/systemd/system/ariang.service
   msg_ok "Installed AriaNG"
 fi
 
 msg_info "Creating Service"
-
 mkdir /root/downloads
+rpc_secret=$(openssl rand -base64 8)
+echo "rpc-secret: $rpc_secret" >>~/rpc.secret
 cat <<EOF >/root/aria2.daemon
-continue
 dir=/root/downloads
 file-allocation=falloc
 max-connection-per-server=4
@@ -67,13 +64,13 @@ max-concurrent-downloads=2
 max-overall-download-limit=0
 min-split-size=25M
 rpc-allow-origin-all=true
-rpc-secret=YouShouldChangeThis
+rpc-secret=${rpc_secret}
 input-file=/var/tmp/aria2c.session
 save-session=/var/tmp/aria2c.session
 EOF
 
 cat <<EOF >/etc/systemd/system/aria2.service
-echo '[Unit]
+[Unit]
 Description=Aria2c download manager
 After=network.target
 
@@ -87,17 +84,17 @@ TimeoutStopSec=20
 Restart=on-failure
 
 [Install]
-WantedBy=multi-user.target'
+WantedBy=multi-user.target
 EOF
-systemctl enable --now -q aria2.service
-
+systemctl enable -q --now aria2.service
+systemctl enable -q --now ariang
 msg_ok "Created Service"
 
 motd_ssh
 customize
 
 msg_info "Cleaning up"
-rm /root/"$(ls -l /root | grep zip$ | awk '{print $9}')"
+rm AriaNg-*-AllInOne.zip
 $STD apt-get autoremove
 $STD apt-get autoclean
 msg_ok "Cleaned"
