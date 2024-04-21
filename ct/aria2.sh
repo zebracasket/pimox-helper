@@ -66,5 +66,5 @@ build_container
 description
 
 msg_ok "Completed Successfully!\n"
-echo -e "${APP} should be accessible via the following IP.
-         ${BL}http://${IP}:6800${CL}"
+echo -e "${APP} should be reachable by going to the following URL.
+         ${BL}http://${IP}:6880${CL}"
