@@ -23,6 +23,7 @@ $STD apt-get install -y gcc
 $STD apt-get install -y ca-certificates
 $STD apt-get install -y gnupg
 $STD apt-get install -y wget
+$STD apt-get install -y gpg
 msg_ok "Installed Dependencies"
 
 msg_info "Setting up Node.js Repository"
@@ -48,11 +49,12 @@ cd /opt/homepage
 cp /opt/homepage/src/skeleton/* /opt/homepage/config
 $STD pnpm install
 $STD pnpm build
+echo "${RELEASE}" >/opt/${APPLICATION}_version.txt
 msg_ok "Installed Homepage v${RELEASE}"
 
 msg_info "Creating Service"
-service_path="/etc/systemd/system/homepage.service"
-echo "[Unit]
+cat <<EOF >/etc/systemd/system/homepage.service
+[Unit]
 Description=Homepage
 After=network.target
 StartLimitIntervalSec=0
@@ -64,8 +66,9 @@ User=root
 WorkingDirectory=/opt/homepage/
 ExecStart=pnpm start
 [Install]
-WantedBy=multi-user.target" >$service_path
-$STD systemctl enable --now homepage
+WantedBy=multi-user.target
+EOF
+systemctl enable -q --now homepage
 msg_ok "Created Service"
 
 motd_ssh
