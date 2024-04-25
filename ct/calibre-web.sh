@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # Co-Author: remz1337
@@ -62,9 +62,9 @@ function update_script() {
   msg_info "Updating $APP LXC"
   systemctl stop cps
   cd /opt/kepubify
-  rm kepubify-linux-64bit
-  curl -fsSLO https://github.com/pgaskin/kepubify/releases/latest/download/kepubify-linux-64bit &>/dev/null
-  chmod +x kepubify-linux-64bit
+  rm kepubify-linux-arm64
+  curl -fsSLO https://github.com/pgaskin/kepubify/releases/latest/download/kepubify-linux-arm64 &>/dev/null
+  chmod +x kepubify-linux-arm64
   rm /opt/calibre-web/metadata.db
   wget https://github.com/janeczku/calibre-web/raw/master/library/metadata.db -P /opt/calibre-web
   menu_array=("1" "Enables gdrive as storage backend for your ebooks" OFF \

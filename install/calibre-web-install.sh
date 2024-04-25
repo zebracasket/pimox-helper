@@ -19,10 +19,12 @@ $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
 $STD apt-get install -y imagemagick
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Python Dependencies"
 $STD apt-get -y install python3-pip
+rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
 msg_ok "Installed Python Dependencies"
 
 msg_info "Installing Kepubify"
