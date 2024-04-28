@@ -38,11 +38,9 @@ $STD apt-get install -y \
   python3-pip \
   python3-venv \
   python3-cffi \
-  python3-certbot \
-  python3-certbot-dns-cloudflare
+  python3-certbot
 rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
-$STD pip3 install certbot_dns_porkbun
-$STD pip3 install certbot-dns-duckdns
+$STD pip3 install certbot-dns-multi
 $STD python3 -m venv /opt/certbot/
 msg_ok "Installed Python Dependencies"
 

@@ -10,6 +10,41 @@
 - All LXC instances created using this repository come pre-installed with Midnight Commander, which is a command-line tool (`mc`) that offers a user-friendly file and directory management interface for the terminal environment.
 - 🚨 **The scripts in the repository will no longer provide support for Proxmox VE 7 starting from July 2024 (scripts will not execute on PVE7). Subsequent <a href='https://forum.proxmox.com/threads/proxmox-ve-support-lifecycle.35755/' target='_blank' rel='noopener noreferrer'>Proxmox VE - Support Lifecycle</a>**
 
+## 2024-04-27
+
+### Changed
+
+- **Frigate LXC**
+  - Unprivileged Hardware Acceleration https://github.com/tteck/Proxmox/discussions/2711#discussioncomment-9244629
+- **Ubuntu 24.04 VM**
+  - NEW Script
+
+## 2024-04-26
+
+### Changed
+
+- **Glances**
+  - NEW Script
+
+## 2024-04-25
+
+### Changed
+
+- **Jellyfin LXC**
+  - Default settings are now **Unprivileged**
+  - Unprivileged Hardware Acceleration
+  - Groups are set automatically
+  - Checks for the existence of `/dev/dri/card0` if not found, use `/dev/dri/card1`. Set the GID to `44`
+  - Set the GID for `/dev/dri/renderD128` to `104`
+  - Not tested <8.1.11
+- **Plex LXC**
+  - Default settings are now **Unprivileged**
+  - Unprivileged Hardware Acceleration
+  - Groups are set automatically
+  - Checks for the existence of `/dev/dri/card0` if not found, use `/dev/dri/card1`. Set the GID to `44`
+  - Set the GID for `/dev/dri/renderD128` to `104`
+  - Not tested <8.1.11
+
 ## 2024-04-24
 
 ### Changed
