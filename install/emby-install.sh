@@ -20,23 +20,27 @@ $STD apt-get install -y mc
 $STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
+msg_info "Setting Up Hardware Acceleration"
+$STD apt-get -y install {va-driver-all,ocl-icd-libopencl1,vainfo}
 if [[ "$CTTYPE" == "0" ]]; then
-  msg_info "Setting Up Hardware Acceleration"
-  $STD apt-get -y install {va-driver-all,ocl-icd-libopencl1,vainfo}
   chgrp video /dev/dri
   chmod 755 /dev/dri
   chmod 660 /dev/dri/*
   $STD adduser $(id -u -n) video
   $STD adduser $(id -u -n) render
-  msg_ok "Set Up Hardware Acceleration"
 fi
+msg_ok "Set Up Hardware Acceleration"
 
 LATEST=$(curl -sL https://api.github.com/repos/MediaBrowser/Emby.Releases/releases/latest | grep '"tag_name":' | cut -d'"' -f4)
 
 msg_info "Installing Emby"
 wget -q https://github.com/MediaBrowser/Emby.Releases/releases/download/${LATEST}/emby-server-deb_${LATEST}_arm64.deb
 $STD dpkg -i emby-server-deb_${LATEST}_arm64.deb
-sed -i -e 's/^ssl-cert:x:104:$/render:x:104:root,emby/' -e 's/^render:x:108:root,emby$/ssl-cert:x:108:/' /etc/group
+if [[ "$CTTYPE" == "0" ]]; then
+  sed -i -e 's/^ssl-cert:x:104:$/render:x:104:root,emby/' -e 's/^render:x:108:root,emby$/ssl-cert:x:108:/' /etc/group
+else
+  sed -i -e 's/^ssl-cert:x:104:$/render:x:104:emby/' -e 's/^render:x:108:emby$/ssl-cert:x:108:/' /etc/group
+fi
 msg_ok "Installed Emby"
 
 motd_ssh
