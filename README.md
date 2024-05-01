@@ -87,6 +87,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Dockge                | ☑️     |                                                                                                                  |
 | Emby                  | ☑️     |                                                                                                                  |
 | EMQX                  | ☑️     |                                                                                                                  |
+| ErsatzTV              | ⭕     |                                                                                                                  |
 | ESPHome               | ☑️     |                                                                                                                  |
 | Fhem                  | ☑️     |                                                                                                                  |
 | FlowiseAI             | ❌     | NPM Error. [Use Docker image](https://docs.frigate.video/frigate/installation/).                                 |

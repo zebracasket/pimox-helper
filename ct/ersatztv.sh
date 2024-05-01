@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck
 # Co-Author: MickLesk (Canbiz)
@@ -71,8 +71,8 @@ if [ -d /opt/ErsatzTV/ErsatzTV_bak ]; then
   rm -rf /opt/ErsatzTV/ErsatzTV_bak
 fi
 mv /opt/ErsatzTV/ErsatzTV /opt/ErsatzTV/ErsatzTV_bak
-wget -qO- "https://github.com/ErsatzTV/ErsatzTV/releases/download/${RELEASE}/ErsatzTV-${RELEASE}-linux-x64.tar.gz" | tar -xz -C /opt
-mv "/opt/ErsatzTV-${RELEASE}-linux-x64" /opt/ErsatzTV
+wget -qO- "https://github.com/ErsatzTV/ErsatzTV/releases/download/${RELEASE}/ErsatzTV-${RELEASE}-linux-arm64.tar.gz" | tar -xz -C /opt
+mv "/opt/ErsatzTV-${RELEASE}-linux-arm64" /opt/ErsatzTV
 msg_ok "Updated ErsatzTV"
 
 msg_info "Starting ErsatzTV"
