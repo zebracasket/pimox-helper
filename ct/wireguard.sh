@@ -63,15 +63,13 @@ if [ "$UPD" == "1" ]; then
 msg_info "Updating ${APP} LXC"
 apt-get update &>/dev/null
 apt-get -y upgrade &>/dev/null
-msg_ok "Updated Successfully"
 exit
 fi
 if [ "$UPD" == "2" ]; then
   if [[ -f /etc/systemd/system/wg-dashboard.service ]]; then
-    msg_info "Updating WGDashboard"
     cd /etc/wgdashboard/src
-    yes "Y" | sudo ./wgd.sh update &>/dev/null
-    sudo chmod u+x wgd.sh
+    chmod u+x wgd.sh
+    ./wgd.sh update
     msg_ok "Updated Successfully"
     exit 
   fi
@@ -92,9 +90,9 @@ WGDREL=$(curl -s https://api.github.com/repos/donaldzou/WGDashboard/releases/lat
 
 git clone -b ${WGDREL} https://github.com/donaldzou/WGDashboard.git /etc/wgdashboard &>/dev/null
 cd /etc/wgdashboard/src
-sudo chmod u+x wgd.sh
-sudo ./wgd.sh install &>/dev/null
-sudo chmod -R 755 /etc/wireguard
+chmod u+x wgd.sh
+./wgd.sh install &>/dev/null
+chmod -R 755 /etc/wireguard
 msg_ok "Installed WGDashboard"
 
 msg_info "Creating Service"
