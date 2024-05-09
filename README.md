@@ -150,6 +150,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Pihole                | ☑️     |                                                                                                                  |
 | Pingvin               | ☑️     |                                                                                                                  |
 | Plex                  | ☑️     |                                                                                                                  |
+| Pocketbase            | ⭕     |                                                                                                                  |
 | Podman-Home Assistant | ☑️     |                                                                                                                  |
 | Podman                | ☑️     |                                                                                                                  |
 | PostgreSQL            | ☑️     |                                                                                                                  |
@@ -198,7 +199,8 @@ If you would like to offer support, I would appreciate a star on the repository,
 
 ## Miscellaneous Compatibility Guide
 
-| Script    | Status | Notes                |
-| --------- | ------ | -------------------- |
-| Olivetin  | ☑️     |                      |
-| Tailscale | ✅     | No changes required. |
+| Script      | Status | Notes                |
+| ----------- | ------ | -------------------- |
+| Code Server | ⭕     |                      |
+| Olivetin    | ☑️     |                      |
+| Tailscale   | ✅     | No changes required. |
