@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -8,18 +8,18 @@ source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/b
 function header_info {
 clear
 cat <<"EOF"
-   __  ____                __       
-  / / / / /_  __  ______  / /___  __
- / / / / __ \/ / / / __ \/ __/ / / /
-/ /_/ / /_/ / /_/ / / / / /_/ /_/ / 
-\____/_.___/\__,_/_/ /_/\__/\__,_/  
- 
+    ____             __        __  __
+   / __ \____  _____/ /_____  / /_/ /_  ____ _________
+  / /_/ / __ \/ ___/ //_/ _ \/ __/ __ \/ __ `/ ___/ _ \
+ / ____/ /_/ / /__/ ,< /  __/ /_/ /_/ / /_/ (__  )  __/
+/_/    \____/\___/_/|_|\___/\__/_.___/\__,_/____/\___/
+
 EOF
 }
 header_info
 echo -e "Loading..."
-APP="Ubuntu"
-var_disk="2"
+APP="Pocketbase"
+var_disk="8"
 var_cpu="1"
 var_ram="512"
 var_os="ubuntu"
@@ -52,18 +52,10 @@ function default_settings() {
   echo_default
 }
 
-function update_script() {
-header_info
-if [[ ! -d /var ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
-msg_info "Updating ${APP} LXC"
-apt-get update &>/dev/null
-apt-get -y upgrade &>/dev/null
-msg_ok "Updated ${APP} LXC"
-exit
-}
-
 start
 build_container
 description
 
 msg_ok "Completed Successfully!\n"
+echo -e "${APP} should be reachable by going to the following URL.
+             ${BL}http://${IP}:8080/_${CL}"
