@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -8,20 +8,20 @@ source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/b
 function header_info {
 clear
 cat <<"EOF"
- _____
-/__  /  ____  _________ __  ____  __
-  / /  / __ \/ ___/ __ `/ |/_/ / / /
- / /__/ /_/ / /  / /_/ />  </ /_/ /
-/____/\____/_/   \__,_/_/|_|\__, /
-                           /____/
+   ______          __    __
+  / ____/___ _____/ /___/ /_  __
+ / /   / __ `/ __  / __  / / / /
+/ /___/ /_/ / /_/ / /_/ / /_/ /
+\____/\__,_/\__,_/\__,_/\__, /
+                       /____/
 EOF
 }
 header_info
 echo -e "Loading..."
-APP="Zoraxy"
-var_disk="6"
-var_cpu="4"
-var_ram="2048"
+APP="Caddy"
+var_disk="2"
+var_cpu="1"
+var_ram="512"
 var_os="debian"
 var_version="12"
 variables
@@ -54,8 +54,11 @@ function default_settings() {
 
 function update_script() {
 header_info
-if [[ ! -d /opt/zoraxy/src ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
-msg_error "There is currently no update path available."
+if [[ ! -d /etc/caddy ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
+msg_info "Updating $APP LXC"
+apt-get update &>/dev/null
+apt-get -y upgrade &>/dev/null
+msg_ok "Updated $APP LXC"
 exit
 }
 
@@ -63,9 +66,4 @@ start
 build_container
 description
 
-msg_info "Setting Container to Normal Resources"
-pct set $CTID -cores 2
-msg_ok "Set Container to Normal Resources"
 msg_ok "Completed Successfully!\n"
-echo -e "${APP} should be reachable by going to the following URL.
-         ${BL}http://${IP}:8000${CL} \n"
