@@ -22,7 +22,7 @@ echo "Unsupported. View notes on GitHub."
 # APP="Vaultwarden"
 # var_disk="6"
 # var_cpu="4"
-# var_ram="4096"
+# var_ram="5120"
 # var_os="debian"
 # var_version="12"
 # variables
