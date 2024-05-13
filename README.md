@@ -72,6 +72,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Autobrr               | ☑️     |                                                                                                                  |
 | Bazarr                | ☑️     |                                                                                                                  |
 | Blocky                | ☑️     |                                                                                                                  |
+| Caddy                 | ⭕     |                                                                                                                  |
 | Calibre-Web           | ☑️     |                                                                                                                  |
 | CasaOS                | ☑️     |                                                                                                                  |
 | ChangeDetection       | ☑️     |                                                                                                                  |
@@ -101,7 +102,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Heimdall              | ☑️     |                                                                                                                  |
 | HiveMQ                | ☑️     |                                                                                                                  |
 | Homarr                | ☑️     |                                                                                                                  |
-| HomeAssistant Core    | ☑️     | Got stuck at the Cleaning Up stage for me, but the webui still loaded.                                           |
+| HomeAssistant Core    | ☑️     | Havent tested with 24.04                                                                                         |
 | HomeAssistant         | ☑️     |                                                                                                                  |
 | Homebridge            | ☑️     |                                                                                                                  |
 | Homepage              | ☑️     |                                                                                                                  |
@@ -180,6 +181,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Traccar               | ☑️     |                                                                                                                  |
 | Transmission          | ☑️     |                                                                                                                  |
 | Trilium               | ❌     | Built for x64 only.                                                                                              |
+| Umami                 | ⭕     |                                                                                                                  |
 | Ubuntu                | ☑️     |                                                                                                                  |
 | Umbrel                | ☑️     |                                                                                                                  |
 | Unifi                 | ☑️     |                                                                                                                  |
