@@ -102,7 +102,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Heimdall              | ☑️     |                                                                                                                  |
 | HiveMQ                | ☑️     |                                                                                                                  |
 | Homarr                | ☑️     |                                                                                                                  |
-| HomeAssistant Core    | ☑️     | Havent tested with 24.04                                                                                         |
+| HomeAssistant Core    | ❌     | pve-container needs to be updated                                                                                |
 | HomeAssistant         | ☑️     |                                                                                                                  |
 | Homebridge            | ☑️     |                                                                                                                  |
 | Homepage              | ☑️     |                                                                                                                  |
