@@ -162,8 +162,8 @@ elif [ $PCT_OSTYPE = alpine ]; then
 else
   if [ $PCT_OSVERSION = 20.04 ]; then
     TEMPLATE_VARIENT=focal
-  elif [ $PCT_OSVERSION = 23.10 ]; then
-    TEMPLATE_VARIENT=mantic
+  elif [ $PCT_OSVERSION = 24.04 ]; then
+    TEMPLATE_VARIENT=noble
   else
     TEMPLATE_VARIENT=jammy
   fi
