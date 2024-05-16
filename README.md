@@ -22,6 +22,7 @@ Ports of tteck's proxmox scripts to ARM64.
 Any issues with the scripts, please put an issue within this repository rather than upstream, as it is likely caused by my modifications.
 
 You can get a script from the [coming soon](http://example.com).
+Until the website is back up, replace the repo owner in the github URL from tteck to asylumexp.
 
 ### VMs
 
@@ -88,9 +89,9 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Dockge                | ☑️     |                                                                                                                  |
 | Emby                  | ☑️     |                                                                                                                  |
 | EMQX                  | ☑️     |                                                                                                                  |
-| ErsatzTV              | ⭕     |                                                                                                                  |
+| ErsatzTV              | ❌     | Working on fixing.                                                                                               |
 | ESPHome               | ☑️     |                                                                                                                  |
-| Fenrus                | ⭕     |                                                                                                                  |
+| Fenrus                | ☑️     |                                                                                                                  |
 | Fhem                  | ☑️     |                                                                                                                  |
 | FlowiseAI             | ❌     | NPM Error. [Use Docker image](https://docs.frigate.video/frigate/installation/).                                 |
 | Frigate               | ❌     | Compile Error. [Use Docker image](https://docs.frigate.video/frigate/installation/).                             |
@@ -151,7 +152,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Pihole                | ☑️     |                                                                                                                  |
 | Pingvin               | ☑️     |                                                                                                                  |
 | Plex                  | ☑️     |                                                                                                                  |
-| Pocketbase            | ⭕     |                                                                                                                  |
+| Pocketbase            | ☑️     |                                                                                                                  |
 | Podman-Home Assistant | ☑️     |                                                                                                                  |
 | Podman                | ☑️     |                                                                                                                  |
 | PostgreSQL            | ☑️     |                                                                                                                  |
@@ -181,7 +182,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Traccar               | ☑️     |                                                                                                                  |
 | Transmission          | ☑️     |                                                                                                                  |
 | Trilium               | ❌     | Built for x64 only.                                                                                              |
-| Umami                 | ⭕     |                                                                                                                  |
+| Umami                 | ☑️     |                                                                                                                  |
 | Ubuntu                | ☑️     |                                                                                                                  |
 | Umbrel                | ☑️     |                                                                                                                  |
 | Unifi                 | ☑️     |                                                                                                                  |
