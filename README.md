@@ -112,6 +112,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Hyperion              | ☑️     |                                                                                                                  |
 | InfluxDB              | ☑️     |                                                                                                                  |
 | ioBroker              | ☑️     |                                                                                                                  |
+| iVentoy               | ⭕     |                                                                                                                  |
 | Jackett               | ☑️     |                                                                                                                  |
 | Jellyfin              | ☑️     |                                                                                                                  |
 | Jellyseerr            | ✅     |                                                                                                                  |
