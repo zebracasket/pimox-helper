@@ -128,6 +128,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | MediaMTX              | ☑️     |                                                                                                                  |
 | Medusa                | ☑️     |                                                                                                                  |
 | MeshCentral           | ☑️     |                                                                                                                  |
+| MongoDB               | ⭕     |                                                                                                                  |
 | Motioneye             | ☑️     |                                                                                                                  |
 | MQTT                  | ☑️     |                                                                                                                  |
 | n8n                   | ☑️     |                                                                                                                  |
