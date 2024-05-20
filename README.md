@@ -93,7 +93,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | ESPHome               | ☑️     |                                                                                                                  |
 | Fenrus                | ☑️     |                                                                                                                  |
 | Fhem                  | ☑️     |                                                                                                                  |
-| FlowiseAI             | ❌     | NPM Error. [Use Docker image](https://docs.frigate.video/frigate/installation/).                                 |
+| FlowiseAI             | ❌     | NPM Error. [Use Docker image](https://docs.flowiseai.com/getting-started).                                       |
 | Frigate               | ❌     | Compile Error. [Use Docker image](https://docs.frigate.video/frigate/installation/).                             |
 | Go2RTC                | ☑️     |                                                                                                                  |
 | Gokapi                | ☑️     |                                                                                                                  |
@@ -133,7 +133,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | MQTT                  | ☑️     |                                                                                                                  |
 | n8n                   | ☑️     |                                                                                                                  |
 | Navidrome             | ☑️     |                                                                                                                  |
-| NextCloudPi           | ☑️     | Took two attempts to work.                                                                                       |
+| NextCloudPi           | ☑️     |                                                                                                                  |
 | Nginx Proxy Manager   | ☑️     |                                                                                                                  |
 | NocoDB                | ☑️     |                                                                                                                  |
 | Node-Red              | ☑️     |                                                                                                                  |
@@ -182,6 +182,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Tdarr                 | ☑️     |                                                                                                                  |
 | Technitium DNS        | ☑️     |                                                                                                                  |
 | Traccar               | ☑️     |                                                                                                                  |
+| Traefik               | ⭕     |                                                                                                                  |
 | Transmission          | ☑️     |                                                                                                                  |
 | Trilium               | ❌     | Built for x64 only.                                                                                              |
 | Umami                 | ☑️     |                                                                                                                  |
@@ -208,4 +209,5 @@ If you would like to offer support, I would appreciate a star on the repository,
 | ----------- | ------ | -------------------- |
 | Code Server | ⭕     |                      |
 | Olivetin    | ☑️     |                      |
+| NetBird     | ☑️     | No changes required. |
 | Tailscale   | ✅     | No changes required. |

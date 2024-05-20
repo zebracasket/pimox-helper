@@ -19,12 +19,13 @@ $STD apt-get install -y sudo
 $STD apt-get install -y mc
 $STD apt-get install -y gpg
 $STD apt-get install -y apt-transport-https
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 RELEASE=$(curl -s https://api.github.com/repos/traefik/traefik/releases/latest | grep "tag_name" | awk '{print substr($2, 3, length($2)-4) }')
 msg_info "Installing Traefik v${RELEASE}"
 mkdir -p /etc/traefik/{conf.d,ssl}
-wget -q https://github.com/traefik/traefik/releases/download/v${RELEASE}/traefik_v${RELEASE}_linux_amd64.tar.gz
+wget -q https://github.com/traefik/traefik/releases/download/v${RELEASE}/traefik_v${RELEASE}_linux_arm64.tar.gz
 tar -C /tmp -xzf traefik*.tar.gz
 mv /tmp/traefik /usr/bin/
 rm -rf traefik*.tar.gz
