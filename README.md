@@ -6,10 +6,10 @@
 <h1 align="center">Proxmox VE Helper-Scripts</h1>
 
 <p align="center">
-  <a href="http://example.com">Website</a> | 
-  <a href="https://github.com/asylumexp/Proxmox/blob/main/.github/CONTRIBUTING.md">Contribute</a> |
-  <a href="https://github.com/asylumexp/Proxmox/blob/main/USER_SUBMITTED_GUIDES.md">Guides</a> |
-  <a href="https://github.com/asylumexp/Proxmox/blob/main/CHANGELOG.md">Changelog</a> |
+  <a href="https://helper-scripts.com/terms-of-use">Website Terms of Use</a> | 
+  <a href="https://github.com/tteck/Proxmox/blob/main/.github/CONTRIBUTING.md">Contribute</a> |
+  <a href="https://github.com/tteck/Proxmox/blob/main/USER_SUBMITTED_GUIDES.md">Guides</a> |
+  <a href="https://github.com/tteck/Proxmox/blob/main/CHANGELOG.md">Changelog</a> |
   <a href="https://ko-fi.com/D1D7EP4GF">Support</a>
 </p>
 
