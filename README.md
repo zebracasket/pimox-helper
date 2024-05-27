@@ -183,6 +183,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Tautulli                        | ☑️     |                                                                                                                  |
 | Tdarr                           | ☑️     |                                                                                                                  |
 | Technitium DNS                  | ☑️     |                                                                                                                  |
+| Threadfin                       | ⭕     |                                                                                                                  |
 | Traccar                         | ☑️     |                                                                                                                  |
 | Traefik                         | ⭕     |                                                                                                                  |
 | Transmission                    | ☑️     |                                                                                                                  |

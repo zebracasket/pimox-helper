@@ -19,11 +19,12 @@ $STD apt-get install -y mc
 $STD apt-get install -y curl
 $STD apt-get install -y ffmpeg
 $STD apt-get install -y vlc
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Threadfin"
 mkdir -p /opt/threadfin
-wget -q -O /opt/threadfin/threadfin 'https://github.com/Threadfin/Threadfin/releases/latest/download/Threadfin_linux_amd64'
+wget -q -O /opt/threadfin/threadfin 'https://github.com/Threadfin/Threadfin/releases/latest/download/Threadfin_linux_arm64'
 chmod +x /opt/threadfin/threadfin
 
 msg_ok "Installed Threadfin"

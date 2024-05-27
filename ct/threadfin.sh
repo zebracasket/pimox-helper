@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -57,7 +57,7 @@ header_info
 if [[ ! -d /opt/threadfin ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
 msg_info "Updating $APP"
 systemctl stop threadfin.service
-wget -q -O /opt/threadfin/threadfin 'https://github.com/Threadfin/Threadfin/releases/latest/download/Threadfin_linux_amd64'
+wget -q -O /opt/threadfin/threadfin 'https://github.com/Threadfin/Threadfin/releases/latest/download/Threadfin_linux_arm64'
 chmod +x /opt/threadfin/threadfin
 systemctl start threadfin.service
 msg_ok "Updated $APP"
