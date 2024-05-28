@@ -21,8 +21,6 @@ Ports of tteck's proxmox scripts to ARM64.
 
 Any issues with the scripts, please put an issue within this repository rather than upstream, as it is likely caused by my modifications.
 
-You can get a script from the [website]([http://example.com](https://proxmox64-scripts.vercel.app/)).
-
 ### VMs
 
 Since I'm using a vm on an M1 Mac I cannot use VMs according to the proxmox-port README. When I have some more time I'll get my RPI4 running with it and try port couple of VM scripts that there are.
