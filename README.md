@@ -6,8 +6,7 @@
 <h1 align="center">Proxmox VE Helper-Scripts</h1>
 
 <p align="center">
-  <a href="https://helper-scripts.com/terms-of-use">Terms of Use</a> | 
-  <a href="https://helper-scripts.com/">Website</a> | 
+  <a href="https://proxmox64-scripts.vercel.app/">Website</a> | 
   <a href="https://github.com/tteck/Proxmox/blob/main/.github/CONTRIBUTING.md">Contribute</a> |
   <a href="https://github.com/tteck/Proxmox/blob/main/USER_SUBMITTED_GUIDES.md">Guides</a> |
   <a href="https://github.com/tteck/Proxmox/blob/main/CHANGELOG.md">Changelog</a> |
@@ -22,8 +21,7 @@ Ports of tteck's proxmox scripts to ARM64.
 
 Any issues with the scripts, please put an issue within this repository rather than upstream, as it is likely caused by my modifications.
 
-You can get a script from the [coming soon](http://example.com).
-Until the website is back up, replace the repo owner in the github URL from tteck to asylumexp.
+You can get a script from the [website]([http://example.com](https://proxmox64-scripts.vercel.app/)).
 
 ### VMs
 
