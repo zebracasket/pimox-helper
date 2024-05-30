@@ -71,7 +71,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Dockge                          | ☑️     |                                                                                                                  |
 | Emby Media Server               | ☑️     |                                                                                                                  |
 | EMQX                            | ☑️     |                                                                                                                  |
-| ErsatzTV                        | ❌     | Working on fixing.                                                                                               |
+| ErsatzTV                        | ☑️     |                                                                                                                  |
 | ESPHome                         | ☑️     |                                                                                                                  |
 | Fenrus                          | ☑️     |                                                                                                                  |
 | FHEM                            | ☑️     |                                                                                                                  |
@@ -95,7 +95,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Hyperion                        | ☑️     |                                                                                                                  |
 | InfluxDB                        | ☑️     |                                                                                                                  |
 | ioBroker                        | ☑️     |                                                                                                                  |
-| iVentoy                         | ❌     | Working on fixing.                                                                                               |
+| iVentoy                         | ☑️     |                                                                                                                  |
 | Jackett                         | ☑️     |                                                                                                                  |
 | Jellyfin Media Server           | ☑️     |                                                                                                                  |
 | Jellyseerr                      | ✅     |                                                                                                                  |
