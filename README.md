@@ -21,22 +21,6 @@ Ports of tteck's proxmox scripts to ARM64.
 
 Any issues with the scripts, please put an issue within this repository rather than upstream, as it is likely caused by my modifications.
 
-### VMs
-
-Since I'm using a vm on an M1 Mac I cannot use VMs according to the proxmox-port README. When I have some more time I'll get my RPI4 running with it and try port couple of VM scripts that there are.
-
-### Unsupported Scripts
-
-As of writing this there are currently 7 scripts that are marked as unsupported. I'll try to fix the ones with compile/npm errors once I have some more time.
-
-### Status Updates
-
-If you are using an app and it has no issues whatsoever, or it has certain features that are blocked due to it being ARM64, please make an issue so that I can update the status for that app to tested with using the application.
-
-### Issues with Scripts
-
-If you have any issues with the scripts feel free to leave an issue and I will try to help fix it.
-
 ### Support
 
 If you would like to offer support, I would appreciate a star on the repository, or for you to support the creator of the Proxmox scripts [tteck on Ko-Fi](https://ko-fi.com/D1D7EP4GF)!
@@ -70,7 +54,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Autobrr                         | ☑️     |                                                                                                                  |
 | Bazarr                          | ☑️     |                                                                                                                  |
 | Blocky                          | ☑️     |                                                                                                                  |
-| Caddy                           | ⭕     |                                                                                                                  |
+| Caddy                           | ☑️     |                                                                                                                  |
 | Calibre-Web                     | ☑️     |                                                                                                                  |
 | CasaOS                          | ☑️     |                                                                                                                  |
 | Change Detection                | ☑️     |                                                                                                                  |
@@ -110,7 +94,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Hyperion                        | ☑️     |                                                                                                                  |
 | InfluxDB                        | ☑️     |                                                                                                                  |
 | ioBroker                        | ☑️     |                                                                                                                  |
-| iVentoy                         | ⭕     |                                                                                                                  |
+| iVentoy                         | ❌     | Working on fixing.                                                                                               |
 | Jackett                         | ☑️     |                                                                                                                  |
 | Jellyfin Media Server           | ☑️     |                                                                                                                  |
 | Jellyseerr                      | ✅     |                                                                                                                  |
@@ -126,7 +110,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | MediaMTX                        | ☑️     |                                                                                                                  |
 | Medusa                          | ☑️     |                                                                                                                  |
 | MeshCentral                     | ☑️     |                                                                                                                  |
-| MongoDB                         | ⭕     |                                                                                                                  |
+| MongoDB                         | ❌     |  Working on fixing.                                                                                              |
 | MotionEye NVR                   | ☑️     |                                                                                                                  |
 | MQTT                            | ☑️     |                                                                                                                  |
 | n8n                             | ☑️     |                                                                                                                  |
@@ -190,7 +174,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | UniFi Network Server            | ☑️     |                                                                                                                  |
 | Unmanic                         | ☑️     |                                                                                                                  |
 | Uptime Kuma                     | ☑️     |                                                                                                                  |
-| Vaultwarden                     | ❌     | Compile error. [Use docker image](https://github.com/dani-garcia/vaultwarden).                                   |
+| Vaultwarden                     | ❌     | Compile error. [Use docker image](https://github.com/dani-garcia/vaultwarden). or Alpine Linux version.          |
 | Wastebin                        | ☑️     |                                                                                                                  |
 | WatchYourLAN                    | ☑️     |                                                                                                                  |
 | Whisparr                        | ☑️     |                                                                                                                  |
