@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -62,15 +62,15 @@ msg_ok "Stopped ${APP}"
 
 msg_info "Updating ${APP}"
 RELEASE=$(curl -s https://codeberg.org/api/v1/repos/forgejo/forgejo/releases/latest | grep -oP '"tag_name":\s*"\K[^"]+' | sed 's/^v//')
-wget -qO forgejo-$RELEASE-linux-amd64 "https://codeberg.org/forgejo/forgejo/releases/download/v${RELEASE}/forgejo-${RELEASE}-linux-amd64"
+wget -qO forgejo-$RELEASE-linux-amd64 "https://codeberg.org/forgejo/forgejo/releases/download/v${RELEASE}/forgejo-${RELEASE}-linux-arm64"
 rm -rf /opt/forgejo/*
-cp -r forgejo-$RELEASE-linux-amd64 /opt/forgejo/forgejo-$RELEASE-linux-amd64
-chmod +x /opt/forgejo/forgejo-$RELEASE-linux-amd64
-ln -sf /opt/forgejo/forgejo-$RELEASE-linux-amd64 /usr/local/bin/forgejo
+cp -r forgejo-$RELEASE-linux-arm64 /opt/forgejo/forgejo-$RELEASE-linux-arm64
+chmod +x /opt/forgejo/forgejo-$RELEASE-linux-arm64
+ln -sf /opt/forgejo/forgejo-$RELEASE-linux-arm64 /usr/local/bin/forgejo
 msg_ok "Updated ${APP}"
 
 msg_info "Cleaning"
-rm -rf forgejo-$RELEASE-linux-amd64
+rm -rf forgejo-$RELEASE-linux-arm64
 msg_ok "Cleaned"
 
 msg_info "Starting ${APP}"
