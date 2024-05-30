@@ -110,7 +110,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | MediaMTX                        | ☑️     |                                                                                                                  |
 | Medusa                          | ☑️     |                                                                                                                  |
 | MeshCentral                     | ☑️     |                                                                                                                  |
-| MongoDB                         | ❌     |  Working on fixing.                                                                                              |
+| MongoDB                         | ❌     | Working on fixing.                                                                                               |
 | MotionEye NVR                   | ☑️     |                                                                                                                  |
 | MQTT                            | ☑️     |                                                                                                                  |
 | n8n                             | ☑️     |                                                                                                                  |
@@ -119,6 +119,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Nginx Proxy Manager             | ☑️     |                                                                                                                  |
 | NocoDB                          | ☑️     |                                                                                                                  |
 | Node-Red                        | ☑️     |                                                                                                                  |
+| Notifiarr                       | ⭕     |                                                                                                                  |
 | ntfy                            | ☑️     |                                                                                                                  |
 | OctoPrint                       | ☑️     |                                                                                                                  |
 | Omada Controller                | ☑️     |                                                                                                                  |
