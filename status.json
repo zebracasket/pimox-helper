@@ -35,7 +35,7 @@
     "status": "created",
     "notes": ""
   },
-  "Alpine Zigbee2mqtt LXC": {
+  "Alpine Zigbee2MQTT LXC": {
     "status": "created",
     "notes": ""
   },
@@ -153,7 +153,7 @@
   },
   "FlowiseAI LXC": {
     "status": "unsupported",
-    "notes": "NPM Error. [Use Docker image](https://docs.flowiseai.com/getting-started)."
+    "notes": "NPM Error. Use Docker image."
   },
   "Forgejo LXC": {
     "status": "created",
@@ -161,7 +161,7 @@
   },
   "Frigate LXC": {
     "status": "unsupported",
-    "notes": "Compile Error. [Use Docker image](https://docs.frigate.video/frigate/installation/)."
+    "notes": "Compile Error. Use Docker image."
   },
   "go2rtc LXC": {
     "status": "created",
@@ -315,7 +315,7 @@
     "status": "created",
     "notes": ""
   },
-  "NextCloudPi LXC": {
+  "Nextcloud LXC": {
     "status": "created",
     "notes": ""
   },
@@ -435,9 +435,9 @@
     "status": "ran",
     "notes": ""
   },
-  "RDTClient LXC": {
+  "Real-Debrid Torrent Client LXC": {
     "status": "ran",
-    "notes": "Real-Debrid Torrent Client"
+    "notes": ""
   },
   "Readarr LXC": {
     "status": "created",
@@ -557,7 +557,7 @@
   },
   "Vaultwarden LXC": {
     "status": "unsupported",
-    "notes": "Compile error. [Use docker image](https://github.com/dani-garcia/vaultwarden). or Alpine Linux version."
+    "notes": "Compile error. Use docker image or Alpine Linux version."
   },
   "Wastebin LXC": {
     "status": "created",
@@ -609,10 +609,10 @@
   },
   "NetBird": {
     "status": "created",
-    "notes": "No changes required."
+    "notes": ""
   },
   "Tailscale": {
     "status": "ran",
-    "notes": "No changes required."
+    "notes": ""
   }
 }
