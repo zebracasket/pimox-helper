@@ -151,6 +151,10 @@
     "status": "created",
     "notes": ""
   },
+  "File Browser": {
+    "status": "untested",
+    "notes": ""
+  },
   "FlowiseAI LXC": {
     "status": "unsupported",
     "notes": "NPM Error. Use Docker image."
