@@ -1,16 +1,17 @@
 <div align="center">
   <a href="#">
-    <img src="https://raw.githubusercontent.com/tteck/Proxmox/main/misc/images/logo.png" height="100px" />
+    <img src="https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/images/logo.png" height="100px" />
  </a>
 </div>
-<h1 align="center">Proxmox VE Helper-Scripts</h1>
+<h1 align="center">Proxmox arm64 Install Scripts</h1>
+<h3 align="center">an unofficial port of tteck's Helper-Scripts to arm64!</h3>
 
 <p align="center">
   <a href="https://pimox-scripts.vercel.app">Website</a> | 
-  <a href="https://github.com/tteck/Proxmox/blob/main/.github/CONTRIBUTING.md">Contribute</a> |
-  <a href="https://github.com/tteck/Proxmox/blob/main/USER_SUBMITTED_GUIDES.md">Guides</a> |
-  <a href="https://github.com/tteck/Proxmox/blob/main/CHANGELOG.md">Changelog</a> |
-  <a href="https://ko-fi.com/D1D7EP4GF">Support</a>
+  <a href="https://github.com/asylumexp/Proxmox/blob/main/.github/CONTRIBUTING.md">Contribute</a> |
+  <a href="https://github.com/asylumexp/Proxmox/blob/main/USER_SUBMITTED_GUIDES.md">Guides</a> |
+  <a href="https://github.com/asylumexp/Proxmox/blob/main/CHANGELOG.md">Changelog</a> |
+  <a href="https://ko-fi.com/D1D7EP4GF">Support (tteck)</a>
 </p>
 
 ---
@@ -18,6 +19,8 @@
 ## Proxmox Helper Script for ARM64
 
 Ports of tteck's proxmox scripts to ARM64.
+
+Find the scripts in the website linked above.
 
 Any issues with the scripts, please put an issue within this repository rather than upstream, as it is likely caused by my modifications.
 
