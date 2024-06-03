@@ -14,7 +14,10 @@
   <a href="https://ko-fi.com/D1D7EP4GF">Support (tteck)</a>
 </p>
 
----
+<p align="center">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/asylumexp/proxmox?style=flat">
+
+## </p>
 
 ## Proxmox Helper Script for ARM64
 
