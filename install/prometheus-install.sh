@@ -59,7 +59,7 @@ motd_ssh
 customize
 
 msg_info "Cleaning up"
-$STD apt-get autoremove
-$STD apt-get autoclean
+$STD apt-get -y autoremove
+$STD apt-get -y autoclean
 rm -rf ../prometheus-${RELEASE}.linux-arm64 ../prometheus-${RELEASE}.linux-arm64.tar.gz
 msg_ok "Cleaned"

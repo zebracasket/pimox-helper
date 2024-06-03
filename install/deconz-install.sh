@@ -58,6 +58,6 @@ customize
 
 msg_info "Cleaning up"
 rm -rf libssl1.1_1.1.1f-1ubuntu2.22_arm64.deb
-$STD apt-get autoremove
-$STD apt-get autoclean
+$STD apt-get -y autoremove
+$STD apt-get -y autoclean
 msg_ok "Cleaned"

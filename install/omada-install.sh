@@ -50,6 +50,6 @@ customize
 
 msg_info "Cleaning up"
 rm -rf ${latest_version} mongodb-org-server_4.4.29_arm64.deb zulu-repo_1.0.0-3_all.deb libssl1.1_1.1.1f-1ubuntu2_arm64.deb
-$STD apt-get autoremove
-$STD apt-get autoclean
+$STD apt-get -y autoremove
+$STD apt-get -y autoclean
 msg_ok "Cleaned"
