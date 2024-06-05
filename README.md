@@ -118,7 +118,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | MediaMTX                        | ☑️     |                                                                                                         |
 | Medusa                          | ☑️     |                                                                                                         |
 | MeshCentral                     | ☑️     |                                                                                                         |
-| MongoDB                         | ❌     | Working on fixing.                                                                                      |
+| MongoDB                         | ☑️     | Only supports ARMv8.2-a currently.                                                                      |
 | MotionEye NVR                   | ☑️     |                                                                                                         |
 | MQTT                            | ☑️     |                                                                                                         |
 | n8n                             | ☑️     |                                                                                                         |

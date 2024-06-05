@@ -304,8 +304,8 @@
     "notes": ""
   },
   "MongoDB LXC": {
-    "status": "unsupported",
-    "notes": "Working on fixing."
+    "status": "created",
+    "notes": "Only supports ARMv8.2-a currently."
   },
   "MotionEye NVR LXC": {
     "status": "created",
