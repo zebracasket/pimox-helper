@@ -13,6 +13,13 @@ setting_up_container
 network_check
 update_os
 
+cpu_info=$(lscpu)
+
+if ! echo "$cpu_info" | grep -q 'asimdrdm\|asimdhf\|dotprod\|fp16'; then
+    msg_error "This machine does not support ARMv8.2-A."
+    exit
+fi
+
 msg_info "Installing Dependencies"
 $STD apt-get install -y gnupg
 $STD apt-get install -y curl
