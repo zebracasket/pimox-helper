@@ -155,6 +155,10 @@
     "status": "untested",
     "notes": ""
   },
+  "FlareSolverr LXC": {
+    "status": "untested",
+    "notes": ""
+  },
   "FlowiseAI LXC": {
     "status": "unsupported",
     "notes": "NPM Error. Use Docker image."

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # Co-Author: remz1337
@@ -57,14 +57,12 @@ function update_script() {
   header_info
   if [[ ! -f /etc/systemd/system/flaresolverr.service ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
   RELEASE=$(wget -q https://github.com/FlareSolverr/FlareSolverr/releases/latest -O - | grep "title>Release" | cut -d " " -f 4)
-  if [[ "${RELEASE}" != "$(cat /opt/${APP}_version.txt)" ]] || [[ ! -f /opt/${APP}_version.txt ]]; then
+  if [[ ! -d /opt/flaresolverr ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
     msg_info "Updating $APP LXC"
     systemctl stop flaresolverr
-    wget -q https://github.com/FlareSolverr/FlareSolverr/releases/download/$RELEASE/flaresolverr_linux_x64.tar.gz
-    tar -xzf flaresolverr_linux_x64.tar.gz -C /opt
-    rm flaresolverr_linux_x64.tar.gz
+    cd /opt/flaresolverr
+    git pull
     systemctl start flaresolverr
-    echo "${RELEASE}" >/opt/${APP}_version.txt
     msg_ok "Updated $APP LXC"
   else
     msg_ok "No update required. ${APP} is already at ${RELEASE}"

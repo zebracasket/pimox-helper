@@ -81,6 +81,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | ESPHome                         | ☑️     |                                                                                                         |
 | Fenrus                          | ☑️     |                                                                                                         |
 | FHEM                            | ☑️     |                                                                                                         |
+| FlareSolverr                    | ⭕     |                                                                                                         |
 | FlowiseAI                       | ❌     | NPM Error. [Use Docker image](https://docs.flowiseai.com/getting-started).                              |
 | Forgejo                         | ☑️     |                                                                                                         |
 | Frigate                         | ❌     | Compile Error. [Use Docker image](https://docs.frigate.video/frigate/installation/).                    |
