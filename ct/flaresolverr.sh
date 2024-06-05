@@ -58,15 +58,12 @@ function update_script() {
   if [[ ! -f /etc/systemd/system/flaresolverr.service ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
   RELEASE=$(wget -q https://github.com/FlareSolverr/FlareSolverr/releases/latest -O - | grep "title>Release" | cut -d " " -f 4)
   if [[ ! -d /opt/flaresolverr ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
-    msg_info "Updating $APP LXC"
-    systemctl stop flaresolverr
-    cd /opt/flaresolverr
-    git pull
-    systemctl start flaresolverr
-    msg_ok "Updated $APP LXC"
-  else
-    msg_ok "No update required. ${APP} is already at ${RELEASE}"
-  fi
+  msg_info "Updating $APP LXC"
+  systemctl stop flaresolverr
+  cd /opt/flaresolverr
+  git pull
+  systemctl start flaresolverr
+  msg_ok "Updated $APP LXC"
   exit
 }
 
