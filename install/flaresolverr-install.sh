@@ -23,6 +23,7 @@ $STD apt-get install -y gpg
 $STD apt-get install -y xvfb
 $STD apt-get install -y wget
 $STD apt-get install -y git
+$STD apt-get install -y chromium
 msg_ok "Installed Dependencies"
 
 msg_info "Updating Python3"
@@ -32,13 +33,6 @@ $STD apt-get install -y \
   python3-pip
 rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
 msg_ok "Updated Python3"
-
-msg_info "Installing Chrome"
-wget -qO- https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /usr/share/keyrings/google-chrome.gpg
-echo "deb [arch=arm64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
-$STD apt update
-$STD apt install -y google-chrome-stable
-msg_ok "Installed Chrome"
 
 msg_info "Installing FlareSolverr"
 $STD git clone https://github.com/FlareSolverr/FlareSolverr /opt/flaresolverr
