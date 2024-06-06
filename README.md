@@ -81,7 +81,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | ESPHome                         | ☑️     |                                                                                                         |
 | Fenrus                          | ☑️     |                                                                                                         |
 | FHEM                            | ☑️     |                                                                                                         |
-| FlareSolverr                    | ⭕     |                                                                                                         |
+| FlareSolverr                    | ☑️     |                                                                                                         |
 | FlowiseAI                       | ❌     | NPM Error. [Use Docker image](https://docs.flowiseai.com/getting-started).                              |
 | Forgejo                         | ☑️     |                                                                                                         |
 | Frigate                         | ❌     | Compile Error. [Use Docker image](https://docs.frigate.video/frigate/installation/).                    |
@@ -118,7 +118,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | MediaMTX                        | ☑️     |                                                                                                         |
 | Medusa                          | ☑️     |                                                                                                         |
 | MeshCentral                     | ☑️     |                                                                                                         |
-| MongoDB                         | ☑️     | Only supports ARMv8.2-a currently.                                                                      |
+| MongoDB                         | ☑️     | Only supports ARMv8.2-a currently. (no RPI4 support).                                                   |
 | MotionEye NVR                   | ☑️     |                                                                                                         |
 | MQTT                            | ☑️     |                                                                                                         |
 | n8n                             | ☑️     |                                                                                                         |

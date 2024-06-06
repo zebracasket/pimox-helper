@@ -156,7 +156,7 @@
     "notes": ""
   },
   "FlareSolverr LXC": {
-    "status": "untested",
+    "status": "created",
     "notes": ""
   },
   "FlowiseAI LXC": {
@@ -305,7 +305,7 @@
   },
   "MongoDB LXC": {
     "status": "created",
-    "notes": "Only supports ARMv8.2-a currently."
+    "notes": "Only supports ARMv8.2-a currently. (no RPI4 support)."
   },
   "MotionEye NVR LXC": {
     "status": "created",
