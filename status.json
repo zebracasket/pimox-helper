@@ -391,6 +391,10 @@
     "status": "created",
     "notes": ""
   },
+  "Petio LXC": {
+    "status": "untested",
+    "notes": "Only supports ARMv8.2-a currently. (no RPI4 support)."
+  },
   "PhotoPrism LXC": {
     "status": "created",
     "notes": ""
