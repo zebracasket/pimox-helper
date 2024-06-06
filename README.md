@@ -131,7 +131,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | OctoPrint                       | ☑️     |                                                                                                         |
 | Omada Controller                | ☑️     |                                                                                                         |
 | Ombi                            | ☑️     |                                                                                                         |
-| OpenMediaVault                  | ❌     | Timeout during APT.                                                                                     |
+| OpenMediaVault                  | ☑️     |                                                                                                         |
 | openHAB                         | ☑️     |                                                                                                         |
 | OpenObserve                     | ☑️     |                                                                                                         |
 | Overseerr                       | ☑️     |                                                                                                         |

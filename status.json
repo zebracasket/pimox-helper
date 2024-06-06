@@ -360,8 +360,8 @@
     "notes": ""
   },
   "OpenMediaVault LXC": {
-    "status": "unsupported",
-    "notes": "Timeout during APT."
+    "status": "created",
+    "notes": ""
   },
   "openHAB LXC": {
     "status": "created",
