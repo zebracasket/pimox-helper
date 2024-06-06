@@ -139,7 +139,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | PairDrop                        | ☑️     |                                                                                                         |
 | Paperless-ngx                   | ☑️     |                                                                                                         |
 | PBS                             | ☑️     | Proxmox Backup Server                                                                                   |
-| Petio                           | ⭕     | Only supports ARMv8.2-a currently. (no RPI4 support).                                                   |
+| Petio                           | ☑️     | Only supports ARMv8.2-a currently. (no RPI4 support).                                                   |
 | PhotoPrism                      | ☑️     |                                                                                                         |
 | Pi.Alert                        | ☑️     |                                                                                                         |
 | Pi-Hole                         | ☑️     |                                                                                                         |
