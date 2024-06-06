@@ -35,8 +35,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 
 | Icon | Description                                                                           |
 | ---- | ------------------------------------------------------------------------------------- |
-| ✅   | The install script has been tested by creating a container and using the application. |
-| ☑️   | The install script has been tested by creating a container.                           |
+| ☑️   | Creating the LXC using the script has been tested.                                    |
 | ⭕   | Install script is ported, but has not been tested.                                    |
 | ❌   | Unsupported. View notes for reason.                                                   |
 | 🔘   | Install script not ported to ARM64.                                                   |
@@ -47,7 +46,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | AdGuard Home                    | ☑️     |                                                                                                         |
 | AgentDVR                        | ☑️     |                                                                                                         |
 | Apache-Cassandra                | ☑️     |                                                                                                         |
-| Alpine Docker                   | ✅     |                                                                                                         |
+| Alpine Docker                   | ☑️     |                                                                                                         |
 | Alpine Grafana                  | ☑️     |                                                                                                         |
 | Alpine                          | ☑️     |                                                                                                         |
 | Alpine Nextcloud                | ☑️     |                                                                                                         |
@@ -105,7 +104,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | iVentoy                         | ☑️     |                                                                                                         |
 | Jackett                         | ☑️     |                                                                                                         |
 | Jellyfin Media Server           | ☑️     |                                                                                                         |
-| Jellyseerr                      | ✅     |                                                                                                         |
+| Jellyseerr                      | ☑️     |                                                                                                         |
 | k0s                             | ☑️     |                                                                                                         |
 | Kavita                          | ☑️     |                                                                                                         |
 | Keycloak                        | ☑️     |                                                                                                         |
@@ -139,7 +138,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Owncast                         | ☑️     |                                                                                                         |
 | PairDrop                        | ☑️     |                                                                                                         |
 | Paperless-ngx                   | ☑️     |                                                                                                         |
-| PBS                             | ✅     | Proxmox Backup Server                                                                                   |
+| PBS                             | ☑️     | Proxmox Backup Server                                                                                   |
 | PhotoPrism                      | ☑️     |                                                                                                         |
 | Pi.Alert                        | ☑️     |                                                                                                         |
 | Pi-Hole                         | ☑️     |                                                                                                         |
@@ -150,10 +149,10 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Podman                          | ☑️     |                                                                                                         |
 | PostgreSQL                      | ☑️     |                                                                                                         |
 | Prometheus                      | ☑️     |                                                                                                         |
-| Prowlarr                        | ✅     |                                                                                                         |
+| Prowlarr                        | ☑️     |                                                                                                         |
 | qBittorrent                     | ☑️     |                                                                                                         |
-| Radarr                          | ✅     |                                                                                                         |
-| RDTClient                       | ✅     | Real-Debrid Torrent Client                                                                              |
+| Radarr                          | ☑️     |                                                                                                         |
+| RDTClient                       | ☑️     | Real-Debrid Torrent Client                                                                              |
 | Readarr                         | ☑️     |                                                                                                         |
 | Readeck                         | ☑️     |                                                                                                         |
 | Redis                           | ☑️     |                                                                                                         |
@@ -164,7 +163,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | SFTPGo                          | ☑️     |                                                                                                         |
 | Shinobi NVR                     | ☑️     |                                                                                                         |
 | SmokePing                       | ☑️     |                                                                                                         |
-| Sonarr                          | ✅     |                                                                                                         |
+| Sonarr                          | ☑️     |                                                                                                         |
 | Stirling-PDF                    | ☑️     |                                                                                                         |
 | Syncthing                       | ☑️     |                                                                                                         |
 | Tandoor Recipes                 | ☑️     |                                                                                                         |
@@ -202,5 +201,5 @@ If you would like to offer support, I would appreciate a star on the repository,
 | File Browser   | ⭕     |                      |
 | OliveTin       | ☑️     |                      |
 | NetBird        | ☑️     | No changes required. |
-| Tailscale      | ✅     | No changes required. |
+| Tailscale      | ☑️     | No changes required. |
 | VS Code Server | ⭕     |                      |
