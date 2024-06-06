@@ -16,7 +16,7 @@
     "notes": ""
   },
   "Alpine Docker LXC": {
-    "status": "ran",
+    "status": "created",
     "notes": ""
   },
   "Alpine Grafana LXC": {
@@ -252,7 +252,7 @@
     "notes": ""
   },
   "Jellyseerr LXC": {
-    "status": "ran",
+    "status": "created",
     "notes": ""
   },
   "k0s LXC": {
@@ -388,7 +388,7 @@
     "notes": ""
   },
   "Proxmox Backup Server LXC": {
-    "status": "ran",
+    "status": "created",
     "notes": ""
   },
   "PhotoPrism LXC": {
@@ -432,7 +432,7 @@
     "notes": ""
   },
   "Prowlarr LXC": {
-    "status": "ran",
+    "status": "created",
     "notes": ""
   },
   "qBittorrent LXC": {
@@ -440,11 +440,11 @@
     "notes": ""
   },
   "Radarr LXC": {
-    "status": "ran",
+    "status": "created",
     "notes": ""
   },
   "Real-Debrid Torrent Client LXC": {
-    "status": "ran",
+    "status": "created",
     "notes": ""
   },
   "Readarr LXC": {
@@ -488,7 +488,7 @@
     "notes": ""
   },
   "Sonarr LXC": {
-    "status": "ran",
+    "status": "created",
     "notes": ""
   },
   "Stirling-PDF LXC": {
@@ -531,7 +531,7 @@
     "status": "created",
     "notes": ""
   },
-  "Transmission LXC": {
+  "Tcreatedsmission LXC": {
     "status": "created",
     "notes": ""
   },
@@ -620,7 +620,7 @@
     "notes": ""
   },
   "Tailscale": {
-    "status": "ran",
+    "status": "created",
     "notes": ""
   }
 }
