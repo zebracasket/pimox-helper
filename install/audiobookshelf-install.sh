@@ -26,6 +26,7 @@ msg_ok "Installed Dependencies"
 msg_info "Installing Node.js"
 $STD apt-get update
 $STD apt-get install -y nodejs
+$STD apt-get install -y npm
 msg_ok "Installed Node.js"
 
 msg_info "Installing audiobookshelf"
