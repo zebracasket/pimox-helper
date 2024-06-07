@@ -29,7 +29,7 @@ $STD apt-get install -y nodejs
 $STD apt-get install -y npm
 msg_ok "Installed Node.js"
 
-msg_info "Installing audiobookshelf"
+msg_info "Installing audiobookshelf (Patience)"
 $STD git clone https://github.com/advplyr/audiobookshelf /opt/audiobookshelf
 cd /opt/audiobookshelf
 sed -i 's/Port: 3333/Port: 13378/' ./.devcontainer/dev.js
