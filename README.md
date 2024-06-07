@@ -199,8 +199,8 @@ If you would like to offer support, I would appreciate a star on the repository,
 
 | Script         | Status | Notes                |
 | -------------- | ------ | -------------------- |
-| File Browser   | ⭕     |                      |
+| File Browser   | ☑️     |                      |
 | OliveTin       | ☑️     |                      |
 | NetBird        | ☑️     | No changes required. |
 | Tailscale      | ☑️     | No changes required. |
-| VS Code Server | ⭕     |                      |
+| VS Code Server | ☑️     |                      |
