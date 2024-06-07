@@ -40,12 +40,14 @@ $STD npm ci
 cd client
 $STD npm ci
 $STD npm run generate
+mkdir -p /usr/share/audiobookshelf/config
+mkdir -p /usr/share/audiobookshelf/metadata
 msg_ok "Installed audiobookshelf"
 
 msg_info "Creating Service"
-cat <<EOF >/etc/systemd/system/audiobookshelf.service
+cat <<EOF >/etc/systemd/system/audiobookshelf_client.service
 [Unit]
-Description=Audiobookshelf Service
+Description=Audiobookshelf Client Service
 After=network.target
 
 [Service]
@@ -57,7 +59,22 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 EOF
-systemctl enable -q --now audiobookshelf.service
+cat <<EOF >/etc/systemd/system/audiobookshelf_server.service
+[Unit]
+Description=Audiobookshelf Server Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/audiobookshelf/
+ExecStart=/usr/bin/npm run dev
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl enable -q --now audiobookshelf_server.service
+systemctl enable -q --now audiobookshelf_client.service
 msg_ok "Created Service"
 
 motd_ssh
