@@ -45,15 +45,15 @@
   },
   "Apt-Cacher-NG LXC": {
     "status": "created",
-    "notes": "Won't work with Debian clients setup before 2024/06/08 (delete from /var/lib/vz/template/cache/)."
+    "notes": "Won't work with Debian clients setup before 2024/06/08 (delete tar from /var/lib/vz/template/cache/)."
   },
   "Aria2 LXC": {
     "status": "created",
     "notes": ""
   },
   "Audiobookshelf LXC": {
-    "status": "unsupported",
-    "notes": "Working on fixing."
+    "status": "created",
+    "notes": ""
   },
   "Autobrr LXC": {
     "status": "created",

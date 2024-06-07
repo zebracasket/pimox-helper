@@ -32,10 +32,10 @@ msg_ok "Installed Node.js"
 msg_info "Installing audiobookshelf (Patience)"
 $STD git clone https://github.com/advplyr/audiobookshelf /opt/audiobookshelf
 cd /opt/audiobookshelf
-sed -i 's/Port: 3333/Port: 13378/' ./.devcontainer/dev.js
-sed -i "s|ConfigPath: Path.resolve('config'),|ConfigPath: '/usr/share/audiobookshelf/config',|" ./.devcontainer/dev.js
-sed -i "s|MetadataPath: Path.resolve('metadata'),|MetadataPath: '/usr/share/audiobookshelf/metadata',|" ./.devcontainer/dev.js
 mv ./.devcontainer/dev.js ./dev.js
+sed -i 's/Port: 3333/Port: 13378/' ./dev.js
+sed -i "s|ConfigPath: Path.resolve('config'),|ConfigPath: '/usr/share/audiobookshelf/config',|" ./dev.js
+sed -i "s|MetadataPath: Path.resolve('metadata'),|MetadataPath: '/usr/share/audiobookshelf/metadata',|" ./dev.js
 $STD npm ci 
 cd client
 $STD npm ci
