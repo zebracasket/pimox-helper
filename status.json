@@ -45,7 +45,7 @@
   },
   "Apt-Cacher-NG LXC": {
     "status": "created",
-    "notes": ""
+    "notes": "Won't work with Debian clients setup before 2024/06/08 (delete from /var/lib/vz/template/cache/)."
   },
   "Aria2 LXC": {
     "status": "created",
