@@ -19,8 +19,8 @@ $STD apt-get install -y sudo
 $STD apt-get install -y gnupg
 $STD apt-get install -y mc
 $STD apt-get install -y wget
-$STD apt-get install ffmpeg
-$STD apt-get install git
+$STD apt-get install -y ffmpeg
+$STD apt-get install -y git
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Node.js"
