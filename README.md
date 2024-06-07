@@ -7,7 +7,7 @@
 <h3 align="center">an unofficial port of tteck's Helper-Scripts to arm64!</h3>
 
 <p align="center">
-  <a href="https://pimox-scripts.vercel.app">Website</a> | 
+  <a href="https://pimox-scripts.com">Website</a> | 
   <a href="https://github.com/asylumexp/Proxmox/blob/main/.github/CONTRIBUTING.md">Contribute</a> |
   <a href="https://github.com/asylumexp/Proxmox/blob/main/USER_SUBMITTED_GUIDES.md">Guides</a> |
   <a href="https://github.com/asylumexp/Proxmox/blob/main/CHANGELOG.md">Changelog</a> |
