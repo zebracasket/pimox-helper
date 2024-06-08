@@ -53,7 +53,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Alpine Vaultwarden              | ☑️     |                                                                                                         |
 | Alpine Zigbee2mqtt              | ☑️     |                                                                                                         |
 | Apache-CouchDB                  | ☑️     |                                                                                                         |
-| Apt-Cacher-NG                   | ☑️     | Won't work with Debian clients setup before 2024/06/08 (delete tar from /var/lib/vz/template/cache/).   |
+| Apt-Cacher-NG                   | ☑️     | Won't work with Debian template from before 2024/06/08 (need to delete tar /var/lib/vz/template/cache/).|
 | Aria2                           | ☑️     |                                                                                                         |
 | Audiobookshelf                  | ☑️     |                                                                                                         |
 | Autobrr                         | ☑️     |                                                                                                         |

@@ -45,7 +45,7 @@
   },
   "Apt-Cacher-NG LXC": {
     "status": "created",
-    "notes": "Won't work with Debian clients setup before 2024/06/08 (delete tar from /var/lib/vz/template/cache/)."
+    "notes": "Won't work with Debian template from before 2024/06/08 (need to delete tar /var/lib/vz/template/cache/)."
   },
   "Aria2 LXC": {
     "status": "created",
