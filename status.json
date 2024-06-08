@@ -160,8 +160,8 @@
     "notes": ""
   },
   "FlowiseAI LXC": {
-    "status": "unsupported",
-    "notes": "NPM Error. Use Docker image."
+    "status": "created",
+    "notes": ""
   },
   "Forgejo LXC": {
     "status": "created",
