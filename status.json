@@ -568,8 +568,8 @@
     "notes": ""
   },
   "Vaultwarden LXC": {
-    "status": "unsupported",
-    "notes": "Compile error. Use docker image or Alpine Linux version."
+    "status": "created",
+    "notes": "Will probably work on default install if you have a lot of ram. Otherwise use the Alpine Linux version."
   },
   "Wastebin LXC": {
     "status": "created",

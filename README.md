@@ -183,7 +183,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | UniFi Network Server            | ☑️     |                                                                                                         |
 | Unmanic                         | ☑️     |                                                                                                         |
 | Uptime Kuma                     | ☑️     |                                                                                                         |
-| Vaultwarden                     | ❌     | Compile error. [Use docker image](https://github.com/dani-garcia/vaultwarden). or Alpine Linux version. |
+| Vaultwarden                     | ☑️     | Will probably work on default install if you have a lot of ram. Otherwise use the Alpine Linux version. |
 | Wastebin                        | ☑️     |                                                                                                         |
 | WatchYourLAN                    | ☑️     |                                                                                                         |
 | Whisparr                        | ☑️     |                                                                                                         |
