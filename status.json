@@ -168,8 +168,8 @@
     "notes": ""
   },
   "Frigate LXC": {
-    "status": "unsupported",
-    "notes": "Compile Error. Use Docker image."
+    "status": "created",
+    "notes": ""
   },
   "go2rtc LXC": {
     "status": "created",

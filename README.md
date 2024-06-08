@@ -83,7 +83,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | FlareSolverr                    | ☑️     |                                                                                                         |
 | FlowiseAI                       | ☑️     |                                                                                                         |
 | Forgejo                         | ☑️     |                                                                                                         |
-| Frigate                         | ❌     | Compile Error. [Use Docker image](https://docs.frigate.video/frigate/installation/).                    |
+| Frigate                         | ☑️     |                                                                                                         |
 | go2rtc                          | ☑️     |                                                                                                         |
 | Gokapi                          | ☑️     |                                                                                                         |
 | Gotify                          | ☑️     |                                                                                                         |
