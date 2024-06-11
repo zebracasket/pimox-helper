@@ -599,6 +599,10 @@
     "status": "created",
     "notes": ""
   },
+  "Zabbix LXC": {
+    "status": "created",
+    "notes": ""
+  },
   "Zigbee2MQTT LXC": {
     "status": "created",
     "notes": ""
