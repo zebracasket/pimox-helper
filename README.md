@@ -114,7 +114,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Mafl                            | ☑️     |                                                                                                          |
 | MagicMirror Server              | ☑️     |                                                                                                          |
 | Mariadb                         | ☑️     |                                                                                                          |
-| Matterbridge                    | ⭕     |                                                                                                          |
+| Matterbridge                    | ☑️     |                                                                                                          |
 | MediaMTX                        | ☑️     |                                                                                                          |
 | Medusa                          | ☑️     |                                                                                                          |
 | MeshCentral                     | ☑️     |                                                                                                          |
