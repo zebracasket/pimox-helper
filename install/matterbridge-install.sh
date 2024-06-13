@@ -25,7 +25,8 @@ $STD apt-get install -y --no-install-recommends \
   make \
   gnupg \
   ca-certificates \
-  mc
+  mc \
+  wget
 msg_ok "Installed Dependencies"
 
 msg_info "Setting up Node.js Repository"

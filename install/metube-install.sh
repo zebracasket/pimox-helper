@@ -30,7 +30,8 @@ $STD apt-get install -y --no-install-recommends \
   make \
   gnupg \
   ca-certificates \
-  mc
+  mc \
+  wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Python3"
@@ -39,6 +40,7 @@ $STD apt-get install -y \
   python3-dev \
   python3-pip \
   python3-venv
+rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
 msg_ok "Installed Python3"
 
 msg_info "Setting up Node.js Repository"

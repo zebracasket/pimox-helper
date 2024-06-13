@@ -291,6 +291,10 @@
     "status": "created",
     "notes": ""
   },
+  "Matterbridge LXC": {
+    "status": "untested",
+    "notes": ""
+  },
   "MediaMTX LXC": {
     "status": "created",
     "notes": ""
@@ -300,6 +304,10 @@
     "notes": ""
   },
   "MeshCentral LXC": {
+    "status": "created",
+    "notes": ""
+  },
+  "MeTube LXC": {
     "status": "created",
     "notes": ""
   },

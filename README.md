@@ -114,9 +114,11 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Mafl                            | ☑️     |                                                                                                          |
 | MagicMirror Server              | ☑️     |                                                                                                          |
 | Mariadb                         | ☑️     |                                                                                                          |
+| Matterbridge                    | ⭕     |                                                                                                          |
 | MediaMTX                        | ☑️     |                                                                                                          |
 | Medusa                          | ☑️     |                                                                                                          |
 | MeshCentral                     | ☑️     |                                                                                                          |
+| MeTube                          | ☑️     |                                                                                                          |
 | MongoDB                         | ☑️     | Only supports ARMv8.2-a currently. (no RPI4 support).                                                    |
 | MotionEye NVR                   | ☑️     |                                                                                                          |
 | MQTT                            | ☑️     |                                                                                                          |
