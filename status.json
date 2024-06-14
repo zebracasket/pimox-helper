@@ -399,6 +399,10 @@
     "status": "created",
     "notes": ""
   },
+  "PeaNUT LXC": {
+    "status": "untested",
+    "notes": ""
+  },
   "Petio LXC": {
     "status": "created",
     "notes": "Only supports ARMv8.2-a currently. (no RPI4 support)."
@@ -501,6 +505,10 @@
   },
   "Sonarr LXC": {
     "status": "created",
+    "notes": ""
+  },
+  "Spoolman LXC": {
+    "status": "untested",
     "notes": ""
   },
   "Stirling-PDF LXC": {

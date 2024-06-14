@@ -2,7 +2,6 @@
 
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
-# Co-Author: remz1337
 # License: MIT
 # https://github.com/tteck/Proxmox/raw/main/LICENSE
 
@@ -19,6 +18,7 @@ $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
 $STD apt-get install -y gpg
+$STD apt-get install -y wget
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Node.js"
