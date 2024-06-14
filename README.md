@@ -123,7 +123,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | MotionEye NVR                   | ☑️     |                                                                                                          |
 | MQTT                            | ☑️     |                                                                                                          |
 | n8n                             | ☑️     |                                                                                                          |
-| MySpeed                         | ⭕     |                                                                                                          |
+| MySpeed                         | ☑️     |                                                                                                          |
 | Navidrome                       | ☑️     |                                                                                                          |
 | NextCloudPi                     | ☑️     |                                                                                                          |
 | Nginx Proxy Manager             | ☑️     |                                                                                                          |
