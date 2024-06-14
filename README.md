@@ -92,7 +92,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Heimdall Dashboard              | ☑️     |                                                                                                          |
 | HiveMQ CE                       | ☑️     |                                                                                                          |
 | Homarr                          | ☑️     |                                                                                                          |
-| Home Assistant Core             | ❌     | pve-container needs to be updated.                                                                       |
+| Home Assistant Core             | ☑️     |                                                                                                          |
 | Home Assistant Container        | ☑️     |                                                                                                          |
 | Homebridge                      | ☑️     |                                                                                                          |
 | Homepage                        | ☑️     |                                                                                                          |
@@ -123,6 +123,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | MotionEye NVR                   | ☑️     |                                                                                                          |
 | MQTT                            | ☑️     |                                                                                                          |
 | n8n                             | ☑️     |                                                                                                          |
+| MySpeed                         | ⭕     |                                                                                                          |
 | Navidrome                       | ☑️     |                                                                                                          |
 | NextCloudPi                     | ☑️     |                                                                                                          |
 | Nginx Proxy Manager             | ☑️     |                                                                                                          |
@@ -141,7 +142,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | PairDrop                        | ☑️     |                                                                                                          |
 | Paperless-ngx                   | ☑️     |                                                                                                          |
 | PBS                             | ☑️     | Proxmox Backup Server                                                                                    |
-| PeaNUT                          | ⭕     |                                                                                                          |
+| PeaNUT                          | ❌     | Working on fixing.                                                                                       |
 | Petio                           | ☑️     | Only supports ARMv8.2-a currently. (no RPI4 support).                                                    |
 | PhotoPrism                      | ☑️     |                                                                                                          |
 | Pi.Alert                        | ☑️     |                                                                                                          |
@@ -168,7 +169,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Shinobi NVR                     | ☑️     |                                                                                                          |
 | SmokePing                       | ☑️     |                                                                                                          |
 | Sonarr                          | ☑️     |                                                                                                          |
-| SpoolMan                        | ⭕     |                                                                                                          |
+| SpoolMan                        | ☑️     |                                                                                                          |
 | Stirling-PDF                    | ☑️     |                                                                                                          |
 | Syncthing                       | ☑️     |                                                                                                          |
 | Tandoor Recipes                 | ☑️     |                                                                                                          |

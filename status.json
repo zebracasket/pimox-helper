@@ -204,8 +204,8 @@
     "notes": ""
   },
   "Home Assistant Core LXC": {
-    "status": "unsupported",
-    "notes": "pve-container needs to be updated."
+    "status": "created",
+    "notes": ""
   },
   "Home Assistant Container LXC": {
     "status": "created",
@@ -323,6 +323,10 @@
     "status": "created",
     "notes": ""
   },
+  "MySpeed LXC": {
+    "status": "untested",
+    "notes": ""
+  },
   "n8n LXC": {
     "status": "created",
     "notes": ""
@@ -400,7 +404,7 @@
     "notes": ""
   },
   "PeaNUT LXC": {
-    "status": "untested",
+    "status": "unsupported",
     "notes": ""
   },
   "Petio LXC": {

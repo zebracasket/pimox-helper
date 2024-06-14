@@ -2,7 +2,6 @@
 
 # Copyright (c) 2021-2024 tteck
 # Author: tteck
-# Co-Author: MickLesk (Canbiz)
 # License: MIT
 # https://github.com/tteck/Proxmox/raw/main/LICENSE
 # Source: https://github.com/gnmyt/myspeed
@@ -22,7 +21,8 @@ $STD apt-get install -y \
   make \
   gpg \
   ca-certificates \
-  mc
+  mc \
+  wget
 msg_ok "Installed Dependencies"
 
 msg_info "Setting up Node.js Repository"
