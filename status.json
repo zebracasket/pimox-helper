@@ -405,7 +405,7 @@
   },
   "PeaNUT LXC": {
     "status": "unsupported",
-    "notes": ""
+    "notes": "Working on fixing."
   },
   "Petio LXC": {
     "status": "created",
