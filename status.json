@@ -404,8 +404,8 @@
     "notes": ""
   },
   "PeaNUT LXC": {
-    "status": "unsupported",
-    "notes": "Working on fixing."
+    "status": "created",
+    "notes": "Configure the files in /etc/nut then update the PeaNUT service environment variables in /etc/systemd/system/peanut.service."
   },
   "Petio LXC": {
     "status": "created",
