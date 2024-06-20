@@ -181,7 +181,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Traccar                         | ☑️     |                                                                                                          |
 | Traefik                         | ☑️     |                                                                                                          |
 | Transmission                    | ☑️     |                                                                                                          |
-| Trilium                         | ☑️     |                                                                                                          |
+| Trilium                         | ❌     | Built for x64 only.                                                                                      |
 | Umami                           | ☑️     |                                                                                                          |
 | Ubuntu                          | ☑️     |                                                                                                          |
 | Umbrel                          | ☑️     |                                                                                                          |
