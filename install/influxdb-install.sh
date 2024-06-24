@@ -43,7 +43,7 @@ if [[ $INFLUX == "2" ]]; then
 else
   $STD apt-get install -y influxdb
   wget -q https://dl.influxdata.com/chronograf/releases/chronograf_1.10.1_arm64.deb
-  $STD dpkg -i chronograf_1.10.1_amd64.deb
+  $STD dpkg -i chronograf_1.10.1_arm64.deb
 fi
 $STD systemctl enable --now influxdb
 msg_ok "Installed InfluxDB"
