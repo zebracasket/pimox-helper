@@ -36,7 +36,8 @@ $STD apt-get -y install \
     mc \
     ca-certificates \
     gpg \
-    wget
+    wget \
+    openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Setting Up Hardware Acceleration"

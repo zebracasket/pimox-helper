@@ -30,7 +30,8 @@ $STD apt-get install -y --no-install-recommends \
   git \
   make \
   mc \
-  wget
+  wget \
+  openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Updating Python3"

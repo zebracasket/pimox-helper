@@ -29,7 +29,8 @@ $STD apt-get install -y \
   g++ \
   unpaper \
   ocrmypdf \
-  wget
+  wget \
+  openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Installing LibreOffice Components"

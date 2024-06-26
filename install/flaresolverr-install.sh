@@ -24,6 +24,7 @@ $STD apt-get install -y xvfb
 $STD apt-get install -y wget
 $STD apt-get install -y git
 $STD apt-get install -y chromium
+$STD apt-get install -y openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Updating Python3"

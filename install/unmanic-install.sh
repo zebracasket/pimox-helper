@@ -20,6 +20,7 @@ $STD apt-get install -y mc
 $STD apt-get install -y ffmpeg
 $STD apt-get install -y python3-pip
 $STD apt-get install -y wget
+$STD apt-get install -y openssh-server
 rm -rf /usr/lib/python3.*/EXTERNALLY-MANAGED
 msg_ok "Installed Dependencies"
 

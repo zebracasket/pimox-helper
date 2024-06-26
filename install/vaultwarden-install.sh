@@ -26,7 +26,8 @@ $STD apt-get -qqy install \
   sudo \
   argon2 \
   mc \
-  wget
+  wget \
+  openssh-server
 msg_ok "Installed Dependencies"
 
 WEBVAULT=$(curl -s https://api.github.com/repos/dani-garcia/bw_web_builds/releases/latest |

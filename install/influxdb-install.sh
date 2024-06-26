@@ -21,6 +21,7 @@ $STD apt-get install -y lsb-base
 $STD apt-get install -y lsb-release
 $STD apt-get install -y gnupg2
 $STD apt-get install -y wget
+$STD apt-get install -y openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Setting up InfluxDB Repository"

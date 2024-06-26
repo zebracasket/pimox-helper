@@ -21,6 +21,7 @@ $STD apt-get install -y git
 $STD apt-get install -y libyaml-dev
 $STD apt-get install -y build-essential
 $STD apt-get install -y wget
+$STD apt-get install -y openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Updating Python3"

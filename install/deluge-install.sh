@@ -18,6 +18,7 @@ $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
 $STD apt-get install -y python3-libtorrent
+$STD apt-get install -y openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Updating Python3"

@@ -45,7 +45,8 @@ $STD apt-get install -y \
   xvfb \
   ca-certificates \
   gnupg \
-  wget
+  wget \
+  openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Updating Python3"

@@ -21,6 +21,7 @@ $STD apt-get install -y git
 $STD apt-get install -y gpg
 $STD apt-get install -y postgresql
 $STD apt-get install -y wget
+$STD apt-get install -y openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Setting up Node.js Repository"

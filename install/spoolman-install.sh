@@ -24,7 +24,8 @@ $STD apt-get install -y \
   gpg \
   ca-certificates \
   mc \
-  wget
+  wget \
+  openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Python3"

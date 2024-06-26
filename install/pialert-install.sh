@@ -33,7 +33,8 @@ $STD apt-get -y install \
   aria2 \
   wakeonlan \
   wget \
-  cron
+  cron \
+  openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Installing PHP Dependencies"

@@ -28,7 +28,8 @@ $STD apt-get -y install \
   logrotate \
   build-essential \
   git \
-  wget
+  wget \
+  openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Python Dependencies"

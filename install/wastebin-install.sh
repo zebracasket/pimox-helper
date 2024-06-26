@@ -25,7 +25,8 @@ $STD apt-get install -y --no-install-recommends \
   make \
   mc \
   wget \
-  ca-certificates
+  ca-certificates \
+  openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Rust (Patience)" 

@@ -23,6 +23,7 @@ $STD apt-get install -y mc
 $STD apt-get install -y curl
 $STD apt-get install -y git
 $STD apt-get install -y wget
+$STD apt-get install -y openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Installing ASP.NET Core 7 SDK"

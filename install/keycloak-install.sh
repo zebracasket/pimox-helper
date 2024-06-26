@@ -20,6 +20,7 @@ $STD apt-get install -y mc
 $STD apt-get install -y ca-certificates-java
 $STD apt-get install -y openjdk-17-jre-headless
 $STD apt-get install -y wget
+$STD apt-get install -y openssh-server
 msg_ok "Installed Dependencies"
 
 RELEASE=$(curl -s https://api.github.com/repos/keycloak/keycloak/releases/latest | grep "tag_name" | awk '{print substr($2, 2, length($2)-3) }')

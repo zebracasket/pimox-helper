@@ -21,6 +21,7 @@ $STD apt-get install -y gnupg2
 $STD apt-get install -y ca-certificates 
 $STD apt-get install -y lsb-release 
 $STD apt-get install -y debian-archive-keyring
+$STD apt-get install -y openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Nginx v1.20.0"

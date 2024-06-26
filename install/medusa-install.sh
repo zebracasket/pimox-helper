@@ -21,6 +21,7 @@ $STD apt-get install -y gpg
 $STD apt-get install -y git-core
 $STD apt-get install -y mediainfo
 $STD apt-get install -y wget
+$STD apt-get install -y openssh-server
 cat <<EOF >/etc/apt/sources.list.d/non-free.list
 deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
 EOF
