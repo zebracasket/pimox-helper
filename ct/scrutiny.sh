@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck
 # Co-Author: MickLesk (Canbiz)
@@ -79,12 +79,12 @@ function update_script() {
       rm -rf scrutiny_bak
       mv scrutiny scrutiny_bak
       mkdir -p /opt/scrutiny/web /opt/scrutiny/bin
-      wget -q -O /opt/scrutiny/bin/scrutiny-web-linux-amd64 "https://github.com/AnalogJ/scrutiny/releases/download/${RELEASE}/scrutiny-web-linux-amd64"
-      wget -q -O /opt/scrutiny/bin/scrutiny-collector-metrics-linux-amd64 "https://github.com/AnalogJ/scrutiny/releases/download/${RELEASE}/scrutiny-collector-metrics-linux-amd64"
+      wget -q -O /opt/scrutiny/bin/scrutiny-web-linux-arm64 "https://github.com/AnalogJ/scrutiny/releases/download/${RELEASE}/scrutiny-web-linux-arm64"
+      wget -q -O /opt/scrutiny/bin/scrutiny-collector-metrics-linux-arm64 "https://github.com/AnalogJ/scrutiny/releases/download/${RELEASE}/scrutiny-collector-metrics-linux-arm64"
       wget -q -O /opt/scrutiny/web/scrutiny-web-frontend.tar.gz "https://github.com/AnalogJ/scrutiny/releases/download/${RELEASE}/scrutiny-web-frontend.tar.gz"
       cd /opt/scrutiny/web && tar xvzf scrutiny-web-frontend.tar.gz --strip-components 1 -C .
-      chmod +x /opt/scrutiny/bin/scrutiny-web-linux-amd64
-      chmod +x /opt/scrutiny/bin/scrutiny-collector-metrics-linux-amd64
+      chmod +x /opt/scrutiny/bin/scrutiny-web-linux-arm64
+      chmod +x /opt/scrutiny/bin/scrutiny-collector-metrics-linux-arm64
       echo "${RELEASE}" > /opt/scrutiny_version.txt
       msg_ok "Updated Scrutiny to $RELEASE"
 
@@ -125,7 +125,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/opt/scrutiny/bin/scrutiny-web-linux-amd64 start --config /opt/scrutiny/config/scrutiny.yaml
+ExecStart=/opt/scrutiny/bin/scrutiny-web-linux-arm64 start --config /opt/scrutiny/config/scrutiny.yaml
 Restart=always
 User=root
 
@@ -150,8 +150,8 @@ if [ "$UPD" == "3" ]; then
         msg_ok "Stopped Scrutiny Collector Service"
     else
         msg_info "Scrutiny Collector Service not found, creating..."
-		wget -q -O /opt/scrutiny/bin/scrutiny-collector-metrics-linux-amd64 "https://github.com/AnalogJ/scrutiny/releases/download/${RELEASE}/scrutiny-collector-metrics-linux-amd64"
-		chmod +x /opt/scrutiny/bin/scrutiny-collector-metrics-linux-amd64
+		wget -q -O /opt/scrutiny/bin/scrutiny-collector-metrics-linux-arm64 "https://github.com/AnalogJ/scrutiny/releases/download/${RELEASE}/scrutiny-collector-metrics-linux-arm64"
+		chmod +x /opt/scrutiny/bin/scrutiny-collector-metrics-linux-arm64
         cat <<EOF >/etc/systemd/system/scrutiny_collector.service
 [Unit]
 Description=Scrutiny Collector
@@ -159,7 +159,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/opt/scrutiny/bin/scrutiny-collector-metrics-linux-amd64 run --api-endpoint "http://localhost:8080"
+ExecStart=/opt/scrutiny/bin/scrutiny-collector-metrics-linux-arm64 run --api-endpoint "http://localhost:8080"
 Restart=always
 User=root
 
