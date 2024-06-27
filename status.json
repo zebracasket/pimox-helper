@@ -499,6 +499,10 @@
     "status": "created",
     "notes": ""
   },
+  "RabbitMQ LXC": {
+    "status": "created",
+    "notes": ""
+  },
   "Radarr LXC": {
     "status": "created",
     "notes": ""
