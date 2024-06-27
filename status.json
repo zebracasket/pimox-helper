@@ -11,6 +11,10 @@
     "status": "untested",
     "notes": "Needs testing."
   },
+  "Ubuntu 24.04 VM": {
+    "status": "untested",
+    "notes": "Needs testing."
+  },
   "Actual Budget LXC": {
     "status": "created",
     "notes": ""

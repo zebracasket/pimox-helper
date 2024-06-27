@@ -45,6 +45,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Home Assistant OS               | ❌     | Use Pimox HAOS VM script.                                                                                |
 | Pimox HAOS                      | ⭕     | Very likely to work, but haven't tested.                                                                 |
 | Ubuntu 22.04                    | ⭕     | Needs testing.                                                                                           |
+| Ubuntu 24.04                    | ⭕     | Needs testing.                                                                                           |
 
 ## LXC Compatibility Guide
 
