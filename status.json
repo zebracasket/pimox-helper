@@ -1,11 +1,31 @@
 {
-  "Home Assistant OS VM": {
+  "Debian VM": {
+    "status": "untested",
+    "notes": "Needs testing."
+  },
+    "Home Assistant OS VM": {
     "status": "unsupported",
     "notes": "Use Pimox HAOS VM script."
   },
-  "Pimox HAOS VM": {
+  "Mikrotik RouterOS VM": {
+    "status": "unsupported",
+    "notes": "No arm64 image available."
+  },
+  "Nextcloud VM": {
+    "status": "unsupported",
+    "notes": "No arm64 image available."
+  },
+   "OpenWRT VM": {
     "status": "untested",
-    "notes": "Very likely to work, but haven't tested."
+    "notes": "Needs testing."
+  },
+  "Owncloud VM": {
+    "status": "unsupported",
+    "notes": "No arm64 image available."
+  },
+  "Pimox HAOS VM": {
+    "status": "created",
+    "notes": ""
   },
   "Ubuntu 22.04 VM": {
     "status": "untested",
