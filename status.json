@@ -1,4 +1,8 @@
 {
+  "Home Assistant OS VM": {
+    "status": "unsupported",
+    "notes": "Use Pimox HAOS VM script."
+  },
   "Pimox HAOS VM": {
     "status": "untested",
     "notes": "Very likely to work, but haven't tested."
