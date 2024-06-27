@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
-# Co-Author: ulmentflam
 # License: MIT
 # https://github.com/tteck/Proxmox/raw/main/LICENSE
 
@@ -60,11 +59,11 @@ if [[ "${RELEASE}" != "$(cat /opt/${APP}_version.txt)" ]] || [[ ! -f /opt/${APP}
   msg_info "Updating $APP LXC"
   apt-get update &>/dev/null
   apt-get -y upgrade &>/dev/null
-  wget -q "https://github.com/ipfs/kubo/releases/download/${RELEASE}/kubo_${RELEASE}_linux-amd64.tar.gz"
-  tar -xzf "kubo_${RELEASE}_linux-amd64.tar.gz" -C /usr/local
+  wget -q "https://github.com/ipfs/kubo/releases/download/${RELEASE}/kubo_${RELEASE}_linux-arm64.tar.gz"
+  tar -xzf "kubo_${RELEASE}_linux-arm64.tar.gz" -C /usr/local
   systemctl restart ipfs.service
   echo "${RELEASE}" >/opt/${APP}_version.txt
-  rm "kubo_${RELEASE}_linux-amd64.tar.gz"
+  rm "kubo_${RELEASE}_linux-arm64.tar.gz"
   msg_ok "Updated $APP LXC"
 else
   msg_ok "No update required. ${APP} is already at ${RELEASE}"
