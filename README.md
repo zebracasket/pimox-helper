@@ -122,6 +122,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | k0s                             | ☑️     |                                                                                                          |
 | Kavita                          | ☑️     |                                                                                                          |
 | Keycloak                        | ☑️     |                                                                                                          |
+| Kubo                            | ☑️     |                                                                                                          |
 | LazyLibrarian                   | ☑️     |                                                                                                          |
 | Lidarr                          | ☑️     |                                                                                                          |
 | Linkwarden                      | ☑️     |                                                                                                          |
