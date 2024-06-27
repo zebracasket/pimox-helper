@@ -165,6 +165,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Runtipi                         | ☑️     |                                                                                                          |
 | SABnzbd                         | ☑️     |                                                                                                          |
 | Scrypted                        | ☑️     |                                                                                                          |
+| Scrutiny                        | ☑️     |                                                                                                         |
 | SFTPGo                          | ☑️     |                                                                                                          |
 | Shinobi NVR                     | ☑️     |                                                                                                          |
 | SmokePing                       | ☑️     |                                                                                                          |
