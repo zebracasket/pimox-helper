@@ -23,7 +23,9 @@ $STD apt-get install -y \
   gnupg   \
   apt-transport-https \
   make \
-  mc
+  mc \
+  wget \
+  openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Adding RabbitMQ signing key"
