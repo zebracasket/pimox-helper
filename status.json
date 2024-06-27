@@ -1,4 +1,12 @@
 {
+  "Pimox HAOS VM": {
+    "status": "untested",
+    "notes": "Very likely to work, but haven't tested."
+  },
+  "Ubuntu 22.04 VM": {
+    "status": "untested",
+    "notes": "Needs testing."
+  },
   "Actual Budget LXC": {
     "status": "created",
     "notes": ""

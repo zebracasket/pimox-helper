@@ -31,7 +31,7 @@ Any issues with the scripts, please put an issue within this repository rather t
 
 If you would like to offer support, I would appreciate a star on the repository, or for you to support the creator of the Proxmox scripts [tteck on Ko-Fi](https://ko-fi.com/D1D7EP4GF)!
 
-## Container Compatibility Guide
+## VM Compatibility Guide
 
 | Icon | Description                                        |
 | ---- | -------------------------------------------------- |
@@ -39,6 +39,13 @@ If you would like to offer support, I would appreciate a star on the repository,
 | ⭕   | Install script is ported, but has not been tested. |
 | ❌   | Unsupported. View notes for reason.                |
 | 🔘   | Install script not ported to ARM64.                |
+
+| OS                             | Status | Notes                                                                                                    |
+| ------------------------------- | ------ | -------------------------------------------------------------------------------------------------------- |
+| Pimox HAOS                      | ⭕     | Very likely to work, but haven't tested.                                                                 |
+| Ubuntu 22.04                    | ⭕     | Needs testing.                                                                                            |
+
+## LXC Compatibility Guide
 
 | App                             | Status | Notes                                                                                                    |
 | ------------------------------- | ------ | -------------------------------------------------------------------------------------------------------- |
