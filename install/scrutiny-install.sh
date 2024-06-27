@@ -35,6 +35,7 @@ sh -c 'echo "deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg
 msg_ok "Set up InfluxDB Repository"
 
 msg_info "Installing InfluxDB"
+$STD apt-get update
 $STD apt-get install -y influxdb2
 $STD systemctl enable --now influxdb
 msg_ok "Installed InfluxDB"
