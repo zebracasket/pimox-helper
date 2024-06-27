@@ -22,8 +22,8 @@ APP="RabbitMQ"
 var_disk="4"
 var_cpu="1"
 var_ram="1024"
-var_os="debian"
-var_version="12"
+var_os="ubuntu"
+var_version="22.04"
 variables
 color
 catch_errors
