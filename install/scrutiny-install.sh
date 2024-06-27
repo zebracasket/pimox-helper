@@ -25,6 +25,7 @@ $STD apt-get install -y \
   wget \
   openssh-server \
   lsb-base \
+  lsb-release \
   gnupg2
 msg_ok "Installed Dependencies"
 
