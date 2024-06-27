@@ -166,15 +166,6 @@ function pve_check() {
   fi
 }
 
-function arch_check() {
-  if [ "$(dpkg --print-architecture)" != "amd64" ]; then
-    echo -e "\n ${CROSS} This script will not work with PiMox! \n"
-    echo -e "Exiting..."
-    sleep 2
-    exit
-  fi
-}
-
 function ssh_check() {
   if command -v pveversion >/dev/null 2>&1; then
     if [ -n "${SSH_CLIENT:+x}" ]; then
@@ -395,7 +386,6 @@ function start_script() {
   fi
 }
 
-arch_check
 pve_check
 ssh_check
 start_script
@@ -433,7 +423,15 @@ msg_info "Getting URL for OpenWrt Disk Image"
 
 response=$(curl -s https://openwrt.org)
 stableversion=$(echo "$response" | sed -n 's/.*Current stable release - OpenWrt \([0-9.]\+\).*/\1/p')
-URL="https://downloads.openwrt.org/releases/$stableversion/targets/x86/64/openwrt-$stableversion-x86-64-generic-ext4-combined.img.gz"
+arch=$(uname -m)
+if [[ "$arch" == "aarch64" ]]; then
+    URL="https://downloads.openwrt.org/releases/$stableversion/targets/armsr/armv8/openwrt-$stableversion-armsr-armv8-generic-ext4-combined.img.gz"
+elif [[ "$arch" == "armv7l" || "$arch" == "armv7" ]]; then
+    URL="https://downloads.openwrt.org/releases/$stableversion/targets/armsr/armv7/openwrt-$stableversion-armsr-armv7-generic-ext4-combined.img.gz"
+else
+    echo "System architecture is unsupported ($arch), create a discussion on GitHub for assistance."
+    exit
+fi
 
 sleep 2
 msg_ok "${CL}${BL}${URL}${CL}"
@@ -476,7 +474,7 @@ qm set $VMID \
   -scsi0 ${DISK1_REF},size=512M \
   -boot order=scsi0 \
   -tags proxmox-helper-scripts \
-  -description "<div align='center'><a href='https://Helper-Scripts.com'><img src='https://raw.githubusercontent.com/tteck/Proxmox/main/misc/images/logo-81x112.png'/></a>
+  -description "<div align='center'><a href='https://pimox-scripts.com'><img src='https://raw.githubusercontent.com/asylumexp/Proxmox/main/misc/images/logo-81x112.png'/></a>
 
   # OpenWRT
 
