@@ -29,12 +29,17 @@ $STD apt-get install -y \
 msg_ok "Installed Dependencies"
 
 msg_info "Adding RabbitMQ signing key"
+echo "deb https://packages.erlang-solutions.com/ubuntu bookworm contrib" | sudo tee /etc/apt/sources.list.d/erlang-solutions.list
+wget -qO- https://packages.erlang-solutions.com/debian/erlang_solutions.asc | sudo apt-key add -
+
 wget -qO- "https://keys.openpgp.org/vks/v1/by-fingerprint/0A9AF2115F4687BD29803A206B73A36E6026DFCA" | gpg --dearmor >/usr/share/keyrings/com.rabbitmq.team.gpg
 wget -qO- "https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-erlang.E495BB49CC4BBE5B.key" | gpg --dearmor >/usr/share/keyrings/rabbitmq.E495BB49CC4BBE5B.gpg
 wget -qO- "https://github.com/rabbitmq/signing-keys/releases/download/3.0/cloudsmith.rabbitmq-server.9F4587F226208342.key" | gpg --dearmor >/usr/share/keyrings/rabbitmq.9F4587F226208342.gpg
 msg_ok "Signing keys added"
 
 msg_info "Adding RabbitMQ repository"
+echo "deb https://packages.erlang-solutions.com/debian bookworm contrib" | tee /etc/apt/sources.list.d/erlang-solutions.list
+
 cat <<EOF >/etc/apt/sources.list.d/rabbitmq.list
 ## Provides modern Erlang/OTP releases from a Cloudsmith mirror
 deb [signed-by=/usr/share/keyrings/rabbitmq.E495BB49CC4BBE5B.gpg] https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-erlang/deb/debian $(lsb_release -cs) main
