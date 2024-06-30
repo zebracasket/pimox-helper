@@ -158,7 +158,7 @@ if [ $PCT_OSTYPE = debian ]; then
     TEMPLATE_VARIENT=bookworm
   fi
 elif [ $PCT_OSTYPE = alpine ]; then
-  TEMPLATE_VARIENT=3.18
+  TEMPLATE_VARIENT=3.20
 else
   if [ $PCT_OSVERSION = 20.04 ]; then
     TEMPLATE_VARIENT=focal
@@ -190,10 +190,11 @@ else
   pveam update >/dev/null
   msg_ok "Updated LXC Template List"
   if [ $PCT_OSTYPE = debian ]; then
-    PCT_OSTYPE=ubuntu
-    TEMPLATE_VARIENT=jammy
-    msg_error "Debian unsupported with this download method. Using Ubuntu 22.04."
+    msg_error "Debian unsupported with this download method. Exiting."
+  elif [ $PCT_OSTYPE = alpine]; then
+    $TEMPLATE_VARIENT = 3.18
   fi
+
   TEMPLATE="$(pveam available | grep -E "arm64.*$PCT_OSTYPE-$TEMPLATE_VARIENT" | sed 's/arm64[[:space:]]*//')"
 
   # Download LXC template if needed
