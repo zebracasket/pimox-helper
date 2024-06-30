@@ -46,7 +46,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Home Assistant OS               | ❌     | Use Pimox HAOS VM script.                                                                                |
 | Mikrotik RouterOS               | ❌     | No arm64 image available.                                                                                |
 | NextCloud                       | ❌     | No arm64 image available. Not present on website.                                                        |
-| OpenWRT HAOS                    | ⭕     | Needs testing.                                                                                           |
+| OpenWRT                         | ⭕     | Needs testing.                                                                                           |
 | OwnCloud                        | ❌     | No arm64 image available.                                                                                |
 | Pimox HAOS                      | ☑️     |                                                                                                          |
 | Ubuntu 22.04                    | ⭕     | Needs testing.                                                                                           |
