@@ -158,7 +158,7 @@ if [ $PCT_OSTYPE = debian ]; then
     TEMPLATE_VARIENT=bookworm
   fi
 elif [ $PCT_OSTYPE = alpine ]; then
-  TEMPLATE_VARIENT=3.20
+  TEMPLATE_VARIENT=3.19
 else
   if [ $PCT_OSVERSION = 20.04 ]; then
     TEMPLATE_VARIENT=focal
