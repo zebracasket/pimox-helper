@@ -94,7 +94,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | ESPHome                         | ☑️     |                                                                                                          |
 | Fenrus                          | ☑️     |                                                                                                          |
 | FHEM                            | ☑️     |                                                                                                          |
-| FlareSolverr                    | ❌     | Only supports arm64 docker install.                                                                      |
+| FlareSolverr                    | ☑️     |                                                                                                          |
 | FlowiseAI                       | ☑️     |                                                                                                          |
 | Forgejo                         | ☑️     |                                                                                                          |
 | Frigate                         | ☑️     |                                                                                                          |
