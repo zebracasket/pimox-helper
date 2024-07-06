@@ -23,8 +23,9 @@ $STD apt-get install -y gpg
 $STD apt-get install -y xvfb
 $STD apt-get install -y wget
 $STD apt-get install -y git
-$STD apt-get install -y chromium
 $STD apt-get install -y openssh-server
+$STD apt-get install -y chromium=126.0.6478.126-1~deb12u1
+$STD apt-mark hold chromium
 msg_ok "Installed Dependencies"
 
 msg_info "Updating Python3"
@@ -40,6 +41,13 @@ $STD git clone https://github.com/FlareSolverr/FlareSolverr /opt/flaresolverr
 $STD pip install -r /opt/flaresolverr/requirements.txt
 msg_ok "Installed FlareSolverr"
 
+msg_info "Installing Chrome Webdriver"
+wget -q https://github.com/electron/electron/releases/download/v31.1.0/chromedriver-v31.1.0-linux-arm64.zip -o /opt/flaresolverr/webdriver.zip
+cd /opt/flaresolverr
+unzip -q webdriver.zip chromedriver
+sed -i 's|^PATCHED_DRIVER_PATH = None|PATCHED_DRIVER_PATH = "/opt/flaresolverr/chromedriver"|' ./src/utils.py
+msg_ok "Installed Chrome Webdriver"
+
 msg_info "Creating Service"
 cat <<EOF >/etc/systemd/system/flaresolverr.service
 [Unit]
@@ -53,7 +61,7 @@ Type=simple
 Environment="LOG_LEVEL=info"
 Environment="CAPTCHA_SOLVER=none"
 WorkingDirectory=/opt/flaresolverr
-ExecStart=python /opt/flaresolverr/src/flaresolverr.py
+ExecStart=python3 /opt/flaresolverr/src/flaresolverr.py
 TimeoutStopSec=30
 [Install]
 WantedBy=multi-user.target
@@ -65,6 +73,7 @@ motd_ssh
 customize
 
 msg_info "Cleaning up"
+rm /opt/flaresolverr/webdriver.zip
 $STD apt-get -y autoremove
 $STD apt-get -y autoclean
 msg_ok "Cleaned"
