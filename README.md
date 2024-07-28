@@ -40,17 +40,17 @@ If you would like to offer support, I would appreciate a star on the repository,
 | ❌   | Unsupported. View notes for reason.                |
 | 🔘   | Install script not ported to ARM64.                |
 
-| OS                             | Status | Notes                                                                                                    |
-| ------------------------------- | ------ | -------------------------------------------------------------------------------------------------------- |
-| Debian                          | ⭕     | Needs testing.                                                                                           |
-| Home Assistant OS               | ❌     | Use Pimox HAOS VM script.                                                                                |
-| Mikrotik RouterOS               | ❌     | No arm64 image available.                                                                                |
-| NextCloud                       | ❌     | No arm64 image available. Not present on website.                                                        |
-| OpenWRT                         | ⭕     | Needs testing.                                                                                           |
-| OwnCloud                        | ❌     | No arm64 image available.                                                                                |
-| Pimox HAOS                      | ☑️     |                                                                                                          |
-| Ubuntu 22.04                    | ⭕     | Needs testing.                                                                                           |
-| Ubuntu 24.04                    | ⭕     | Needs testing.                                                                                           |
+| OS                | Status | Notes                                             |
+| ----------------- | ------ | ------------------------------------------------- |
+| Debian            | ⭕     | Needs testing.                                    |
+| Home Assistant OS | ❌     | Use Pimox HAOS VM script.                         |
+| Mikrotik RouterOS | ❌     | No arm64 image available.                         |
+| NextCloud         | ❌     | No arm64 image available. Not present on website. |
+| OpenWRT           | ⭕     | Needs testing.                                    |
+| OwnCloud          | ❌     | No arm64 image available.                         |
+| Pimox HAOS        | ☑️     |                                                   |
+| Ubuntu 22.04      | ⭕     | Needs testing.                                    |
+| Ubuntu 24.04      | ⭕     | Needs testing.                                    |
 
 ## LXC Compatibility Guide
 
@@ -181,7 +181,7 @@ If you would like to offer support, I would appreciate a star on the repository,
 | Runtipi                         | ☑️     |                                                                                                          |
 | SABnzbd                         | ☑️     |                                                                                                          |
 | Scrypted                        | ☑️     |                                                                                                          |
-| Scrutiny                        | ☑️     |                                                                                                         |
+| Scrutiny                        | ☑️     |                                                                                                          |
 | SFTPGo                          | ☑️     |                                                                                                          |
 | Shinobi NVR                     | ☑️     |                                                                                                          |
 | SmokePing                       | ☑️     |                                                                                                          |
