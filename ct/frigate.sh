@@ -64,8 +64,13 @@ build_container
 description
 
 msg_info "Setting Container to Normal Resources"
-pct set $CTID -memory 1024
-msg_ok "Set Container to Normal Resources"
+STATUS=$(pct status $CTID | grep -oP '(?<=status: ).*')
+if [ "$STATUS" == "running" ]; then
+    pct set $CTID -memory 1024
+else
+    echo -e " ⚠️  ${RD}Container is not running. Will need to change memory to 1024MB manually.${CL}"
+fi
+msg_ok "Set Normal Resources"
 msg_ok "Completed Successfully!\n"
 echo -e "${APP} should be reachable by going to the following URL.
          ${BL}http://${IP}:5000${CL} \n"
