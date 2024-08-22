@@ -14,19 +14,13 @@ setting_up_container
 network_check
 update_os
 
-msg_info "Installing Dependencies (Patience)"
-$STD apt-get install -y --no-install-recommends \
-  build-essential \
-  unzip \
-  curl \
-  sudo \
-  git \
-  make \
-  gnupg \
-  ca-certificates \
-  mc \
-  wget \
-  openssh-server
+msg_info "Installing Dependencies"
+$STD apt-get install -y curl
+$STD apt-get install -y sudo
+$STD apt-get install -y mc
+$STD apt-get install -y gpg
+$STD apt-get install -y wget
+$STD apt-get install -y openssh-server
 msg_ok "Installed Dependencies"
 
 msg_info "Setting up Node.js Repository"
@@ -41,15 +35,8 @@ $STD apt-get install -y nodejs
 msg_ok "Installed Node.js"
 
 msg_info "Install Matterbridge" 
-RELEASE=$(curl -s https://api.github.com/repos/Luligu/matterbridge/releases/latest | grep "tag_name" | awk '{print substr($2, 2, length($2)-3) }')
-wget -q "https://github.com/Luligu/matterbridge/archive/refs/tags/${RELEASE}.zip"
-unzip -q ${RELEASE}.zip
-mv matterbridge-${RELEASE} /opt/matterbridge
-rm -R ${RELEASE}.zip 
-cd /opt/matterbridge
-$STD npm ci
-$STD npm run build
-echo "${RELEASE}" >/opt/${APPLICATION}_version.txt
+mkdir -p /root/Matterbridge
+$STD npm install -g matterbridge
 msg_ok "Installed Matterbridge"
 
 msg_info "Creating Service"
@@ -60,16 +47,13 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/npm run start:bridge
-WorkingDirectory=/opt/matterbridge
+ExecStart=matterbridge -bridge -service
+WorkingDirectory=/root/Matterbridge
 StandardOutput=inherit
 StandardError=inherit
 Restart=always
 RestartSec=10s
 TimeoutStopSec=30s
-User=root
-Environment=PATH=/usr/bin:/usr/local/bin:/opt/matterbridge/bin
-Environment=NODE_ENV=production
 
 [Install]
 WantedBy=multi-user.target
