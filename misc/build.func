@@ -145,9 +145,7 @@ echo_default() {
 
 # This function is called when the user decides to exit the script. It clears the screen and displays an exit message.
 exit-script() {
-  clear
   echo -e "⚠  User exited script \n"
-  exit
 }
 
 # This function allows the user to configure advanced settings for the script.
@@ -165,6 +163,7 @@ advanced_settings() {
           echo -e "${DGN}Using Distribution: ${BGN}$var_os${CL}"
         fi
       else
+        echo choose debian or ubuntu
         exit-script
       fi
     done
@@ -181,6 +180,7 @@ advanced_settings() {
           echo -e "${DGN}Using $var_os Version: ${BGN}$var_version${CL}"
         fi
       else
+        echo debian
         exit-script
       fi
     done
@@ -198,6 +198,7 @@ advanced_settings() {
           echo -e "${DGN}Using $var_os Version: ${BGN}$var_version${CL}"
         fi
       else
+        echo ubuntu
         exit-script
       fi
     done
@@ -213,6 +214,7 @@ advanced_settings() {
         echo -e "${DGN}Using Container Type: ${BGN}$CT_TYPE${CL}"
       fi
     else
+      echo privledges
       exit-script
     fi
   done
@@ -234,6 +236,7 @@ advanced_settings() {
               whiptail --msgbox "Passwords do not match. Please try again." 8 58
             fi
           else
+            echo passwords 1
             exit-script
           fi
         fi
@@ -244,6 +247,7 @@ advanced_settings() {
         break
       fi
     else
+      echo passwords 2
       exit-script
     fi
   done
@@ -268,6 +272,7 @@ advanced_settings() {
     fi
     echo -e "${DGN}Using Hostname: ${BGN}$HN${CL}"
   else
+    echo hostname
     exit-script
   fi
 
@@ -283,6 +288,7 @@ advanced_settings() {
       echo -e "${DGN}Using Disk Size: ${BGN}$DISK_SIZE${CL}"
     fi
   else
+    echo disk size
     exit-script
   fi
 
@@ -294,6 +300,7 @@ advanced_settings() {
       echo -e "${DGN}Allocated Cores: ${BGN}$CORE_COUNT${CL}"
     fi
   else
+    echo cpu cores
     exit-script
   fi
 
@@ -305,6 +312,7 @@ advanced_settings() {
       echo -e "${DGN}Allocated RAM: ${BGN}$RAM_SIZE${CL}"
     fi
   else
+    echo memory
     exit-script
   fi
 
@@ -316,6 +324,7 @@ advanced_settings() {
       echo -e "${DGN}Using Bridge: ${BGN}$BRG${CL}"
     fi
   else
+    echo bridge
     exit-script
   fi
 
@@ -335,6 +344,7 @@ advanced_settings() {
         fi
       fi
     else
+      echo ipv4
       exit-script
     fi
   done
@@ -365,6 +375,7 @@ advanced_settings() {
       APT_CACHER="${APT_CACHER_IP:+yes}"
       echo -e "${DGN}Using APT-Cacher IP Address: ${BGN}${APT_CACHER_IP:-Default}${CL}"
     else
+      echo apt-cacher
       exit-script
     fi
   fi
@@ -385,6 +396,7 @@ advanced_settings() {
     fi
     echo -e "${DGN}Using Interface MTU Size: ${BGN}$MTU1${CL}"
   else
+    echo mtu
     exit-script
   fi
 
@@ -398,6 +410,7 @@ advanced_settings() {
     fi
     echo -e "${DGN}Using DNS Search Domain: ${BGN}$SX${CL}"
   else
+    echo dns search
     exit-script
   fi
 
@@ -410,6 +423,7 @@ advanced_settings() {
     fi
     echo -e "${DGN}Using DNS Server IP Address: ${BGN}$NX${CL}"
   else
+    echo dns server ip
     exit-script
   fi
 
@@ -422,6 +436,7 @@ advanced_settings() {
       echo -e "${DGN}Using MAC Address: ${BGN}$MAC1${CL}"
     fi
   else
+    echo nac
     exit-script
   fi
 
@@ -434,6 +449,7 @@ advanced_settings() {
     fi
     echo -e "${DGN}Using Vlan: ${BGN}$VLAN1${CL}"
   else
+    echo vlan
     exit-script
   fi
 
